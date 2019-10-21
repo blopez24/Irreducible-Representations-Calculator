@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:background="#00589d"
         android:gravity="center_horizontal"
-        android:text="Reduction Irreducible Representation Calculator"
+        android:text="Irreducible Representations Calculator"
         android:textColor="#ffffff"
         android:textSize="20sp" />
 
@@ -32,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="This calculator allows youto reduce a reducible representation for a wide range of chemically relevant point groups using the reduction operator."
+        android:text="This calculator allows you to reduce a reducible representation for a wide range of chemically relevant point groups using the reduction operator."
         android:textSize="12sp"
         android:textColor="#000000" />
 
