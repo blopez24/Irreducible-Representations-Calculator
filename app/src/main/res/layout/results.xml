@@ -61,23 +61,40 @@
         android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:text="reduces to:" />
 
-    <Button
-        android:id="@+id/button23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="reduce another *element from user_input.xml* representation"
-        android:textColorHighlight="#00FFFFFF" />
-
-    <Button
-        android:id="@+id/button24"
+    <TextView
+        android:id="@+id/textView10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginBottom="0dp"
-        android:text="reduce a representation for a different point group" />
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:text="RESULT" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="55dp"
+            android:text="reduce another *element from user_input.xml* representation"
+            android:textColorHighlight="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/button24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/button23"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:text="reduce a representation for a different point group" />
+    </RelativeLayout>
 
 
 </LinearLayout>
