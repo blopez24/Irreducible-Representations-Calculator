@@ -95,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="270dp"
         android:text="reduce a representation for a different point group"
         android:textColorHighlight="#00FFFFFF" />
 
