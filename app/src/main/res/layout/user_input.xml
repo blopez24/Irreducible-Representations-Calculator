@@ -65,8 +65,8 @@
                 android:id="@+id/inputUser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="2"
-                android:inputType="textPersonName" />
+
+                />
         </TableRow>
 
     </TableLayout>
