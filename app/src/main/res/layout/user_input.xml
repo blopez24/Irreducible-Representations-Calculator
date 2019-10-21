@@ -37,36 +37,50 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:background="#BBBBBB">
+        android:layout_marginTop="20dp">
 
-        <TableRow>
-
-            <TextView />
+        <TableRow
+            android:background="@drawable/table_outline">
 
             <TextView
                 android:id="@+id/textView6"
-                android:background="@drawable/table_outline"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
                 android:padding="2dp"
-                android:text="E" />
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView13"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="2dp"
+                android:text="E"
+                android:textColor="@color/black" />
         </TableRow>
 
-        <TableRow>
+        <TableRow
+            android:background="@drawable/table_outline">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:background="@drawable/table_outline"
+                android:layout_height="match_parent"
+                android:gravity="center"
                 android:padding="2dp"
-                android:text="r reducible" />
+                android:background="@drawable/table_outline"
+                android:text="r reducible"
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/inputUser"
+                android:background="@drawable/table_outline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 />
+
         </TableRow>
 
     </TableLayout>
@@ -83,7 +97,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button22"
+        android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -94,10 +108,15 @@
     <Button
         android:id="@+id/button23"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginTop="270dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/submit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:background="#00589d"
+        android:padding="5dp"
         android:text="reduce a representation for a different point group"
-        android:textColorHighlight="#00FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00FFFFFF"
+        android:textSize="10sp" />
 
 </LinearLayout>
