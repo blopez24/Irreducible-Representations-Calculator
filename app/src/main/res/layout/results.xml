@@ -13,11 +13,18 @@
         android:textColor="#ffffff"
         android:textSize="20sp" />
 
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="The reducible representation:" />
+
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
         android:background="#BBBBBB">
 
         <TableRow>
@@ -39,25 +46,38 @@
                 android:layout_width="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="2dp"
-                android:text="r reducible" />
+                android:text="3rd cell" />
 
-            <EditText
-                android:id="@+id/editText"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="2"
-                android:inputType="textPersonName" />
+                android:text="4th cell" />
         </TableRow>
 
     </TableLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="reduces to:" />
 
     <Button
         android:id="@+id/button23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginTop="270dp"
-        android:text="reduce a representation for a different point group"
+        android:text="reduce another *element from user_input.xml* representation"
         android:textColorHighlight="#00FFFFFF" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dp"
+        android:text="reduce a representation for a different point group" />
+
 
 </LinearLayout>
