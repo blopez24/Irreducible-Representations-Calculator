@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/top_banner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00589d"
+        android:gravity="center_horizontal"
+        android:text="Reduction Irreducible Representation Calculator"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:text="Step 2: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:text="Enter the characters for the reducible representation of the *__* point group below."
+        android:textColor="@color/black" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="BBBBBB">
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:background="@drawable/table_outline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="E" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="2dp"
+                android:background="@drawable/table_outline"
+                android:text="r reducible" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Step 3: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="SUBMIT" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="280dp"
+        android:text="reduce a representation for a different point group"
+        android:textColorHighlight="#00FFFFFF" />
+
+</LinearLayout>
