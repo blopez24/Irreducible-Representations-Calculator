@@ -22,6 +22,7 @@ public class Input extends AppCompatActivity {
         value = findViewById(R.id.inputUser);
         Intent intent = new Intent(this, Results.class);
         intent.putExtra("value", value.getText());
+       // intent.putExtra("results", )
         startActivity(intent);
     }
 

@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Results extends AppCompatActivity {
 
     TextView text;
+    TextView resultView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,10 +18,11 @@ public class Results extends AppCompatActivity {
         setContentView(R.layout.results);
 
         text = findViewById(R.id.cell);
+        resultView = findViewById(R.id.result_view);
         Intent it = getIntent();
         Bundle bundle = it.getExtras();
         text.setText(bundle.get("value").toString());
-
+        resultView.setText(bundle.get("value").toString());
     }
 
     public void return_2(View view) {
