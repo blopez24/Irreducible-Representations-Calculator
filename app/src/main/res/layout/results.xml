@@ -20,44 +20,54 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="80dp"
         android:text="The reducible representation:"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
+    <!-- -START TABLE LAYOUT- -->
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="10dp"
-        android:background="#BBBBBB">
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp">
 
         <TableRow>
 
-            <TextView />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="C1"
+                android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:background="@drawable/table_outline"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="E" />
+                android:padding="4dp"
+                android:text="E"
+                android:textColor="@color/black" />
         </TableRow>
 
-        <TableRow>
+        <TableRow android:background="@drawable/table_outline">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_outline"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="r reducible"
+                android:textColor="@color/black" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:padding="2dp"
-                android:text="3rd cell" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/cell"
-                android:ems="2"
-                android:text="4th cell" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:textColor="@color/black" />
         </TableRow>
 
     </TableLayout>
+    <!-- -END TABLE LAYOUT- -->
 
     <TextView
         android:id="@+id/textView9"
@@ -66,39 +76,46 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="40dp"
         android:text="reduces to:"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="40dp"
-        android:text="RESULT" />
+        android:layout_marginTop="10dp"
+        android:text="2 A"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-    <RelativeLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+    <Button
+        android:id="@+id/return_same"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:background="#00589d"
+        android:padding="5dp"
+        android:text="reduce the same representation again"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00FFFFFF"
+        android:textSize="12sp"
+        android:onClick="return_same_button"/>
 
-        <Button
-            android:id="@+id/button23"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="55dp"
-            android:text="reduce the same representation again"
-            android:textColorHighlight="#00FFFFFF" />
-
-        <Button
-            android:id="@+id/button24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/button23"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="0dp"
-            android:text="reduce a representation for a different point group" />
-    </RelativeLayout>
-
+    <Button
+        android:id="@+id/return2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#00589d"
+        android:padding="5dp"
+        android:text="reduce a representation for a different point group"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00FFFFFF"
+        android:textSize="12sp"
+        android:onClick="return_2"/>
 
 </LinearLayout>

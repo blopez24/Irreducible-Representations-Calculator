@@ -24,4 +24,9 @@ public class Input extends AppCompatActivity {
         intent.putExtra("value", value.getText());
         startActivity(intent);
     }
+
+    public void return_1(View view) {
+        Intent it = new Intent(this, MainActivity.class);
+        startActivity(it);
+    }
 }
