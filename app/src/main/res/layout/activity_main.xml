@@ -31,17 +31,18 @@
         android:id="@+id/brief_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
         android:text="This calculator allows you to reduce a reducible representation for a wide range of chemically relevant point groups using the reduction operator."
         android:textSize="12sp"
         android:textColor="#000000" />
+
+
 
     <ImageView
         android:id="@+id/irc_equation_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
         android:layout_gravity="center_horizontal"
         android:maxWidth="350dp"
         android:adjustViewBounds="true"
@@ -51,33 +52,27 @@
         android:id="@+id/step1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Step 1: "
-        android:textSize="12sp"
-        android:textColor="#000000" />
-    <TextView
-        android:id="@+id/step1b"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pick the point group from the list below."
+        android:layout_margin="10dp"
+        android:text="Step 1:\nPick the point group from the list below."
         android:textSize="12sp"
         android:textColor="#000000" />
 
     <TextView
         android:id="@+id/point_groups_text"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center"
         android:text="Character tables for chemically important point groups"
         android:textColor="#000000"
-        android:textSize="15sp" />
+        android:textSize="20sp" />
 
     <LinearLayout
         android:id="@+id/nonaxial_group_row"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:layout_margin="10dp" >
 
 
         <TextView
@@ -143,7 +138,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
 
         <TextView
             android:id="@+id/textView2"
@@ -206,6 +202,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:orientation="horizontal">
 
         <TextView
