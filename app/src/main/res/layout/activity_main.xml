@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,6 +11,8 @@
         android:id="@+id/top_banner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
         android:background="#00589d"
         android:gravity="center_horizontal"
         android:text="Irreducible Representations Calculator"
@@ -19,32 +20,31 @@
         android:textSize="20sp" />
 
     <ImageView
-        android:id="@+id/ucsc_icon"
+        android:id="@+id/top_banner_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_margin="1dp"
         android:adjustViewBounds="true"
-        android:maxHeight="42dp"
-        app:srcCompat="@drawable/ucsc_symbol" />
+        android:maxHeight="50dp"
+        app:srcCompat="@drawable/uc_logo" />
 
     <TextView
         android:id="@+id/brief_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:text="This calculator allows you to reduce a reducible representation for a wide range of chemically relevant point groups using the reduction operator."
-        android:textSize="12sp"
-        android:textColor="#000000" />
-
+        android:textColor="#000000"
+        android:textSize="12sp" />
 
 
     <ImageView
         android:id="@+id/irc_equation_icon"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
-        android:maxWidth="350dp"
+        android:layout_margin="5dp"
         android:adjustViewBounds="true"
         app:srcCompat="@drawable/irc_equation" />
 
@@ -52,214 +52,330 @@
         android:id="@+id/step1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:text="Step 1:\nPick the point group from the list below."
-        android:textSize="12sp"
-        android:textColor="#000000" />
-
-    <TextView
-        android:id="@+id/point_groups_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:text="Character tables for chemically important point groups"
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="12sp" />
 
     <LinearLayout
-        android:id="@+id/nonaxial_group_row"
+        android:id="@+id/table"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="10dp" >
-
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="160dp"
+            android:id="@+id/point_groups_text"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Non-axial groups" />
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Character tables for chemically important point groups"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/nonaxial_group_row"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="C1"
-            android:onClick="c1"
-            />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
+
+            <TextView
+                android:id="@+id/nonaxial_group_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nonaxial groups" />
+
+            <Button
+                android:id="@+id/c1_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="c1"
+                android:text="C1" />
+
+            <Button
+                android:id="@+id/cs_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cs" />
+
+            <Button
+                android:id="@+id/ci_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ci" />
+
+            <Button
+                android:id="@+id/empty_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/empty_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_weight="1"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cn_group_row"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Cs" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/cn_group_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cn Group" />
+
+            <Button
+                android:id="@+id/c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="C2" />
+
+            <Button
+                android:id="@+id/c3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="C3" />
+
+            <Button
+                android:id="@+id/c4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="C4" />
+
+            <Button
+                android:id="@+id/c5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="C5" />
+
+            <Button
+                android:id="@+id/c6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="C6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cnv_group_row"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Ci" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/cnv_group_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cnv Group" />
+
+            <Button
+                android:id="@+id/c2v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="c2v" />
+
+            <Button
+                android:id="@+id/c3v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="c3v" />
+
+            <Button
+                android:id="@+id/c4v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="c4v" />
+
+            <Button
+                android:id="@+id/c5v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="c5v" />
+
+            <Button
+                android:id="@+id/c6v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="c6v" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cnh_group_row"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="-" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/cnh_group_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cnh Group" />
+
+            <Button
+                android:id="@+id/c2h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="c2h" />
+
+            <Button
+                android:id="@+id/c3h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="c3h" />
+
+            <Button
+                android:id="@+id/c4h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="c4h" />
+
+            <Button
+                android:id="@+id/c5h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="c5h" />
+
+            <Button
+                android:id="@+id/c6h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="c6h" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dn_group_row"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="-" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/dn_group_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dn Group" />
+
+            <Button
+                android:id="@+id/d2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="d2" />
+
+            <Button
+                android:id="@+id/d3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="d3" />
+
+            <Button
+                android:id="@+id/d4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="d4" />
+
+            <Button
+                android:id="@+id/d5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="d5" />
+
+            <Button
+                android:id="@+id/d6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="d6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dnv_group_row"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="-" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="-" />
+            <TextView
+                android:id="@+id/dnv_group_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dnv Group" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/d2v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="d2v" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="horizontal" >
+            <Button
+                android:id="@+id/d3v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="d3v" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Cn Group" />
+            <Button
+                android:id="@+id/d4v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="d4v" />
 
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="C2" />
+            <Button
+                android:id="@+id/d5v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="d5v" />
 
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="C3" />
+            <Button
+                android:id="@+id/d6v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="d6v" />
 
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="C4" />
-
-        <Button
-            android:id="@+id/button11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="C5" />
-
-        <Button
-            android:id="@+id/button12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="C6" />
-
-        <Button
-            android:id="@+id/button13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="C7" />
-
-        <Button
-            android:id="@+id/button14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="C8" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Cn Group" />
-
-        <Button
-            android:id="@+id/button15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="D2" />
-
-        <Button
-            android:id="@+id/button16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="D3" />
-
-        <Button
-            android:id="@+id/button17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="D4" />
-
-        <Button
-            android:id="@+id/button18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="D5" />
-
-        <Button
-            android:id="@+id/button19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="D6" />
-
-        <Button
-            android:id="@+id/button20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="D7" />
-
-        <Button
-            android:id="@+id/button21"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="D8" />
+        </LinearLayout>
 
     </LinearLayout>
 
