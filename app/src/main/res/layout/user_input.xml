@@ -3,15 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/top_banner2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#00589d"
-        android:gravity="center_horizontal"
-        android:text="Irreducible Representations Calculator"
-        android:textColor="#ffffff"
-        android:textSize="20sp" />
+    <include layout="@layout/toolbar"/>
 
     <TextView
         android:id="@+id/textView4"
