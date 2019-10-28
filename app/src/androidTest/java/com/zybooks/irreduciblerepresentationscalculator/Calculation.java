@@ -9,6 +9,28 @@ public class Calculation {
         this.element = element;
         result = ""; // will be something like "2A1 + B2" eventually
         switch (element){
+            case "c1":
+                //
+                //
+                charTable = new Object[2][2];
+                charTable[0][0] = 1;    charTable[0][1] = 1;
+                charTable[1][0] = "A";  charTable[1][1] = 1;
+                break;
+
+            case "cs":
+                charTable = new Object[3][3];
+                charTable[0][0] = 2;    charTable[0][1] = 1; charTable[0][2] = 1;
+                charTable[1][0] = "A'"; charTable[1][1] = 1; charTable[1][2] = 1;
+                charTable[2][0] = "A''"; charTable[2][1] = 1; charTable[2][2] = -1;
+                break;
+
+            case "ci":
+                charTable = new Object[3][3];
+                charTable[0][0] = 2;    charTable[0][1] = 1; charTable[0][2] = 1;
+                charTable[1][0] = "Ag"; charTable[1][1] = 1; charTable[1][2] = 1;
+                charTable[2][0] = "Au"; charTable[2][1] = 1; charTable[2][2] = -1;
+                break;
+
             case "c2v":
                 // c2v's charTable, first row is coefficients of E, C2, etc
                 // other rows are the values in the table (A1's are +1, +1, +1, +1)
