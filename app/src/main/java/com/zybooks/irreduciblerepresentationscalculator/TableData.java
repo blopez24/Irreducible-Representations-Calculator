@@ -1,11 +1,11 @@
 package com.zybooks.irreduciblerepresentationscalculator;
 
-public class Calculation {
+public class TableData {
     private String element;
     private Object[][] charTable;
     private String result;
 
-    Calculation(String element){
+    TableData(String element){
         this.element = element;
         result = ""; // will be something like "2A1 + B2" eventually
         switch (element){
@@ -41,7 +41,35 @@ public class Calculation {
                 break;
 
             case "c2":
+                // Number of symmetry elements	h = 2
+                //  C2  E   C2
+                //  A   +1  +1
+                //  B   +1  -1
+                charTable = new Object[3][3];
+                charTable[0][0] = 2;    charTable[0][1] = 1; charTable[0][2] = 1;
+                charTable[1][0] = "A"; charTable[1][1] = 1; charTable[1][2] = 1;
+                charTable[2][0] = "B"; charTable[2][1] = 1; charTable[2][2] = -1;
+                break;
 
+            case "c3":
+                // Number of symmetry elements  h = 3
+                // Ask Professor
+                break;
+
+            case "c4":
+                // Number of symmetry elements  h = 4
+                // Ask Professor
+                break;
+
+            case "c5":
+                // Number of symmetry elements  h = 5
+                // Ask Professor
+                break;
+
+            case "c6":
+                // Number of symmetry elements  h = 6
+                // Ask Professor
+                break;
 
             case "c2v":
                 // c2v's charTable, first row is coefficients of E, C2, etc
@@ -66,7 +94,7 @@ public class Calculation {
         int h;
         if(charTable[0][0] instanceof Integer)
             h = (Integer) charTable[0][0];
-        
+
 
 
     }
