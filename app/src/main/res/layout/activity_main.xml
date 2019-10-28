@@ -7,27 +7,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/top_banner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-        android:background="#00589d"
-        android:gravity="center_horizontal"
-        android:text="Irreducible Representations Calculator"
-        android:textColor="#ffffff"
-        android:textSize="20sp" />
-
-    <ImageView
-        android:id="@+id/top_banner_2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="1dp"
-        android:adjustViewBounds="true"
-        android:maxHeight="50dp"
-        app:srcCompat="@drawable/uc_logo" />
+    <include layout="@layout/toolbar" />
 
     <TextView
         android:id="@+id/brief_description"

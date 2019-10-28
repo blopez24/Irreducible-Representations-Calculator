@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#00589d"
+    android:elevation="4dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingRight="10dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="50dp"
+        android:src="@drawable/uc_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Irreducible Representation\nCalculator"
+        android:gravity="start"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
 
 </androidx.appcompat.widget.Toolbar>
