@@ -10,14 +10,19 @@ public class Calculation {
         result = ""; // will be something like "2A1 + B2" eventually
         switch (element){
             case "c1":
-                //
-                //
+                // Number of symmetry elements h = 1
+                //  C1  E
+                //  A   +1
                 charTable = new Object[2][2];
                 charTable[0][0] = 1;    charTable[0][1] = 1;
                 charTable[1][0] = "A";  charTable[1][1] = 1;
                 break;
 
             case "cs":
+                // Number of symmetry elements	h = 2
+                //  Cs  E   Oh
+                //  A'  +1  +1
+                //  A'' +1  -1
                 charTable = new Object[3][3];
                 charTable[0][0] = 2;    charTable[0][1] = 1; charTable[0][2] = 1;
                 charTable[1][0] = "A'"; charTable[1][1] = 1; charTable[1][2] = 1;
@@ -25,11 +30,18 @@ public class Calculation {
                 break;
 
             case "ci":
+                // Number of symmetry elements	h = 2
+                //  Ci  E   i
+                //  Ag  +1  +1
+                //  Au  +1  -1
                 charTable = new Object[3][3];
                 charTable[0][0] = 2;    charTable[0][1] = 1; charTable[0][2] = 1;
                 charTable[1][0] = "Ag"; charTable[1][1] = 1; charTable[1][2] = 1;
                 charTable[2][0] = "Au"; charTable[2][1] = 1; charTable[2][2] = -1;
                 break;
+
+            case "c2":
+
 
             case "c2v":
                 // c2v's charTable, first row is coefficients of E, C2, etc
