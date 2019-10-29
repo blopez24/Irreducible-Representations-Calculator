@@ -41,6 +41,8 @@
         android:id="@+id/table"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
         android:orientation="vertical">
 
         <TextView
@@ -66,29 +68,29 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Nonaxial groups" />
+                android:text="Nonaxial Groups" />
 
             <Button
                 android:id="@+id/c1_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:layout_weight="1"
-                android:onClick="c1"
-                android:text="C1" />
+                android:onClick="c1"/>
 
             <Button
                 android:id="@+id/cs_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Cs" />
+                android:textAllCaps="false"
+                android:layout_weight="1" />
 
             <Button
                 android:id="@+id/ci_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Ci" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/empty_button_1"
@@ -118,43 +120,37 @@
                 android:id="@+id/cn_group_text"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Cn Group" />
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/c2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="C2" />
+                android:layout_weight="1" />
 
             <Button
                 android:id="@+id/c3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="C3" />
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/c4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="C4" />
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/c5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="C5" />
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/c6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="C6" />
+                android:layout_weight="1" />
 
         </LinearLayout>
 
@@ -168,43 +164,42 @@
                 android:id="@+id/cnv_group_text"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Cnv Group" />
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/c2v"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="c2v" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/c3v"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="c3v" />
+                android:textAllCaps="false"
+                android:layout_weight="1" />
 
             <Button
                 android:id="@+id/c4v"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="c4v" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/c5v"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="c5v" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/c6v"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="c6v" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
         </LinearLayout>
 
@@ -218,43 +213,42 @@
                 android:id="@+id/cnh_group_text"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Cnh Group" />
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/c2h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="c2h" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/c3h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="c3h" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/c4h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="c4h" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/c5h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="c5h" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/c6h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="c6h" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
         </LinearLayout>
 
         <LinearLayout
@@ -267,43 +261,37 @@
                 android:id="@+id/dn_group_text"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Dn Group" />
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/d2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="d2" />
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/d3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="d3" />
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/d4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="d4" />
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/d5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="d5" />
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/d6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="d6" />
+                android:layout_weight="1"/>
 
         </LinearLayout>
 
@@ -317,43 +305,42 @@
                 android:id="@+id/dnv_group_text"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Dnv Group" />
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/d2v"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="d2v" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/d3v"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="d3v" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/d4v"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="d4v" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/d5v"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="d5v" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/d6v"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="d6v" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
         </LinearLayout>
 
@@ -367,43 +354,145 @@
                 android:id="@+id/dnh_group_text"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Dnh Group" />
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/d2h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="d2h" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/d3h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="d3h" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/d4h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="d4h" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/d5h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="d5h" />
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/d6h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cubic_group_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cubic_group_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="d6h" />
+                android:text="Cubic Group"/>
+
+            <Button
+                android:id="@+id/td"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/o"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/oh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/empty_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/empty_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_group_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/linear_group_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Linear Group"/>
+
+            <Button
+                android:id="@+id/cinfv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/dinfv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/empty_button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/empty_button_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/empty_button_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
         </LinearLayout>
 
     </LinearLayout>

@@ -2,10 +2,13 @@ package com.zybooks.irreduciblerepresentationscalculator;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.text.HtmlCompat;
 
 public class Results extends AppCompatActivity {
 
@@ -34,4 +37,5 @@ public class Results extends AppCompatActivity {
         Intent it = new Intent(this, Input.class);
         startActivity(it);
     }
+
 }
