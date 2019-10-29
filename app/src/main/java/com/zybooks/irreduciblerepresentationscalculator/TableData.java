@@ -83,6 +83,19 @@ public class TableData {
                 charTable[3][0] = "B1"; charTable[3][1] = 1; charTable[3][2] = -1; charTable[3][3] = 1; charTable[3][4] = -1;
                 charTable[4][0] = "B2"; charTable[4][1] = 1; charTable[4][2] = -1; charTable[4][3] = -1; charTable[4][4] = 1;
                 break;
+
+            case "c3v":
+                // c2v's charTable, first row is coefficients of E, C2, etc
+                // other rows are the values in the table (A1's are +1, +1, +1, +1)
+                // is a 2d object array because row names vary by element so have to store as String
+                // charTable [0][0] stores the value used for h in the equation
+                charTable = new Object[5][4];
+                charTable[0][0] = 6;    charTable[0][1] = 1; charTable[0][2] = 2; charTable[0][3] = 3;
+                charTable[1][0] = "A1"; charTable[1][1] = 1; charTable[1][2] = 1; charTable[1][3] = 1;
+                charTable[2][0] = "A2"; charTable[2][1] = 1; charTable[2][2] = 1; charTable[2][3] = -1;
+                charTable[3][0] = "E";  charTable[3][1] = 2; charTable[3][2] = -1; charTable[3][3] = 0;
+                break;
+
             default:
                 charTable = null;
                 break;

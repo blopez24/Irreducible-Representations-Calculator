@@ -39,7 +39,7 @@
 
             <TextView
                 android:id="@+id/textView13"
-                android:layout_width="wrap_content"
+                android:layout_width="99dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="4dp"
