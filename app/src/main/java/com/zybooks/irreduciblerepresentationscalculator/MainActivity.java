@@ -19,11 +19,6 @@ public class MainActivity extends AppCompatActivity {
         setTexts();
     }
 
-    public void c1(View view) {
-        Intent intent = new Intent(this, Input.class);
-        startActivity(intent);
-    }
-
     public void setTexts()
     {
         // TextView
@@ -176,5 +171,121 @@ public class MainActivity extends AppCompatActivity {
 
         Button dinfv = findViewById(R.id.dinfv);
         dinfv.setText(HtmlCompat.fromHtml("D<sub>&#8734;v</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+    }
+
+    public void c1(View view) {
+        Intent intent = new Intent(this, Input.class);
+        startActivity(intent);
+    }
+
+    public void cs(View view) {
+    }
+
+    public void ci(View view) {
+    }
+
+    public void c2(View view) {
+    }
+
+    public void c3(View view) {
+    }
+
+    public void c4(View view) {
+    }
+
+    public void c5(View view) {
+    }
+
+    public void c6(View view) {
+    }
+
+    public void c2v(View view) {
+    }
+
+    public void c3v(View view) {
+    }
+
+    public void c4v(View view) {
+    }
+
+    public void c5v(View view) {
+    }
+
+    public void c6v(View view) {
+    }
+
+    public void c2h(View view) {
+    }
+
+    public void c3h(View view) {
+    }
+
+    public void c4h(View view) {
+    }
+
+    public void c5h(View view) {
+    }
+
+    public void c6h(View view) {
+    }
+
+    public void d2(View view) {
+    }
+
+    public void d3(View view) {
+    }
+
+    public void d4(View view) {
+    }
+
+    public void d5(View view) {
+    }
+
+    public void d6(View view) {
+    }
+
+    public void d2v(View view) {
+    }
+
+    public void d3v(View view) {
+    }
+
+    public void d4v(View view) {
+    }
+
+    public void d5v(View view) {
+    }
+
+    public void d6v(View view) {
+    }
+
+    public void d2h(View view) {
+    }
+
+    public void d3h(View view) {
+    }
+
+    public void d4h(View view) {
+    }
+
+    public void d5h(View view) {
+    }
+
+    public void d6h(View view) {
+    }
+
+    public void td(View view) {
+    }
+
+    public void o(View view) {
+    }
+
+    public void oh(View view) {
+    }
+
+    public void cinfv(View view) {
+    }
+
+    public void dinfv(View view) {
     }
 }
