@@ -7,5 +7,14 @@
     <string name="cubic_group_text">Cubic Group</string>
     <string name="linear_group_text">Linear Group</string>
 
+    <string name="step_2">Step 2: </string>
+    <string name="step_2_descr">Enter the characters for the reducible representation of the C1 point group below.</string>
+    <string name="e">E</string>
+    <string name="r_reduc">r reducible</string>
+    <string name="step_3">Step 3: </string>
+    <string name="submit">SUBMIT</string>
+    <string name="step_3_descr">reduce a representation for a different point group</string>
+    <string name="i">i</string>
+
     <string name="equation">Equation</string>
 </resources>

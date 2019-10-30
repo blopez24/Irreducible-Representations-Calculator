@@ -19,7 +19,7 @@ public class Input extends AppCompatActivity {
 
 
     public void result(View view) {
-        value = findViewById(R.id.inputUser);
+        value = findViewById(R.id.c1_e_user_input);
         Intent intent = new Intent(this, Results.class);
         intent.putExtra("value", value.getText());
        // intent.putExtra("results", )
