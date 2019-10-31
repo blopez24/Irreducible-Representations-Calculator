@@ -47,6 +47,14 @@
                 android:textColor="@color/black" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="4dp"
+                android:text="C6"
+                android:textColor="@color/black" />
+
+            <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -56,12 +64,27 @@
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="4dp"
-                android:text="C3 2"
+                android:text="C2"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="4dp"
+                android:text="(C3)2"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="4dp"
+                android:text="(C6)5"
                 android:textColor="@color/black" />
 
         </TableRow>
@@ -78,7 +101,7 @@
                 android:textColor="@color/black" />
 
             <EditText
-                android:id="@+id/c3_e_user_input"
+                android:id="@+id/c6_e_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
@@ -88,7 +111,7 @@
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/c3_c3_user_input"
+                android:id="@+id/c6_c6_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
@@ -98,7 +121,37 @@
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/c3.2_c3.2_user_input"
+                android:id="@+id/c6_c3_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="#"
+                android:background="@drawable/table_outline"
+                android:inputType="number"
+                android:minEms="2"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/c6_c2_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="#"
+                android:background="@drawable/table_outline"
+                android:inputType="number"
+                android:minEms="2"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/c6_c3.2_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="#"
+                android:background="@drawable/table_outline"
+                android:inputType="number"
+                android:minEms="2"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/c6_c6.5_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints="#"

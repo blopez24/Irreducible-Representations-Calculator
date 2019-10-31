@@ -38,7 +38,6 @@
                 android:layout_height="match_parent" />
 
             <TextView
-                android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -47,21 +46,11 @@
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="4dp"
-                android:text="C5"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/table_outline"
-                android:padding="4dp"
-                android:text="(C5)2"
+                android:text="2C3"
                 android:textColor="@color/black" />
 
             <TextView
@@ -69,17 +58,8 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="4dp"
-                android:text="(C5)3"
+                android:text="3Sv"
                 android:textColor="@color/black" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/table_outline"
-                android:padding="4dp"
-                android:text="(C5)4"
-                android:textColor="@color/black" />
-
         </TableRow>
 
         <TableRow android:background="@drawable/table_outline">
@@ -94,7 +74,7 @@
                 android:textColor="@color/black" />
 
             <EditText
-                android:id="@+id/c5_e_user_input"
+                android:id="@+id/c3v_e_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
@@ -104,7 +84,7 @@
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/c5_c5_user_input"
+                android:id="@+id/c3v_2c3_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
@@ -114,7 +94,7 @@
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/c5_c5.2_user_input"
+                android:id="@+id/c3v_3sv_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
@@ -122,27 +102,6 @@
                 android:inputType="number"
                 android:minEms="2"
                 android:padding="5dp" />
-
-            <EditText
-                android:id="@+id/c5_c5.3_user_input"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:autofillHints="#"
-                android:background="@drawable/table_outline"
-                android:inputType="number"
-                android:minEms="2"
-                android:padding="5dp" />
-
-            <EditText
-                android:id="@+id/c5_c5.4_user_input"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:autofillHints="#"
-                android:background="@drawable/table_outline"
-                android:inputType="number"
-                android:minEms="2"
-                android:padding="5dp" />
-
         </TableRow>
 
     </TableLayout>

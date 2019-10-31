@@ -9,6 +9,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c1;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c2;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c2v;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c3;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c3v;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c4;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c4v;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c5;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c5v;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c6;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c6v;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.ci;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.cs;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -174,44 +188,68 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void c1(View view) {
-        Intent intent = new Intent(this, Input.class);
+        Intent intent = new Intent(this, c1.class);
         startActivity(intent);
     }
 
     public void cs(View view) {
+        Intent intent = new Intent(this, cs.class);
+        startActivity(intent);
     }
 
     public void ci(View view) {
+        Intent intent = new Intent(this, ci.class);
+        startActivity(intent);
     }
 
     public void c2(View view) {
+        Intent intent = new Intent(this, c2.class);
+        startActivity(intent);
     }
 
     public void c3(View view) {
+        Intent intent = new Intent(this, c3.class);
+        startActivity(intent);
     }
 
     public void c4(View view) {
+        Intent intent = new Intent(this, c4.class);
+        startActivity(intent);
     }
 
     public void c5(View view) {
+        Intent intent = new Intent(this, c5.class);
+        startActivity(intent);
     }
 
     public void c6(View view) {
+        Intent intent = new Intent(this, c6.class);
+        startActivity(intent);
     }
 
     public void c2v(View view) {
+        Intent intent = new Intent(this, c2v.class);
+        startActivity(intent);
     }
 
     public void c3v(View view) {
+        Intent it = new Intent(this, c3v.class);
+        startActivity(it);
     }
 
     public void c4v(View view) {
+        Intent it = new Intent(this, c4v.class);
+        startActivity(it);
     }
 
     public void c5v(View view) {
+        Intent it = new Intent(this, c5v.class);
+        startActivity(it);
     }
 
     public void c6v(View view) {
+        Intent it = new Intent(this, c6v.class);
+        startActivity(it);
     }
 
     public void c2h(View view) {

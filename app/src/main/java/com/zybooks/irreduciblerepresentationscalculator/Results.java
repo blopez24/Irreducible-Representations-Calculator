@@ -2,13 +2,12 @@ package com.zybooks.irreduciblerepresentationscalculator;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Html;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.text.HtmlCompat;
+
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c1;
 
 public class Results extends AppCompatActivity {
 
@@ -34,7 +33,7 @@ public class Results extends AppCompatActivity {
     }
 
     public void return_same_button(View view) {
-        Intent it = new Intent(this, Input.class);
+        Intent it = new Intent(this, c1.class);
         startActivity(it);
     }
 
