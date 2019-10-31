@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/step_2"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/step_2_descr"
+        android:textColor="@color/black" />
+
+    <!-- -START TABLE LAYOUT- -->
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp">
+
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="4dp"
+                android:text="@string/e"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="4dp"
+                android:text="2C3"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="4dp"
+                android:text="3C2"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow android:background="@drawable/table_outline">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_outline"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/r_reduc"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/d3_e_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="#"
+                android:background="@drawable/table_outline"
+                android:inputType="number"
+                android:minEms="2"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/d3_2c3_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="#"
+                android:background="@drawable/table_outline"
+                android:inputType="number"
+                android:minEms="2"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/d3_3c2_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="#"
+                android:background="@drawable/table_outline"
+                android:inputType="number"
+                android:minEms="2"
+                android:padding="5dp" />
+        </TableRow>
+
+    </TableLayout>
+    <!-- -END TABLE LAYOUT- -->
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/step_3"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/submit"
+        android:onClick="result"/>
+
+    <Button
+        android:id="@+id/return1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:background="#00589d"
+        android:padding="5dp"
+        android:text="@string/step_3_descr"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00FFFFFF"
+        android:textSize="12sp"
+        android:onClick="return_1"
+        />
+
+</LinearLayout>

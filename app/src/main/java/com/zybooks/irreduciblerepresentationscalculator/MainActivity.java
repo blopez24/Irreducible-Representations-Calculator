@@ -11,8 +11,10 @@ import android.widget.TextView;
 
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c1;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c2;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c2h;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c2v;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c3;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c3h;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c3v;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c4;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c4v;
@@ -22,6 +24,11 @@ import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c6;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c6v;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.ci;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.cs;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d2;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d3;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d4;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d5;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d6;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -253,33 +260,50 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void c2h(View view) {
+        Intent it = new Intent(this, c2h.class);
+        startActivity(it);
     }
 
     public void c3h(View view) {
+        Intent it = new Intent(this, c3h.class);
+        startActivity(it);
     }
 
-    public void c4h(View view) {
+    public void c4h(View view) {////////////////////////////////////////////////////
+
     }
 
-    public void c5h(View view) {
+    public void c5h(View view) {///////////////////////////////////////////////////
+
     }
 
-    public void c6h(View view) {
+    public void c6h(View view) {///////////////////////////////////////////////////////
+
     }
 
     public void d2(View view) {
+        Intent it = new Intent(this, d2.class);
+        startActivity(it);
     }
 
     public void d3(View view) {
+        Intent it = new Intent(this, d3.class);
+        startActivity(it);
     }
 
     public void d4(View view) {
+        Intent it = new Intent(this, d4.class);
+        startActivity(it);
     }
 
     public void d5(View view) {
+        Intent it = new Intent(this, d5.class);
+        startActivity(it);
     }
 
     public void d6(View view) {
+        Intent it = new Intent(this, d6.class);
+        startActivity(it);
     }
 
     public void d2v(View view) {

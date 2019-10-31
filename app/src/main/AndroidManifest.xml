@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PointGroups.c6v"></activity>
+        <activity android:name=".PointGroups.d6"></activity>
+        <activity android:name=".PointGroups.d5" />
+        <activity android:name=".PointGroups.d4" />
+        <activity android:name=".PointGroups.d3" />
+        <activity android:name=".PointGroups.d2" />
+        <activity android:name=".PointGroups.c3h" />
+        <activity android:name=".PointGroups.c2h" />
+        <activity android:name=".PointGroups.c6v" />
         <activity android:name=".PointGroups.c5v" />
         <activity android:name=".PointGroups.c4v" />
         <activity android:name=".PointGroups.c3v" />
