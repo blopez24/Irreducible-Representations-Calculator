@@ -1,11 +1,13 @@
 package com.zybooks.irreduciblerepresentationscalculator;
 
-public class TableData {
+public class TableData
+{
     private String element;
     private Object[][] charTable;
     private String result;
 
-    TableData(String element){
+    TableData(String element)
+    {
         this.element = element;
         result = ""; // will be something like "2A1 + B2" eventually
         switch (element){
@@ -102,7 +104,8 @@ public class TableData {
         }
     }
 
-    public void calculate(int[] input){
+    public void calculate(int[] input)
+    {
         // input is an array because the amount of args varies by element
         int h;
         if(charTable[0][0] instanceof Integer)
