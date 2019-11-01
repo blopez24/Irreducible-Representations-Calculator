@@ -3,9 +3,9 @@
     <string name="app_description">This calculator allows you to reduce a reducible representation for a wide range of chemically relevant point groups using the reduction operator.</string>
     <string name="step_one">Step 1:\nPick the point group from the list below.</string>
     <string name="point_group_text">Character tables for chemically important point groups</string>
-    <string name="nonaxial_group_text">Nonaxial Groups</string>
-    <string name="cubic_group_text">Cubic Groups</string>
-    <string name="linear_group_text">Linear Groups</string>
+    <string name="nonaxial_group_text">Nonaxial\nGroups</string>
+    <string name="cubic_group_text">Cubic\nGroups</string>
+    <string name="linear_group_text">Linear\nGroups</string>
 
     <string name="step_2">Step 2: </string>
     <string name="step_2_descr">Enter the characters for the reducible representation of the C1 point group below.</string>
