@@ -130,7 +130,8 @@
                     <TextView
                         android:id="@+id/cn_group_text"
                         android:layout_width="150dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
                         android:layout_weight="1" />
 
                     <Button
@@ -179,7 +180,8 @@
                     <TextView
                         android:id="@+id/cnv_group_text"
                         android:layout_width="150dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
                         android:layout_weight="1" />
 
                     <Button
@@ -233,7 +235,8 @@
                     <TextView
                         android:id="@+id/cnh_group_text"
                         android:layout_width="150dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
                         android:layout_weight="1" />
 
                     <Button
@@ -286,7 +289,8 @@
                     <TextView
                         android:id="@+id/dn_group_text"
                         android:layout_width="150dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
                         android:layout_weight="1" />
 
                     <Button
@@ -335,7 +339,8 @@
                     <TextView
                         android:id="@+id/dnd_group_text"
                         android:layout_width="150dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
                         android:layout_weight="1"
                         android:onClick="d2d"/>
 
@@ -390,7 +395,8 @@
                     <TextView
                         android:id="@+id/dnh_group_text"
                         android:layout_width="150dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
                         android:layout_weight="1" />
 
                     <Button
