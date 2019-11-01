@@ -115,7 +115,8 @@ public class TableData
                 charTable[5][0] = "E";  charTable[5][1] = 2; charTable[5][2] = 0; charTable[5][3] = -2; charTable[5][4] = 0; charTable[5][5] = 0;
                 break;
 
-            case "c5v":
+            // shouldn't need the following because we don't have to do point groups w/cosine, but leaving in comments because it's already done and in case things change
+            /*case "c5v":
                 // Number of symmetry elements	h = 10
                 // C5v	E	2C5 (z)	2(C5)2	5v
                 // A1	+1	+1	+1	+1
@@ -128,7 +129,7 @@ public class TableData
                 charTable[2][0] = "A2"; charTable[2][1] = 1; charTable[2][2] = 1; charTable[2][3] = 1; charTable[2][4] = -1;
                 charTable[3][0] = "E1"; charTable[3][1] = 2; charTable[3][2] = 2*Math.cos(2*Math.pi/5); charTable[3][3] = 2*Math.cos(4*Math.pi/5); charTable[3][4] = 0;
                 charTable[4][0] = "E2"; charTable[4][1] = 2; charTable[4][2] = 2*Math.cos(4*Math.pi/5); charTable[4][3] = 2*Math.cos(2*Math.pi/5); charTable[4][4] = 0;
-                break;
+                break;*/
 
             case "c6v":
                 // Number of symmetry elements	h = 12
@@ -150,6 +151,18 @@ public class TableData
                 break;
 
             case "c2h":
+                // Number of symmetry elements	h = 4
+                // C2h	E	C2 (z)	i	h
+                // Ag	+1	+1	+1	+1
+                // Bg	+1	-1	+1	-1
+                // Au	+1	+1	-1	-1
+                // Bu	+1	-1	-1	+1
+                charTable = new Object[5][5];
+                charTable[0][0] = 4;    charTable[0][1] = 1; charTable[0][2] = 1; charTable[0][3] = 1; charTable[0][4] = 1;
+                charTable[1][0] = "Ag"; charTable[1][1] = 1; charTable[1][2] = -1; charTable[1][3] = 1; charTable[1][4] = -1;
+                charTable[2][0] = "Bg"; charTable[2][1] = 1; charTable[2][2] = -1; charTable[2][3] = 1; charTable[2][4] = -1;
+                charTable[3][0] = "Au"; charTable[3][1] = 1; charTable[3][2] = 1; charTable[3][3] = -1; charTable[3][4] = -1;
+                charTable[4][0] = "Bu"; charTable[4][1] = 1; charTable[4][2] = -1; charTable[4][3] = -1; charTable[4][4] = 1;
                 break;
 
             case "c3h":
@@ -165,33 +178,112 @@ public class TableData
                 break;
 
             case "d2":
+                // Number of symmetry elements	h = 4
+                // D2	E	C2 (z)	C2 (y)	C2 (x)
+                // A	+1	+1	+1	+1
+                // B1	+1	+1	-1	-1
+                // B2	+1	-1	+1	-1
+                // B3	+1	-1	-1	+1
+                charTable = new Object[5][5];
+                charTable[0][0] = 4;    charTable[0][1] = 1; charTable[0][2] = 1; charTable[0][3] = 1; charTable[0][4] = 1;
+                charTable[1][0] = "A";  charTable[1][1] = 1; charTable[1][2] = 1; charTable[1][3] = 1; charTable[1][4] = 1;
+                charTable[2][0] = "B1"; charTable[2][1] = 1; charTable[2][2] = 1; charTable[2][3] = -1; charTable[2][4] = -1;
+                charTable[3][0] = "B2"; charTable[3][1] = 1; charTable[3][2] = -1; charTable[3][3] = 1; charTable[3][4] = -1;
+                charTable[4][0] = "B3"; charTable[4][1] = 1; charTable[4][2] = -1; charTable[4][3] = -1; charTable[4][4] = 1;
                 break;
 
             case "d3":
+                // Number of symmetry elements	h = 6
+                // D3	E	2C3 (z)	3C'2
+                // A1	+1	+1	+1
+                // A2	+1	+1	-1
+                // E	+2	-1	0
+                charTable = new Object[4][4];
+                charTable[0][0] = 6;    charTable[0][1] = 1; charTable[0][2] = 2; charTable[0][3] = 3;
+                charTable[1][0] = "A1"; charTable[1][1] = 1; charTable[1][2] = 1; charTable[1][3] = 1;
+                charTable[2][0] = "A2"; charTable[2][1] = 1; charTable[2][2] = 1; charTable[2][3] = -1;
+                charTable[3][0] = "E";  charTable[3][1] = 2; charTable[3][2] = -1; charTable[3][3] = 0;
                 break;
 
             case "d4":
-                break;
-
-            case "d5":
+                // Number of symmetry elements	h = 8
+                // D4	E	2C4 (z)	C2 (z)	2C'2	2C''2
+                // A1	+1	+1	+1	+1	+1
+                // A2	+1	+1	+1	-1	-1
+                // B1	+1	-1	+1	+1	-1
+                // B2	+1	-1	+1	-1	+1
+                // E	+2	0	-2	0	0
+                charTable = new Object[6][6];
+                charTable[0][0] = 8;    charTable[0][1] = 1; charTable[0][2] = 2; charTable[0][3] = 1; charTable[0][4] = 2; charTable[0][5] = 2;
+                charTable[1][0] = "A1"; charTable[1][1] = 1; charTable[1][2] = 1; charTable[1][3] = 1; charTable[1][4] = 1; charTable[1][5] = 1;
+                charTable[2][0] = "A2"; charTable[2][1] = 1; charTable[2][2] = 1; charTable[2][3] = 1; charTable[2][4] = -1; charTable[2][5] = -1;
+                charTable[3][0] = "B1"; charTable[3][1] = 1; charTable[3][2] = -1; charTable[3][3] = 1; charTable[3][4] = 1; charTable[3][5] = 1;
+                charTable[4][0] = "B2"; charTable[4][1] = 1; charTable[4][2] = -1; charTable[4][3] = 1; charTable[4][4] = -1; charTable[4][5] = 1;
+                charTable[5][0] = "E";  charTable[5][1] = 2; charTable[5][2] = 0; charTable[5][3] = -2; charTable[5][4] = 0; charTable[5][5] = 0;
                 break;
 
             case "d6":
+                // Number of symmetry elements	h = 12
+                // D6	E	2C6 (z)	2C3 (z)	C2 (z)	3C'2	3C''2
+                // A1	+1	+1	+1	+1	+1	+1
+                // A2	+1	+1	+1	+1	-1	-1
+                // B1	+1	-1	+1	-1	+1	-1
+                // B2	+1	-1	+1	-1	-1	+1
+                // E1	+2	+1	-1	-2	0	0
+                // E2	+2	-1	-1	+2	0	0
+                charTable = new Object[7][7];
+                charTable[0][0] = 12;   charTable[0][1] = 1; charTable[0][2] = 2; charTable[0][3] = 2; charTable[0][4] = 1; charTable[0][5] = 3; charTable[0][6] = 3;
+                charTable[1][0] = "A1"; charTable[1][1] = 1; charTable[1][2] = 1; charTable[1][3] = 1; charTable[1][4] = 1; charTable[1][5] = 1; charTable[1][6] = 1;
+                charTable[2][0] = "A2"; charTable[2][1] = 1; charTable[2][2] = 1; charTable[2][3] = 1; charTable[2][4] = 1; charTable[2][5] = -1; charTable[2][6] = -1;
+                charTable[3][0] = "B1"; charTable[3][1] = 1; charTable[3][2] = -1; charTable[3][3] = 1; charTable[3][4] = -1; charTable[3][5] = 1; charTable[3][6] = -1;
+                charTable[4][0] = "B2"; charTable[4][1] = 1; charTable[4][2] = -1; charTable[4][3] = 1; charTable[4][4] = -1; charTable[4][5] = -1; charTable[4][6] = 1;
+                charTable[5][0] = "E1"; charTable[5][1] = 2; charTable[5][2] = 1; charTable[5][3] = -1; charTable[5][4] = -2; charTable[5][5] = 0; charTable[5][6] = 0;
+                charTable[6][0] = "E2"; charTable[5][1] = 2; charTable[5][2] = -1; charTable[5][3] = -1; charTable[5][4] = 2; charTable[5][5] = 0; charTable[5][6] = 0;
                 break;
 
-            case "d2v":
+            case "d2d":
+                // Number of symmetry elements	h = 8
+                // D2d	E	2S4	C2 (z)	2C'2	2d
+                // A1	+1	+1	+1	+1	+1
+                // A2	+1	+1	+1	-1	-1
+                // B1	+1	-1	+1	+1	-1
+                // B2	+1	-1	+1	-1	+1
+                // E	+2	0	-2	0	0
+                charTable = new Object[6][6];
+                charTable[0][0] = 8;    charTable[0][1] = 1; charTable[0][2] = 2; charTable[0][3] = 1; charTable[0][4] = 2; charTable[0][5] = 2;
+                charTable[1][0] = "A1"; charTable[1][1] = 1; charTable[1][2] = 1; charTable[1][3] = 1; charTable[1][4] = 1; charTable[1][5] = 1;
+                charTable[2][0] = "A2"; charTable[2][1] = 1; charTable[2][2] = 1; charTable[2][3] = 1; charTable[2][4] = -1; charTable[2][5] = -1;
+                charTable[3][0] = "B1"; charTable[3][1] = 1; charTable[3][2] = -1; charTable[3][3] = 1; charTable[3][4] = 1; charTable[3][5] = -1;
+                charTable[4][0] = "B2"; charTable[4][1] = 1; charTable[4][2] = -1; charTable[4][3] = 1; charTable[4][4] = -1; charTable[4][5] = 1;
+                charTable[5][0] = "E";  charTable[5][1] = 2; charTable[5][2] = 0; charTable[5][3] = -2; charTable[5][4] = 0; charTable[5][5] = 0;
                 break;
 
-            case "d3v":
+            case "d3d":
+                // Number of symmetry elements	h = 12
+                // D3d	E	2C3	3C'2	i	2S6	3d
+                // A1g	+1	+1	+1	+1	+1	+1
+                // A2g	+1	+1	-1	+1	+1	-1
+                // Eg	+2	-1	0	+2	-1	0
+                // A1u	+1	+1	+1	-1	-1	-1
+                // A2u	+1	+1	-1	-1	-1	+1
+                // Eu	+2	-1	0	-2	+1	0
+                charTable = new Object[7][7];
+                charTable[0][0] = 12;    charTable[0][1] = 1; charTable[0][2] = 2; charTable[0][3] = 3; charTable[0][4] = 1; charTable[0][5] = 2; charTable[0][6] = 3;
+                charTable[1][0] = "A1g"; charTable[1][1] = 1; charTable[1][2] = 1; charTable[1][3] = 1; charTable[1][4] = 1; charTable[1][5] = 1; charTable[1][6] = 1;
+                charTable[2][0] = "A2g"; charTable[2][1] = 1; charTable[2][2] = 1; charTable[2][3] = -1; charTable[2][4] = 1; charTable[2][5] = 1; charTable[2][6] = -1;
+                charTable[3][0] = "Eg";  charTable[3][1] = 2; charTable[3][2] = -1; charTable[3][3] = 0; charTable[3][4] = 2; charTable[3][5] = -1; charTable[3][6] = 0;
+                charTable[4][0] = "A1u"; charTable[4][1] = 1; charTable[4][2] = 1; charTable[4][3] = 1; charTable[4][4] = -1; charTable[4][5] = -1; charTable[4][6] = -1;
+                charTable[5][0] = "A2u"; charTable[5][1] = 1; charTable[5][2] = 1; charTable[5][3] = -1; charTable[5][4] = -1; charTable[5][5] = -1; charTable[5][6] = 1;
+                charTable[6][0] = "Eu";  charTable[5][1] = 2; charTable[5][2] = -1; charTable[5][3] = 0; charTable[5][4] = -2; charTable[5][5] = 1; charTable[5][6] = 0;
                 break;
 
-            case "d4v":
+            case "d4d":
                 break;
 
-            case "d5v":
+            case "d5d":
                 break;
 
-            case "d6v":
+            case "d6d":
                 break;
 
             case "d2h":
