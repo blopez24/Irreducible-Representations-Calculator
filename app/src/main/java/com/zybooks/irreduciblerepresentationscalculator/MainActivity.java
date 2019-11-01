@@ -60,9 +60,9 @@ public class MainActivity extends AppCompatActivity {
         TextView dn = findViewById(R.id.dn_group_text);
         dn.setText(HtmlCompat.fromHtml("D<sub>n</sub> Groups", HtmlCompat.FROM_HTML_MODE_LEGACY));
 
-        // Dnv Groups
-        TextView dnv = findViewById(R.id.dnv_group_text);
-        dnv.setText(HtmlCompat.fromHtml("D<sub>nv</sub> Groups", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        // Dnd Groups
+        TextView dnd = findViewById(R.id.dnd_group_text);
+        dnd.setText(HtmlCompat.fromHtml("D<sub>nd</sub> Groups", HtmlCompat.FROM_HTML_MODE_LEGACY));
 
         // Dnh Groups
         TextView dnh = findViewById(R.id.dnh_group_text);
@@ -144,21 +144,21 @@ public class MainActivity extends AppCompatActivity {
         Button d6 = findViewById(R.id.d6);
         d6.setText(HtmlCompat.fromHtml("D<sub>6</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
 
-        // Dnv Groups
-        Button d2v = findViewById(R.id.d2v);
-        d2v.setText(HtmlCompat.fromHtml("D<sub>2v</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        // Dnd Groups
+        Button d2d = findViewById(R.id.d2d);
+        d2d.setText(HtmlCompat.fromHtml("D<sub>2d</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
 
-        Button d3v = findViewById(R.id.d3v);
-        d3v.setText(HtmlCompat.fromHtml("D<sub>3v</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        Button d3d = findViewById(R.id.d3d);
+        d3d.setText(HtmlCompat.fromHtml("D<sub>3d</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
 
-        Button d4v = findViewById(R.id.d4v);
-        d4v.setText(HtmlCompat.fromHtml("D<sub>4v</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        Button d4d = findViewById(R.id.d4d);
+        d4d.setText(HtmlCompat.fromHtml("D<sub>4d</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
 
-        Button d5v = findViewById(R.id.d5v);
-        d5v.setText(HtmlCompat.fromHtml("D<sub>5v</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        Button d5d = findViewById(R.id.d5d);
+        d5d.setText(HtmlCompat.fromHtml("D<sub>5d</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
 
-        Button d6v = findViewById(R.id.d6v);
-        d6v.setText(HtmlCompat.fromHtml("D<sub>6v</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        Button d6d = findViewById(R.id.d6d);
+        d6d.setText(HtmlCompat.fromHtml("D<sub>6d</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
 
         // Dnh Groups
         Button d2h = findViewById(R.id.d2h);
@@ -306,19 +306,19 @@ public class MainActivity extends AppCompatActivity {
         startActivity(it);
     }
 
-    public void d2v(View view) {
+    public void d2d(View view) {
     }
 
-    public void d3v(View view) {
+    public void d3d(View view) {
     }
 
-    public void d4v(View view) {
+    public void d4d(View view) {
     }
 
-    public void d5v(View view) {
+    public void d5d(View view) {
     }
 
-    public void d6v(View view) {
+    public void d6d(View view) {
     }
 
     public void d2h(View view) {

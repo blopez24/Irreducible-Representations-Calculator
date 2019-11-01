@@ -327,57 +327,57 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/dnv_group_row"
+                    android:id="@+id/dnd_group_row"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/dnv_group_text"
+                        android:id="@+id/dnd_group_text"
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="d2v"/>
+                        android:onClick="d2d"/>
 
                     <Button
-                        android:id="@+id/d2v"
+                        android:id="@+id/d2d"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:textAllCaps="false"
-                        android:onClick="d3v"/>
+                        android:onClick="d3d"/>
 
                     <Button
-                        android:id="@+id/d3v"
+                        android:id="@+id/d3d"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:textAllCaps="false"
-                        android:onClick="d3v"/>
+                        android:onClick="d3d"/>
 
                     <Button
-                        android:id="@+id/d4v"
+                        android:id="@+id/d4d"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:textAllCaps="false"
-                        android:onClick="d4v"/>
+                        android:onClick="d4d"/>
 
                     <Button
-                        android:id="@+id/d5v"
+                        android:id="@+id/d5d"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:textAllCaps="false"
-                        android:onClick="d5v"/>
+                        android:onClick="d5d"/>
 
                     <Button
-                        android:id="@+id/d6v"
+                        android:id="@+id/d6d"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:textAllCaps="false"
-                        android:onClick="d6v"/>
+                        android:onClick="d6d"/>
 
                 </LinearLayout>
 
