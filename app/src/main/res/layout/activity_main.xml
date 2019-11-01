@@ -75,7 +75,8 @@
                     <TextView
                         android:id="@+id/nonaxial_group_text"
                         android:layout_width="100dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="@string/nonaxial_group_text" />
 
@@ -449,7 +450,8 @@
                     <TextView
                         android:id="@+id/cubic_group_text"
                         android:layout_width="100dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="@string/cubic_group_text" />
 
@@ -503,7 +505,8 @@
                     <TextView
                         android:id="@+id/linear_group_text"
                         android:layout_width="100dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="@string/linear_group_text" />
 
