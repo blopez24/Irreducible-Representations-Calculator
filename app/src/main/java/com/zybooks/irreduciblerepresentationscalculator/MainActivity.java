@@ -23,6 +23,7 @@ import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c5v;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c6;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c6v;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.ci;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.cinfv;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.cs;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d2;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d2d;
@@ -31,6 +32,7 @@ import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d3d;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d4;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d5;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d6;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.o;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.td;
 
 public class MainActivity extends AppCompatActivity {
@@ -334,12 +336,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void o(View view) {
+        Intent it = new Intent(this, o.class);
+        startActivity(it);
     }
 
     public void oh(View view) {
     }
 
     public void cinfv(View view) {
+        Intent it = new Intent(this, cinfv.class);
+        startActivity(it);
     }
 
     public void dinfv(View view) {

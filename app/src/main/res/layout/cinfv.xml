@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="4dp"
-                android:text="8C3"
+                android:text="2Cinf"
                 android:textColor="@color/black" />
 
             <TextView
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="4dp"
-                android:text="3C2"
+                android:text="inf"
                 android:textColor="@color/black" />
 
             <TextView
@@ -66,15 +66,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="4dp"
-                android:text="6C4"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/table_outline"
-                android:padding="4dp"
-                android:text="6C2"
+                android:text="inf Sv"
                 android:textColor="@color/black" />
         </TableRow>
 
@@ -90,7 +82,7 @@
                 android:textColor="@color/black" />
 
             <EditText
-                android:id="@+id/o_e_user_input"
+                android:id="@+id/cinfv_e_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
@@ -100,7 +92,7 @@
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/o_8c3_user_input"
+                android:id="@+id/cinfv_2cinf_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
@@ -110,7 +102,7 @@
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/o_3c2_user_input"
+                android:id="@+id/cinfv_inf_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
@@ -120,17 +112,7 @@
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/o_6c4_user_input"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:autofillHints="#"
-                android:background="@drawable/table_outline"
-                android:inputType="number"
-                android:minEms="2"
-                android:padding="5dp" />
-
-            <EditText
-                android:id="@+id/o_6c2_user_input"
+                android:id="@+id/cinfv_infSv_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
