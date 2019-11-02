@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PointGroups.cinfv"></activity>
+        <activity android:name=".PointGroups.c4h"></activity>
+        <activity android:name=".PointGroups.cinfv" />
         <activity android:name=".PointGroups.o" />
         <activity android:name=".PointGroups.td" />
         <activity android:name=".PointGroups.d3d" />
