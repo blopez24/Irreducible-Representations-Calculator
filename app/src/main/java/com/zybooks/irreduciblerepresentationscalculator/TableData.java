@@ -6,7 +6,7 @@ public class TableData
     private Object[][] charTable;
     private String result;
 
-    TableData(String element)
+    public TableData(String element)
     {
         this.element = element;
         result = ""; // will be something like "2A1 + B2" eventually
@@ -445,9 +445,60 @@ public class TableData
     public void calculate(int[] input)
     {
         // input is an array because the amount of args varies by element
-        int h;
+        int h = 1;
         if(charTable[0][0] instanceof Integer)
             h = (Integer) charTable[0][0];
+
+        double[] results = new double[charTable.length-1];
+        int rIndex = 0;
+
+        for(int row = 1; row < charTable.length; row++)
+        {
+            int index = 0;
+            for(int col = 1; col < charTable[0].length; col++)
+            {
+                results[rIndex] += (int)charTable[row][col] * (int)charTable[0][col] * input[index];
+                //System.out.println(row + " " + col + "  " + (row+1) + " " + col + " " + index);
+                index++;
+            }
+            rIndex++;
+        }
+
+        for(int i = 0; i < results.length; i++)
+        {
+            results[i] /= h;
+        }
+
+        boolean reducible = true;
+        for(int i = 0; i < results.length; i++) {
+            if (results[i] != (int) results[i])
+                reducible = false;
+        }
+
+        if( reducible )
+        {
+            for(int i = 0; i < results.length; i++)
+            {
+                if(results[i] != 0)
+                {
+                    if (i == 0)
+                        result += (int)results[i] + (String)charTable[i+1][0];
+                    else
+                        result += " + " + (int)results[i] + charTable[i+1][0];
+                    //System.out.println( results[i] + " " + charTable[i+1][0]);
+                }
+            }
+        }
+        else
+        {
+            System.out.println("Not reducible");
+            for(int i = 0; i < results.length; i++)
+                if (i == 0)
+                    result += (int)results[i] + (String)charTable[i+1][0];
+                else
+                    result += "+ " + (int)results[i] + charTable[i+1][0];
+                //System.out.println(results[i] + " " + charTable[i+1][0]);
+        }
 
 
 
