@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         android:text="@string/step_2"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -81,13 +81,6 @@
                 android:background="@drawable/table_outline"
                 android:padding="4dp"
                 android:text="(S4)3"
-                android:textColor="@color/black" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/table_outline"
-                android:padding="4dp"
-                android:text="Sh"
                 android:textColor="@color/black" />
         </TableRow>
 
@@ -161,6 +154,40 @@
                 android:inputType="number"
                 android:minEms="2"
                 android:padding="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="4dp"
+                android:text="sig h"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="4dp"
+                android:text="S4"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_outline"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/r_reduc"
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/c4h_sh_user_input"
@@ -171,16 +198,16 @@
                 android:inputType="number"
                 android:minEms="2"
                 android:padding="5dp" />
-        </TableRow>
 
-        <TableRow android:background="@drawable/table_outline">
-            <TextView></TextView>
-            <TextView>
-
-            </TextView>
-            <TextView>
-
-            </TextView>
+            <EditText
+                android:id="@+id/c4h_S4_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="#"
+                android:background="@drawable/table_outline"
+                android:inputType="number"
+                android:minEms="2"
+                android:padding="5dp" />
 
         </TableRow>
 
@@ -212,7 +239,7 @@
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         android:background="#00589d"
         android:padding="5dp"
         android:text="@string/step_3_descr"
