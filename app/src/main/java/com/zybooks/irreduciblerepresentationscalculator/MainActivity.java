@@ -37,10 +37,12 @@ import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d6;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.o;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.td;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
