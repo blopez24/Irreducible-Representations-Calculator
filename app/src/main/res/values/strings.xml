@@ -13,9 +13,12 @@
     <string name="r_reduc">r reducible</string>
     <string name="step_3">Step 3: </string>
     <string name="submit">SUBMIT</string>
+    <string name="reset">RESET</string>
     <string name="step_3_descr">reduce a representation for a different point group</string>
     <string name="i">i</string>
     <string name="answerText">The reducible representation reduces to: </string>
-
     <string name="equation">Equation</string>
+
+    <!--Strings for each point group description-->
+
 </resources>
