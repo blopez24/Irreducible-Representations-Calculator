@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.text.HtmlCompat;
 
 import com.zybooks.irreduciblerepresentationscalculator.MainActivity;
 import com.zybooks.irreduciblerepresentationscalculator.R;
@@ -21,6 +22,11 @@ public class c2v extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c2v);
+        TextView c2_descr = findViewById(R.id.c2v_descr);
+        c2_descr.setText(HtmlCompat.fromHtml(
+                "Enter the characters for the reducible representation of the C<sub>2v</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView c2_c2 = findViewById(R.id.c2v_c2);
+        c2_c2.setText(HtmlCompat.fromHtml("C<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {
@@ -31,7 +37,8 @@ public class c2v extends AppCompatActivity {
         Button button = findViewById(R.id.c2v_submit);
         TextView answerText = findViewById(R.id.c2v_text);
         TextView answer = findViewById(R.id.c2v_answer);
-        TextView step3 = findViewById(R.id.c2v_step3);
+        Button reset = findViewById(R.id.c2v_reset);
+
 
         if (TextUtils.isEmpty(value1.getText().toString())
                 || TextUtils.isEmpty(value2.getText().toString())
@@ -39,10 +46,10 @@ public class c2v extends AppCompatActivity {
                 || TextUtils.isEmpty(value4.getText().toString())){
             Toast.makeText(this,"Please enter the values for each cell!", Toast.LENGTH_LONG).show();
         } else{
-            step3.setVisibility(View.GONE);
             button.setVisibility(View.GONE);
             answerText.setVisibility(View.VISIBLE);
             answer.setVisibility(View.VISIBLE);
+            reset.setVisibility(View.VISIBLE);
 
             TableData td = new TableData("c2v");
             int[] input = new int[4];
@@ -60,5 +67,25 @@ public class c2v extends AppCompatActivity {
     public void return_1(View view) {
         Intent it = new Intent(this, MainActivity.class);
         startActivity(it);
+    }
+
+    public void reset(View view) {
+        EditText value1 = findViewById(R.id.c2v_e_user_input);
+        EditText value2 = findViewById(R.id.c2v_c2_user_input);
+        EditText value3 = findViewById(R.id.c2v_sv_user_input);
+        EditText value4 = findViewById(R.id.c2v_svp_user_input);
+        Button button = findViewById(R.id.c2v_submit);
+        TextView answerText = findViewById(R.id.c2v_text);
+        TextView answer = findViewById(R.id.c2v_answer);
+        Button reset = findViewById(R.id.c2v_reset);
+
+        value1.setText("");
+        value2.setText("");
+        value3.setText("");
+        value4.setText("");
+        button.setVisibility(View.VISIBLE);
+        answerText.setVisibility(View.GONE);
+        answer.setVisibility(View.GONE);
+        reset.setVisibility(View.INVISIBLE);
     }
 }

@@ -64,8 +64,6 @@ public class c1 extends AppCompatActivity {
         button.setVisibility(View.VISIBLE);
         answerText.setVisibility(View.GONE);
         answer.setVisibility(View.GONE);
-        reset.animate();
         reset.setVisibility(View.INVISIBLE);
-
     }
 }

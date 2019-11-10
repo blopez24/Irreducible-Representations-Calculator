@@ -11,28 +11,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         android:text="@string/step_2"
         android:textColor="@color/black"
-        android:textSize="25sp"
+        android:textSize="23sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/d2d_descr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="3dp"
         android:text="@string/step_2_descr"
         android:textColor="@color/black"
-        android:textSize="16sp" />
+        android:textSize="15sp" />
 
     <!-- -START TABLE LAYOUT- -->
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" >
 
         <TableRow>
             <TextView
@@ -43,39 +44,39 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:padding="4dp"
+                android:padding="6dp"
                 android:text="@string/e"
                 android:textColor="@color/black" />
 
             <TextView
+                android:id="@+id/d2d_2s4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:padding="4dp"
-                android:text="2S4"
+                android:padding="6dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/d2d_c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="6dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/d2d_2c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="6dp"
                 android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:padding="4dp"
-                android:text="C2"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/table_outline"
-                android:padding="4dp"
-                android:text="2C'2"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/table_outline"
-                android:padding="4dp"
+                android:padding="6dp"
                 android:text="2Sd"
                 android:textColor="@color/black" />
         </TableRow>
@@ -140,37 +141,28 @@
     </TableLayout>
     <!-- -END TABLE LAYOUT- -->
 
-    <TextView
-        android:id="@+id/d2d_step3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/step_3"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-
     <Button
         android:id="@+id/d2d_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/bannerColor"
         android:onClick="result"
-        android:text="@string/submit" />
+        android:text="@string/submit"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/d2d_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
         android:text="@string/answerText"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:visibility="invisible"/>
+        android:visibility="gone"/>
 
     <TextView
         android:id="@+id/d2d_answer"
@@ -180,7 +172,7 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         android:layout_marginTop="10dp"
-        android:visibility="invisible"
+        android:visibility="gone"
         android:layout_gravity="center" />
 
     <RelativeLayout
@@ -192,15 +184,29 @@
         android:layout_marginEnd="15dp">
 
         <Button
+            android:id="@+id/d2d_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/return1"
+            android:layout_marginBottom="10dp"
+            android:background="@color/bannerColor"
+            android:onClick="reset"
+            android:padding="8dp"
+            android:text="@string/reset"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:visibility="invisible"/>
+
+        <Button
             android:id="@+id/return1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/bannerColor"
             android:onClick="return_1"
-            android:padding="12dp"
+            android:padding="8dp"
             android:text="@string/step_3_descr"
             android:textColor="#FFFFFF"
             android:textColorHighlight="#00FFFFFF"
-            android:textSize="18sp" />
+            android:textSize="15sp" />
     </RelativeLayout>
 </LinearLayout>

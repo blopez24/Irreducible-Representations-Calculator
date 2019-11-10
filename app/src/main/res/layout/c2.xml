@@ -18,7 +18,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/c1_descr"
+        android:id="@+id/c2_descr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -50,7 +50,7 @@
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/c2_c2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"

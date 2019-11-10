@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.text.HtmlCompat;
 
 import com.zybooks.irreduciblerepresentationscalculator.MainActivity;
 import com.zybooks.irreduciblerepresentationscalculator.R;
@@ -23,8 +24,12 @@ public class c2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c2);
+        TextView c2_descr = findViewById(R.id.c2_descr);
+        c2_descr.setText(HtmlCompat.fromHtml(
+                "Enter the characters for the reducible representation of the C<sub>2</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView c2_c2 = findViewById(R.id.c2_c2);
+        c2_c2.setText(HtmlCompat.fromHtml("C<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
-
 
     public void result(View view) {
         EditText value1 = findViewById(R.id.c2_e_user_input);
@@ -32,6 +37,8 @@ public class c2 extends AppCompatActivity {
         Button button = findViewById(R.id.c2_submit);
         TextView answerText = findViewById(R.id.c2_text);
         TextView answer = findViewById(R.id.c2_answer);
+        Button reset = findViewById(R.id.c2_reset);
+
 
         if (TextUtils.isEmpty(value1.getText().toString())
                 || TextUtils.isEmpty(value2.getText().toString())){
@@ -40,6 +47,7 @@ public class c2 extends AppCompatActivity {
             button.setVisibility(View.GONE);
             answerText.setVisibility(View.VISIBLE);
             answer.setVisibility(View.VISIBLE);
+            reset.setVisibility(View.VISIBLE);
 
             TableData td = new TableData("c2");
             int[] input = new int[2];
@@ -58,18 +66,18 @@ public class c2 extends AppCompatActivity {
     }
 
     public void reset(View view) {
-        EditText value1 = findViewById(R.id.c1_e_user_input);
-        Button button = findViewById(R.id.c1_submit);
-        TextView answerText = findViewById(R.id.c1_text);
-        TextView answer = findViewById(R.id.c1_answer);
-        Button reset = findViewById(R.id.c1_reset);
+        EditText value1 = findViewById(R.id.c2_e_user_input);
+        EditText value2 = findViewById(R.id.c2_c2_user_input);
+        Button button = findViewById(R.id.c2_submit);
+        TextView answerText = findViewById(R.id.c2_text);
+        TextView answer = findViewById(R.id.c2_answer);
+        Button reset = findViewById(R.id.c2_reset);
 
         value1.setText("");
+        value2.setText("");
         button.setVisibility(View.VISIBLE);
         answerText.setVisibility(View.GONE);
         answer.setVisibility(View.GONE);
-        reset.animate();
         reset.setVisibility(View.INVISIBLE);
-
     }
 }

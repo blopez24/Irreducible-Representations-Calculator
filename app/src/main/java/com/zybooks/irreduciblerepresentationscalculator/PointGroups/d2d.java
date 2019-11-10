@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.text.HtmlCompat;
 
 import com.zybooks.irreduciblerepresentationscalculator.MainActivity;
 import com.zybooks.irreduciblerepresentationscalculator.R;
@@ -22,6 +23,17 @@ public class d2d extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.d2d);
+
+        TextView d2d_descr = findViewById(R.id.d2d_descr);
+        d2d_descr.setText(HtmlCompat.fromHtml(
+                "Enter the characters for the reducible representation of the D<sub>2d</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));
+
+        TextView a = findViewById(R.id.d2d_2s4);
+        a.setText(HtmlCompat.fromHtml("2S<sub>4</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView b = findViewById(R.id.d2d_c2);
+        b.setText(HtmlCompat.fromHtml("C<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView c = findViewById(R.id.d2d_2c2);
+        c.setText(HtmlCompat.fromHtml("2C<sub>2</sub>'", HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {
@@ -31,10 +43,10 @@ public class d2d extends AppCompatActivity {
         EditText value4 = findViewById(R.id.d2d_2c2_user_input);
         EditText value5 = findViewById(R.id.d2d_2sd_user_input);
 
+        Button reset = findViewById(R.id.d2d_reset);
         Button button = findViewById(R.id.d2d_submit);
         TextView answerText = findViewById(R.id.d2d_text);
         TextView answer = findViewById(R.id.d2d_answer);
-        TextView step3 = findViewById(R.id.d2d_step3);
 
         if (TextUtils.isEmpty(value1.getText().toString())
                 || TextUtils.isEmpty(value2.getText().toString())
@@ -42,10 +54,10 @@ public class d2d extends AppCompatActivity {
                 || TextUtils.isEmpty(value4.getText().toString())){
             Toast.makeText(this,"Please enter the values for each cell!", Toast.LENGTH_LONG).show();
         } else{
-            step3.setVisibility(View.GONE);
             button.setVisibility(View.GONE);
             answerText.setVisibility(View.VISIBLE);
             answer.setVisibility(View.VISIBLE);
+            reset.setVisibility(View.VISIBLE);
 
             TableData td = new TableData("d2d");
             int[] input = new int[5];
@@ -64,6 +76,28 @@ public class d2d extends AppCompatActivity {
     public void return_1(View view) {
         Intent it = new Intent(this, MainActivity.class);
         startActivity(it);
-        finish();
+    }
+
+    public void reset(View view) {
+        EditText value1 = findViewById(R.id.d2d_e_user_input);
+        EditText value2 = findViewById(R.id.d2d_2s4_user_input);
+        EditText value3 = findViewById(R.id.d2d_c2_user_input);
+        EditText value4 = findViewById(R.id.d2d_2c2_user_input);
+        EditText value5 = findViewById(R.id.d2d_2sd_user_input);
+
+        Button reset = findViewById(R.id.d2d_reset);
+        Button button = findViewById(R.id.d2d_submit);
+        TextView answerText = findViewById(R.id.d2d_text);
+        TextView answer = findViewById(R.id.d2d_answer);
+
+        value1.setText("");
+        value2.setText("");
+        value3.setText("");
+        value4.setText("");
+        value5.setText("");
+        button.setVisibility(View.VISIBLE);
+        answerText.setVisibility(View.GONE);
+        answer.setVisibility(View.GONE);
+        reset.setVisibility(View.INVISIBLE);
     }
 }
