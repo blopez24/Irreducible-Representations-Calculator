@@ -2,6 +2,7 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorAccent">#2196F3</color>
     <color name="black">#000000</color>
+    <color name="bannerColor">#00589d</color>
 </resources>

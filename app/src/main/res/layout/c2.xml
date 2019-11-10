@@ -72,9 +72,8 @@
 
             <EditText
                 android:id="@+id/c2_e_user_input"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:autofillHints="#"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:background="@drawable/table_outline"
                 android:inputType="number"
                 android:minEms="2"
@@ -84,7 +83,6 @@
                 android:id="@+id/c2_c2_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:autofillHints="#"
                 android:background="@drawable/table_outline"
                 android:inputType="number"
                 android:minEms="2"
@@ -150,8 +148,7 @@
             android:id="@+id/return1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:background="#00589d"
+            android:background="@color/bannerColor"
             android:onClick="return_1"
             android:padding="12dp"
             android:text="@string/step_3_descr"
