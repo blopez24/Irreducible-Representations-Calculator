@@ -1,9 +1,11 @@
 package com.zybooks.irreduciblerepresentationscalculator.PointGroups;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,30 +23,38 @@ public class c2v extends AppCompatActivity {
         setContentView(R.layout.c2v);
     }
 
-
     public void result(View view) {
-        EditText value = findViewById(R.id.c2v_e_user_input);
+        EditText value1 = findViewById(R.id.c2v_e_user_input);
         EditText value2 = findViewById(R.id.c2v_c2_user_input);
         EditText value3 = findViewById(R.id.c2v_sv_user_input);
         EditText value4 = findViewById(R.id.c2v_svp_user_input);
+        Button button = findViewById(R.id.c2v_submit);
+        TextView answerText = findViewById(R.id.c2v_text);
+        TextView answer = findViewById(R.id.c2v_answer);
+        TextView step3 = findViewById(R.id.c2v_step3);
 
-        TableData td = new TableData("c2v");
-        int[] input = new int[4];
-        input[0] = Integer.parseInt(value.getText().toString().trim());
-        input[1] = Integer.parseInt(value2.getText().toString().trim());
-        input[2] = Integer.parseInt(value3.getText().toString().trim());
-        input[3] = Integer.parseInt(value4.getText().toString().trim());
+        if (TextUtils.isEmpty(value1.getText().toString())
+                || TextUtils.isEmpty(value2.getText().toString())
+                || TextUtils.isEmpty(value3.getText().toString())
+                || TextUtils.isEmpty(value4.getText().toString())){
+            Toast.makeText(this,"Please enter the values for each cell!", Toast.LENGTH_LONG).show();
+        } else{
+            step3.setVisibility(View.GONE);
+            button.setVisibility(View.GONE);
+            answerText.setVisibility(View.VISIBLE);
+            answer.setVisibility(View.VISIBLE);
 
-        td.calculate(input);
-        String result = td.getResult();
-        Toast.makeText(this, "Result is: "+result, Toast.LENGTH_LONG).show();
+            TableData td = new TableData("c2v");
+            int[] input = new int[4];
+            input[0] = Integer.parseInt(value1.getText().toString().trim());
+            input[1] = Integer.parseInt(value2.getText().toString().trim());
+            input[2] = Integer.parseInt(value3.getText().toString().trim());
+            input[3] = Integer.parseInt(value4.getText().toString().trim());
 
-        Intent intent = new Intent(this, Results.class);
-        intent.putExtra("value", value.getText());
-        intent.putExtra("value2", value2.getText());
-        intent.putExtra("value3", value3.getText());
-        intent.putExtra("value4", value4.getText());
-        startActivity(intent);
+            td.calculate(input);
+            String result = td.getResult();
+            answer.setText(result);
+        }
     }
 
     public void return_1(View view) {

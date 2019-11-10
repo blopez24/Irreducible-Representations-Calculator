@@ -105,7 +105,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/submit"
+        android:id="@+id/c2_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -156,5 +156,4 @@
             android:textColorHighlight="#00FFFFFF"
             android:textSize="18sp" />
     </RelativeLayout>
-
 </LinearLayout>

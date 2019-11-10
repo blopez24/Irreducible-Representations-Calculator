@@ -30,7 +30,7 @@ public class c2 extends AppCompatActivity {
     public void result(View view) {
         value = findViewById(R.id.c2_e_user_input);
         value2 = findViewById(R.id.c2_c2_user_input);
-        button = findViewById(R.id.submit);
+        button = findViewById(R.id.c2_submit);
         answerText = findViewById(R.id.c2_text);
         answer = findViewById(R.id.c2_answer);
         step3 = findViewById(R.id.c2_step3);
@@ -40,13 +40,6 @@ public class c2 extends AppCompatActivity {
         answerText.setVisibility(View.VISIBLE);
         answer.setVisibility(View.VISIBLE);
         answer.setText("2A + 3B");
-
-        /*Intent intent = new Intent(this, Results.class);
-        intent.putExtra("value", value.getText());
-        intent.putExtra("results", value2.getText());
-        startActivity(intent);
-
-         */
     }
 
     public void return_1(View view) {

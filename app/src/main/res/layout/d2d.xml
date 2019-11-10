@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <include layout="@layout/toolbar"/>
@@ -10,10 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="15dp"
         android:text="@string/step_2"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
     <TextView
@@ -23,7 +24,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="3dp"
         android:text="@string/step_2_descr"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <!-- -START TABLE LAYOUT- -->
     <TableLayout
@@ -91,19 +93,17 @@
 
             <EditText
                 android:id="@+id/d2d_e_user_input"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:autofillHints="#"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:background="@drawable/table_outline"
                 android:inputType="number"
                 android:minEms="2"
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/d2d_2S4_user_input"
+                android:id="@+id/d2d_2s4_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:autofillHints="#"
                 android:background="@drawable/table_outline"
                 android:inputType="number"
                 android:minEms="2"
@@ -113,7 +113,6 @@
                 android:id="@+id/d2d_c2_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:autofillHints="#"
                 android:background="@drawable/table_outline"
                 android:inputType="number"
                 android:minEms="2"
@@ -123,7 +122,6 @@
                 android:id="@+id/d2d_2c2_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:autofillHints="#"
                 android:background="@drawable/table_outline"
                 android:inputType="number"
                 android:minEms="2"
@@ -133,7 +131,6 @@
                 android:id="@+id/d2d_2sd_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:autofillHints="#"
                 android:background="@drawable/table_outline"
                 android:inputType="number"
                 android:minEms="2"
@@ -144,38 +141,66 @@
     <!-- -END TABLE LAYOUT- -->
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/d2d_step3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
         android:text="@string/step_3"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/submit"
+        android:id="@+id/d2d_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:text="@string/submit"
-        android:onClick="result"/>
+        android:onClick="result"
+        android:text="@string/submit" />
 
-    <Button
-        android:id="@+id/return1"
+    <TextView
+        android:id="@+id/d2d_text"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
-        android:background="#00589d"
-        android:padding="5dp"
-        android:text="@string/step_3_descr"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#00FFFFFF"
-        android:textSize="12sp"
-        android:onClick="return_1"
-        />
+        android:layout_marginTop="40dp"
+        android:text="@string/answerText"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
 
+    <TextView
+        android:id="@+id/d2d_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp">
+
+        <Button
+            android:id="@+id/return1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bannerColor"
+            android:onClick="return_1"
+            android:padding="12dp"
+            android:text="@string/step_3_descr"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#00FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
 </LinearLayout>
