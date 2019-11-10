@@ -351,7 +351,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:textAllCaps="false"
-                        android:onClick="d3d"/>
+                        android:onClick="d2d"/>
 
                     <Button
                         android:id="@+id/d3d"

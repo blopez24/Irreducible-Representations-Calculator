@@ -19,7 +19,6 @@ public class d3d extends AppCompatActivity {
         setContentView(R.layout.d3d);
     }
 
-
     public void result(View view) {
         EditText value = findViewById(R.id.d3d_e_user_input);
         EditText value2 = findViewById(R.id.d3d_2c3_user_input);

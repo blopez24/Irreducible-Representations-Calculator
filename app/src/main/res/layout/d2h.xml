@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="4dp"
-                android:text="8C3"
+                android:text="2S4"
                 android:textColor="@color/black" />
 
             <TextView
@@ -60,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="4dp"
-                android:text="3C2"
+                android:text="C2"
                 android:textColor="@color/black" />
 
             <TextView
@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="4dp"
-                android:text="6S4"
+                android:text="2C'2"
                 android:textColor="@color/black" />
 
             <TextView
@@ -76,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="4dp"
-                android:text="6sd"
+                android:text="2Sd"
                 android:textColor="@color/black" />
         </TableRow>
 
@@ -92,7 +92,7 @@
                 android:textColor="@color/black" />
 
             <EditText
-                android:id="@+id/td_e_user_input"
+                android:id="@+id/d2d_e_user_input"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_outline"
@@ -101,7 +101,7 @@
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/td_8c3_user_input"
+                android:id="@+id/d2d_2s4_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -110,7 +110,7 @@
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/td_3c2_user_input"
+                android:id="@+id/d2d_c2_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -119,7 +119,7 @@
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/td_6s4_user_input"
+                android:id="@+id/d2d_2c2_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -128,7 +128,7 @@
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/td_6sd_user_input"
+                android:id="@+id/d2d_2sd_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -141,7 +141,7 @@
     <!-- -END TABLE LAYOUT- -->
 
     <TextView
-        android:id="@+id/td_step3"
+        android:id="@+id/d2d_step3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -152,7 +152,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/td_submit"
+        android:id="@+id/d2d_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -161,7 +161,7 @@
         android:text="@string/submit" />
 
     <TextView
-        android:id="@+id/td_text"
+        android:id="@+id/d2d_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -173,7 +173,7 @@
         android:visibility="invisible"/>
 
     <TextView
-        android:id="@+id/td_answer"
+        android:id="@+id/d2d_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp"
