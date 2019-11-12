@@ -47,7 +47,7 @@ public class cinfv extends AppCompatActivity {
             answerText.setVisibility(View.VISIBLE);
             answer.setVisibility(View.VISIBLE);
 
-            TableData td = new TableData("cinfv");
+            TableData td = new TableData(getApplicationContext(), "cinfv");
             int[] input = new int[4];
             input[0] = Integer.parseInt(value1.getText().toString().trim());
             input[1] = Integer.parseInt(value2.getText().toString().trim());

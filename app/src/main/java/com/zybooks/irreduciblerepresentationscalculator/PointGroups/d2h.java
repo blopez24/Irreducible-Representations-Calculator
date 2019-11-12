@@ -65,7 +65,7 @@ public class d2h extends AppCompatActivity {
             answer.setVisibility(View.VISIBLE);
             reset.setVisibility(View.VISIBLE);
 
-            TableData td = new TableData("d2h");
+            TableData td = new TableData(getApplicationContext(),"d2h");
             int[] input = new int[8];
             input[0] = Integer.parseInt(value0.getText().toString().trim());
             input[1] = Integer.parseInt(value1.getText().toString().trim());

@@ -1,16 +1,53 @@
 package com.zybooks.irreduciblerepresentationscalculator;
 
+import android.content.Context;
+import android.os.Environment;
+import android.util.Log;
+
+import com.opencsv.CSVReader;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.FileReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+
 public class TableData
 {
     private String element;
-    private Object[][] charTable;
+    private ArrayList<ArrayList<String>> charTable = new ArrayList<ArrayList<String>>();
     private String result;
+    private Context context;
 
-    public TableData(String element)
+    public TableData(Context context, String element)
     {
         this.element = element;
+        this.context = context;
         result = ""; // will be something like "2A1 + B2" eventually
-        switch (element){
+        try{
+            InputStream is = context.getResources().openRawResource(context.getResources().getIdentifier(element, "raw", context.getPackageName()));
+            //CSVReader reader = new CSVReader(new FileReader(element+".csv"));
+            BufferedReader reader = new BufferedReader(
+                    new InputStreamReader(is, Charset.forName("UTF-8"))
+            );
+            String fileInfo = "";
+            String nextLine;
+            while((nextLine = reader.readLine()) != null){
+                String[] tokens = nextLine.split(",");
+                ArrayList<String> ob = new ArrayList<>();
+                for (int i = 0; i < tokens.length; i++){
+                    ob.add(tokens[i]);
+                }
+                charTable.add(ob);
+            }
+        } catch (IOException e){
+
+        }
+
+        /*switch (element){
             case "c1":
                 // Number of symmetry elements h = 1
                 //  C1  E
@@ -439,25 +476,23 @@ public class TableData
             default:
                 charTable = null;
                 break;
-        }
+        }*/
     }
 
     public void calculate(int[] input)
     {
         // input is an array because the amount of args varies by element
-        int h = 1;
-        if(charTable[0][0] instanceof Integer)
-            h = (Integer) charTable[0][0];
+        int h = Integer.parseInt(charTable.get(0).get(0));
 
-        double[] results = new double[charTable.length-1];
+        double[] results = new double[charTable.size()-1];
         int rIndex = 0;
 
-        for(int row = 1; row < charTable.length; row++)
+        for(int row = 1; row < charTable.size(); row++)
         {
             int index = 0;
-            for(int col = 1; col < charTable[0].length; col++)
+            for(int col = 1; col < charTable.get(0).size(); col++)
             {
-                results[rIndex] += (int)charTable[row][col] * (int)charTable[0][col] * input[index];
+                results[rIndex] += Integer.parseInt(charTable.get(row).get(col)) * Integer.parseInt(charTable.get(0).get(col)) * input[index];
                 //System.out.println(row + " " + col + "  " + (row+1) + " " + col + " " + index);
                 index++;
             }
@@ -482,9 +517,9 @@ public class TableData
                 if(results[i] != 0)
                 {
                     if (i == 0)
-                        result += (int)results[i] + (String)charTable[i+1][0];
+                        result += (int)results[i] + (String)charTable.get(i+1).get(0);
                     else
-                        result += " + " + (int)results[i] + charTable[i+1][0];
+                        result += " + " + (int)results[i] + charTable.get(i+1).get(0);
                     //System.out.println( results[i] + " " + charTable[i+1][0]);
                 }
             }
@@ -493,10 +528,22 @@ public class TableData
         {
             System.out.println("Not reducible");
             for(int i = 0; i < results.length; i++)
-                if (i == 0)
-                    result += (int)results[i] + (String)charTable[i+1][0];
-                else
-                    result += "+ " + (int)results[i] + charTable[i+1][0];
+                if (i == 0) {
+                    if ((int) results[i] == 1)
+                        result += (String) charTable.get(i + 1).get(0);
+                    else
+                        result += (int) results[i] + (String) charTable.get(i + 1).get(0);
+                }
+                else {
+                    if ((int) results[i] == 1) {
+                        result += "+ " + (String) charTable.get(i + 1).get(0);
+                        Log.d("3", "3");
+                    }
+                    else {
+                        result += "+ ";// + (int) results[i] + charTable.get(i + 1).get(0);
+                        Log.d("4", "4");
+                    }
+                }
                 //System.out.println(results[i] + " " + charTable[i+1][0]);
         }
 

@@ -52,7 +52,7 @@ public class c2h extends AppCompatActivity {
             answer.setVisibility(View.VISIBLE);
             reset.setVisibility(View.VISIBLE);
 
-            TableData td = new TableData("c2h");
+            TableData td = new TableData(getApplicationContext(), "c2h");
             int[] input = new int[4];
             input[0] = Integer.parseInt(value1.getText().toString().trim());
             input[1] = Integer.parseInt(value2.getText().toString().trim());

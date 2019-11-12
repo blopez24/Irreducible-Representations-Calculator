@@ -59,7 +59,7 @@ public class d2d extends AppCompatActivity {
             answer.setVisibility(View.VISIBLE);
             reset.setVisibility(View.VISIBLE);
 
-            TableData td = new TableData("d2d");
+            TableData td = new TableData(getApplicationContext(),"d2d");
             int[] input = new int[5];
             input[0] = Integer.parseInt(value1.getText().toString().trim());
             input[1] = Integer.parseInt(value2.getText().toString().trim());

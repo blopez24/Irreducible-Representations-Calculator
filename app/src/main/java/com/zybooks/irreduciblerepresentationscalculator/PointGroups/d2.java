@@ -56,7 +56,7 @@ public class d2 extends AppCompatActivity {
             answer.setVisibility(View.VISIBLE);
             reset.setVisibility(View.VISIBLE);
 
-            TableData td = new TableData("d2");
+            TableData td = new TableData(getApplicationContext(),"d2");
             int[] input = new int[4];
             input[0] = Integer.parseInt(value1.getText().toString().trim());
             input[1] = Integer.parseInt(value2.getText().toString().trim());

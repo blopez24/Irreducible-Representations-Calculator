@@ -1,4 +1,5 @@
 package com.zybooks.irreduciblerepresentationscalculator.PointGroups;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -29,6 +30,7 @@ public class c2v extends AppCompatActivity {
         c2_c2.setText(HtmlCompat.fromHtml("C<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
+
     public void result(View view) {
         EditText value1 = findViewById(R.id.c2v_e_user_input);
         EditText value2 = findViewById(R.id.c2v_c2_user_input);
@@ -51,12 +53,12 @@ public class c2v extends AppCompatActivity {
             answer.setVisibility(View.VISIBLE);
             reset.setVisibility(View.VISIBLE);
 
-            TableData td = new TableData("c2v");
-            int[] input = new int[4];
-            input[0] = Integer.parseInt(value1.getText().toString().trim());
-            input[1] = Integer.parseInt(value2.getText().toString().trim());
-            input[2] = Integer.parseInt(value3.getText().toString().trim());
-            input[3] = Integer.parseInt(value4.getText().toString().trim());
+        TableData td = new TableData(getApplicationContext(), "c2v");
+        int[] input = new int[4];
+        input[0] = Integer.parseInt(value1.getText().toString().trim());
+        input[1] = Integer.parseInt(value2.getText().toString().trim());
+        input[2] = Integer.parseInt(value3.getText().toString().trim());
+        input[3] = Integer.parseInt(value4.getText().toString().trim());
 
             td.calculate(input);
             String result = td.getResult();
