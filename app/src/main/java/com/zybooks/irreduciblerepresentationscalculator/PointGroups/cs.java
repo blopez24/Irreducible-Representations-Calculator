@@ -21,10 +21,10 @@ public class cs extends AppCompatActivity {
 
 
     public void result(View view) {
-        EditText value = findViewById(R.id.cs_e_user_input);
+        EditText value1 = findViewById(R.id.cs_e_user_input);
         EditText value2 = findViewById(R.id.cs_sh_user_input);
         Intent intent = new Intent(this, Results.class);
-        intent.putExtra("value", value.getText());
+        intent.putExtra("value", value1.getText());
         intent.putExtra("value2", value2.getText());
         startActivity(intent);
     }
