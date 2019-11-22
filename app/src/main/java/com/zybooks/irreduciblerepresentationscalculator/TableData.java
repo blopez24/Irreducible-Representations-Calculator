@@ -71,6 +71,7 @@ public class TableData
         for(int i = 0; i < results.length; i++)
         {
             results[i] /= h;
+            Log.i("table", "results " + results[i]);
         }
 
         boolean reducible = true;
@@ -86,17 +87,24 @@ public class TableData
                 if(results[i] != 0)
                 {
                     if (i == 0) {
-                        if ((int) results[i] == 1)
+                        if ((int) results[i] == 1) {
                             result += (String) charTable.get(i + 1).get(0);
-                        else
+                            Log.i("result", "1: " + result);
+                        }
+                        else {
                             result += (int) results[i] + (String) charTable.get(i + 1).get(0);
+                            Log.i("result", "2: " + result);
+                        }
                     }
                     else {
                         if ((int) results[i] == 1) {
                             result += " + " + (String) charTable.get(i + 1).get(0);
+                            Log.i("result", "3: " + result);
                         }
                         else {
-                            result += " + ";// + (int) results[i] + charTable.get(i + 1).get(0);
+                            result += (int) results[i] + (String) charTable.get(i + 1).get(0);
+                            //result += " + ";// + (int) results[i] + charTable.get(i + 1).get(0);
+                            Log.i("result", "4: " + result);
                         }
                     }
                 }

@@ -1,9 +1,12 @@
 package com.zybooks.irreduciblerepresentationscalculator.PointGroups;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -41,6 +44,7 @@ public class c2v extends AppCompatActivity {
         TextView answer = findViewById(R.id.c2v_answer);
         Button reset = findViewById(R.id.c2v_reset);
 
+        hideKeyboard(view);
 
         if (TextUtils.isEmpty(value1.getText().toString())
                 || TextUtils.isEmpty(value2.getText().toString())
@@ -62,6 +66,7 @@ public class c2v extends AppCompatActivity {
 
             td.calculate(input);
             String result = td.getResult();
+            Log.i("c2v", "results: " + result);
             answer.setText(result);
         }
     }
@@ -89,5 +94,10 @@ public class c2v extends AppCompatActivity {
         answerText.setVisibility(View.GONE);
         answer.setVisibility(View.GONE);
         reset.setVisibility(View.INVISIBLE);
+    }
+
+    public void hideKeyboard(View view) {
+        InputMethodManager inputMethodManager =(InputMethodManager)getSystemService(Activity.INPUT_METHOD_SERVICE);
+        inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 }
