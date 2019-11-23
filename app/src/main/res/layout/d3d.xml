@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <include layout="@layout/toolbar"/>
@@ -10,20 +11,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="12dp"
         android:text="@string/step_2"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="23sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/d3d_descr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="3dp"
         android:text="@string/step_2_descr"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:textSize="15sp" />
 
     <!-- -START TABLE LAYOUT- -->
     <TableLayout
