@@ -72,7 +72,13 @@ public class TableData
         {
             results[i] /= h;
             Log.i("table", "results " + results[i]);
+
+            // Rounds results to the sixth decimal place
+            // Necessary for sin, cos, decimal, and sqrt table values
+            results[i] = (double)Math.round((results[i]) * 1000000) / 1000000;
         }
+
+
 
         boolean reducible = true;
         for(int i = 0; i < results.length; i++) {
@@ -80,35 +86,16 @@ public class TableData
                 reducible = false;
         }
 
+
         if( reducible )
         {
+            int[] integerResults = new int[results.length];
             for(int i = 0; i < results.length; i++)
             {
-                if(results[i] != 0)
-                {
-                    if (i == 0) {
-                        if ((int) results[i] == 1) {
-                            result += (String) charTable.get(i + 1).get(0);
-                            Log.i("result", "1: " + result);
-                        }
-                        else {
-                            result += (int) results[i] + (String) charTable.get(i + 1).get(0);
-                            Log.i("result", "2: " + result);
-                        }
-                    }
-                    else {
-                        if ((int) results[i] == 1) {
-                            result += " + " + (String) charTable.get(i + 1).get(0);
-                            Log.i("result", "3: " + result);
-                        }
-                        else {
-                            result += (int) results[i] + (String) charTable.get(i + 1).get(0);
-                            //result += " + ";// + (int) results[i] + charTable.get(i + 1).get(0);
-                            Log.i("result", "4: " + result);
-                        }
-                    }
-                }
+                integerResults[i] = (int)results[i];
             }
+
+            result = getResultsFormat(integerResults);
         }
         else
         {
@@ -117,6 +104,44 @@ public class TableData
 
 
 
+    }
+
+    public String getResultsFormat(int[] array)
+    {
+        String formattedResults = "";
+        int nonZeroes = 0;
+
+        for(int i = 0; i < array.length; i++)
+        {
+            if(array[i] != 0)
+            {
+                nonZeroes++;
+            }
+        }
+
+        nonZeroes--;
+
+        for(int i = 0; i < array.length; i++)
+        {
+            if(array[i] != 0)
+            {
+                if(array[i] == 1)
+                {
+                    formattedResults += (String) charTable.get(i + 1).get(0);
+                }
+                else
+                {
+                    formattedResults += array[i] + (String) charTable.get(i + 1).get(0);
+                }
+
+                if(nonZeroes > 0)
+                {
+                    nonZeroes--;
+                    formattedResults += " + ";
+                }
+            }
+        }
+        return formattedResults;
     }
 
     public String getResult(){
