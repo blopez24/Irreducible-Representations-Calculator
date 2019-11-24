@@ -18,39 +18,44 @@ import com.zybooks.irreduciblerepresentationscalculator.MainActivity;
 import com.zybooks.irreduciblerepresentationscalculator.R;
 import com.zybooks.irreduciblerepresentationscalculator.TableData;
 
-public class d2h extends AppCompatActivity {
+public class d4d extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.d2h);
+        setContentView(R.layout.d4d);
 
-        TextView d2h_descr = findViewById(R.id.d2h_descr);
-        d2h_descr.setText(HtmlCompat.fromHtml(
-                "Enter the characters for the reducible representation of the D<sub>2h</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView descr = findViewById(R.id.d4d_descr);
+        descr.setText(HtmlCompat.fromHtml(
+                "Enter the characters for the reducible representation of the D<sub>4d</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));
 
-        TextView a = findViewById(R.id.d2h_z);
-        a.setText(HtmlCompat.fromHtml("C<sub>2</sub>(z)", HtmlCompat.FROM_HTML_MODE_LEGACY));
-        TextView b = findViewById(R.id.d2h_y);
-        b.setText(HtmlCompat.fromHtml("C<sub>2</sub>(y)", HtmlCompat.FROM_HTML_MODE_LEGACY));
-        TextView c = findViewById(R.id.d2h_x);
-        c.setText(HtmlCompat.fromHtml("C<sub>2</sub>(x)", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView a = findViewById(R.id.d4d_2s8);
+        a.setText(HtmlCompat.fromHtml("2S<sub>8</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView b = findViewById(R.id.d4d_2c4);
+        b.setText(HtmlCompat.fromHtml("2C<sub>4</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView c = findViewById(R.id.d4d_2s83);
+        c.setText(HtmlCompat.fromHtml("2(S<sub>8</sub>)<sup>3</sup>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView d = findViewById(R.id.d4d_c2);
+        d.setText(HtmlCompat.fromHtml("C<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView e = findViewById(R.id.d4d_4c2);
+        e.setText(HtmlCompat.fromHtml("4C'<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView f = findViewById(R.id.d4d_4sd);
+        f.setText(HtmlCompat.fromHtml("4S<sub>d</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {
-        EditText value0 = findViewById(R.id.d2h_e_user_input);
-        EditText value1 = findViewById(R.id.d2h_z_user_input);
-        EditText value2 = findViewById(R.id.d2h_y_user_input);
-        EditText value3 = findViewById(R.id.d2h_x_user_input);
-        EditText value4 = findViewById(R.id.d2h_i_user_input);
-        EditText value5 = findViewById(R.id.d2h_xy_user_input);
-        EditText value6 = findViewById(R.id.d2h_xz_user_input);
-        EditText value7 = findViewById(R.id.d2h_yz_user_input);
+        EditText value0 = findViewById(R.id.d4d_e_user_input);
+        EditText value1 = findViewById(R.id.d4d_2s8_user_input);
+        EditText value2 = findViewById(R.id.d4d_2c4_user_input);
+        EditText value3 = findViewById(R.id.d4d_2s83_user_input);
+        EditText value4 = findViewById(R.id.d4d_c2_user_input);
+        EditText value5 = findViewById(R.id.d4d_4c2_user_input);
+        EditText value6 = findViewById(R.id.d4d_4sd_user_input);
 
-        Button reset = findViewById(R.id.d2h_reset);
-        Button button = findViewById(R.id.d2h_submit);
-        TextView answerText = findViewById(R.id.d2h_text);
-        TextView answer = findViewById(R.id.d2h_answer);
+        Button reset = findViewById(R.id.d4d_reset);
+        Button button = findViewById(R.id.d4d_submit);
+        TextView answerText = findViewById(R.id.d4d_text);
+        TextView answer = findViewById(R.id.d4d_answer);
 
         if (TextUtils.isEmpty(value0.getText().toString())
                 || TextUtils.isEmpty(value1.getText().toString())
@@ -58,8 +63,7 @@ public class d2h extends AppCompatActivity {
                 || TextUtils.isEmpty(value3.getText().toString())
                 || TextUtils.isEmpty(value4.getText().toString())
                 || TextUtils.isEmpty(value5.getText().toString())
-                || TextUtils.isEmpty(value6.getText().toString())
-                || TextUtils.isEmpty(value7.getText().toString())){
+                || TextUtils.isEmpty(value6.getText().toString())){
             Toast.makeText(this,"Please enter the values for each cell!", Toast.LENGTH_LONG).show();
         } else{
             button.setVisibility(View.GONE);
@@ -67,8 +71,8 @@ public class d2h extends AppCompatActivity {
             answer.setVisibility(View.VISIBLE);
             reset.setVisibility(View.VISIBLE);
 
-            TableData td = new TableData(getApplicationContext(),"d2h");
-            int[] input = new int[8];
+            TableData td = new TableData(getApplicationContext(),"d4d");
+            int[] input = new int[7];
             input[0] = Integer.parseInt(value0.getText().toString().trim());
             input[1] = Integer.parseInt(value1.getText().toString().trim());
             input[2] = Integer.parseInt(value2.getText().toString().trim());
@@ -76,7 +80,6 @@ public class d2h extends AppCompatActivity {
             input[4] = Integer.parseInt(value4.getText().toString().trim());
             input[5] = Integer.parseInt(value5.getText().toString().trim());
             input[6] = Integer.parseInt(value6.getText().toString().trim());
-            input[7] = Integer.parseInt(value7.getText().toString().trim());
 
             hideKeyboard(view);
             td.calculate(input);
@@ -92,19 +95,18 @@ public class d2h extends AppCompatActivity {
     }
 
     public void reset(View view) {
-        EditText value0 = findViewById(R.id.d2h_e_user_input);
-        EditText value1 = findViewById(R.id.d2h_z_user_input);
-        EditText value2 = findViewById(R.id.d2h_y_user_input);
-        EditText value3 = findViewById(R.id.d2h_x_user_input);
-        EditText value4 = findViewById(R.id.d2h_i_user_input);
-        EditText value5 = findViewById(R.id.d2h_xy_user_input);
-        EditText value6 = findViewById(R.id.d2h_xz_user_input);
-        EditText value7 = findViewById(R.id.d2h_yz_user_input);
+        EditText value0 = findViewById(R.id.d4d_e_user_input);
+        EditText value1 = findViewById(R.id.d4d_2s8_user_input);
+        EditText value2 = findViewById(R.id.d4d_2c4_user_input);
+        EditText value3 = findViewById(R.id.d4d_2s83_user_input);
+        EditText value4 = findViewById(R.id.d4d_c2_user_input);
+        EditText value5 = findViewById(R.id.d4d_4c2_user_input);
+        EditText value6 = findViewById(R.id.d4d_4sd_user_input);
 
-        Button reset = findViewById(R.id.d2h_reset);
-        Button button = findViewById(R.id.d2h_submit);
-        TextView answerText = findViewById(R.id.d2h_text);
-        TextView answer = findViewById(R.id.d2h_answer);
+        Button reset = findViewById(R.id.d4d_reset);
+        Button button = findViewById(R.id.d4d_submit);
+        TextView answerText = findViewById(R.id.d4d_text);
+        TextView answer = findViewById(R.id.d4d_answer);
 
         value0.setText("");
         value1.setText("");
@@ -113,7 +115,6 @@ public class d2h extends AppCompatActivity {
         value4.setText("");
         value5.setText("");
         value6.setText("");
-        value7.setText("");
         button.setVisibility(View.VISIBLE);
         answerText.setVisibility(View.GONE);
         answer.setVisibility(View.GONE);

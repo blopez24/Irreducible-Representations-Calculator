@@ -18,39 +18,44 @@ import com.zybooks.irreduciblerepresentationscalculator.MainActivity;
 import com.zybooks.irreduciblerepresentationscalculator.R;
 import com.zybooks.irreduciblerepresentationscalculator.TableData;
 
-public class d2h extends AppCompatActivity {
+public class d5d extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.d2h);
+        setContentView(R.layout.d5d);
+        TextView descr = findViewById(R.id.d5d_descr);
+        descr.setText(HtmlCompat.fromHtml(
+                "Enter the characters for the reducible representation of the D<sub>5d</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));
 
-        TextView d2h_descr = findViewById(R.id.d2h_descr);
-        d2h_descr.setText(HtmlCompat.fromHtml(
-                "Enter the characters for the reducible representation of the D<sub>2h</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));
-
-        TextView a = findViewById(R.id.d2h_z);
-        a.setText(HtmlCompat.fromHtml("C<sub>2</sub>(z)", HtmlCompat.FROM_HTML_MODE_LEGACY));
-        TextView b = findViewById(R.id.d2h_y);
-        b.setText(HtmlCompat.fromHtml("C<sub>2</sub>(y)", HtmlCompat.FROM_HTML_MODE_LEGACY));
-        TextView c = findViewById(R.id.d2h_x);
-        c.setText(HtmlCompat.fromHtml("C<sub>2</sub>(x)", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView a = findViewById(R.id.d5d_2c5);
+        a.setText(HtmlCompat.fromHtml("2C<sub>5</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView b = findViewById(R.id.d5d_2c52);
+        b.setText(HtmlCompat.fromHtml("2(C<sub>5</sub>)<sup>2</sup>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView c = findViewById(R.id.d5d_5c2);
+        c.setText(HtmlCompat.fromHtml("5C'<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView d = findViewById(R.id.d5d_2s103);
+        d.setText(HtmlCompat.fromHtml("2(S<sub>10</sub>)<sup>3</sup>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView e = findViewById(R.id.d5d_2s10);
+        e.setText(HtmlCompat.fromHtml("2S<sub>10</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView f = findViewById(R.id.d5d_5Sd);
+        f.setText(HtmlCompat.fromHtml("5S<sub>d</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {
-        EditText value0 = findViewById(R.id.d2h_e_user_input);
-        EditText value1 = findViewById(R.id.d2h_z_user_input);
-        EditText value2 = findViewById(R.id.d2h_y_user_input);
-        EditText value3 = findViewById(R.id.d2h_x_user_input);
-        EditText value4 = findViewById(R.id.d2h_i_user_input);
-        EditText value5 = findViewById(R.id.d2h_xy_user_input);
-        EditText value6 = findViewById(R.id.d2h_xz_user_input);
-        EditText value7 = findViewById(R.id.d2h_yz_user_input);
+        EditText value0 = findViewById(R.id.d5d_e_user_input);
+        EditText value1 = findViewById(R.id.d5d_2c5_user_input);
+        EditText value2 = findViewById(R.id.d5d_2c52_user_input);
+        EditText value3 = findViewById(R.id.d5d_5c2_user_input);
+        EditText value4 = findViewById(R.id.d5d_i_user_input);
+        EditText value5 = findViewById(R.id.d5d_2s103_user_input);
+        EditText value6 = findViewById(R.id.d5d_2s10_user_input);
+        EditText value7 = findViewById(R.id.d5d_5Sd_user_input);
 
-        Button reset = findViewById(R.id.d2h_reset);
-        Button button = findViewById(R.id.d2h_submit);
-        TextView answerText = findViewById(R.id.d2h_text);
-        TextView answer = findViewById(R.id.d2h_answer);
+        Button reset = findViewById(R.id.d5d_reset);
+        Button button = findViewById(R.id.d5d_submit);
+        TextView answerText = findViewById(R.id.d5d_text);
+        TextView answer = findViewById(R.id.d5d_answer);
 
         if (TextUtils.isEmpty(value0.getText().toString())
                 || TextUtils.isEmpty(value1.getText().toString())
@@ -67,7 +72,7 @@ public class d2h extends AppCompatActivity {
             answer.setVisibility(View.VISIBLE);
             reset.setVisibility(View.VISIBLE);
 
-            TableData td = new TableData(getApplicationContext(),"d2h");
+            TableData td = new TableData(getApplicationContext(),"d5d");
             int[] input = new int[8];
             input[0] = Integer.parseInt(value0.getText().toString().trim());
             input[1] = Integer.parseInt(value1.getText().toString().trim());
@@ -92,19 +97,19 @@ public class d2h extends AppCompatActivity {
     }
 
     public void reset(View view) {
-        EditText value0 = findViewById(R.id.d2h_e_user_input);
-        EditText value1 = findViewById(R.id.d2h_z_user_input);
-        EditText value2 = findViewById(R.id.d2h_y_user_input);
-        EditText value3 = findViewById(R.id.d2h_x_user_input);
-        EditText value4 = findViewById(R.id.d2h_i_user_input);
-        EditText value5 = findViewById(R.id.d2h_xy_user_input);
-        EditText value6 = findViewById(R.id.d2h_xz_user_input);
-        EditText value7 = findViewById(R.id.d2h_yz_user_input);
+        EditText value0 = findViewById(R.id.d5d_e_user_input);
+        EditText value1 = findViewById(R.id.d5d_2c5_user_input);
+        EditText value2 = findViewById(R.id.d5d_2c52_user_input);
+        EditText value3 = findViewById(R.id.d5d_5c2_user_input);
+        EditText value4 = findViewById(R.id.d5d_i_user_input);
+        EditText value5 = findViewById(R.id.d5d_2s103_user_input);
+        EditText value6 = findViewById(R.id.d5d_2s10_user_input);
+        EditText value7 = findViewById(R.id.d5d_5Sd_user_input);
 
-        Button reset = findViewById(R.id.d2h_reset);
-        Button button = findViewById(R.id.d2h_submit);
-        TextView answerText = findViewById(R.id.d2h_text);
-        TextView answer = findViewById(R.id.d2h_answer);
+        Button reset = findViewById(R.id.d5d_reset);
+        Button button = findViewById(R.id.d5d_submit);
+        TextView answerText = findViewById(R.id.d5d_text);
+        TextView answer = findViewById(R.id.d5d_answer);
 
         value0.setText("");
         value1.setText("");
