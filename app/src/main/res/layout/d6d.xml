@@ -18,7 +18,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/c2_descr"
+        android:id="@+id/d5d_descr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp" >
+        android:layout_marginBottom="20dp">
 
         <TableRow>
             <TextView
@@ -41,23 +41,44 @@
                 android:layout_height="match_parent" />
 
             <TextView
-                android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:padding="4dp"
+                android:padding="6dp"
                 android:text="@string/e"
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/c2_c2"
+                android:id="@+id/d5d_2c5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:padding="4dp"
-                android:text="C2"
+                android:padding="6dp"
                 android:textColor="@color/black" />
 
+            <TextView
+                android:id="@+id/d5d_2c52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="6dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/d5d_5c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="6dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="6dp"
+                android:text="@string/i"
+                android:textColor="@color/black" />
         </TableRow>
 
         <TableRow android:background="@drawable/table_outline">
@@ -72,7 +93,7 @@
                 android:textColor="@color/black" />
 
             <EditText
-                android:id="@+id/c2_e_user_input"
+                android:id="@+id/d5d_e_user_input"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_outline"
@@ -81,7 +102,7 @@
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/c2_c2_user_input"
+                android:id="@+id/d5d_2c5_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -89,13 +110,106 @@
                 android:minEms="2"
                 android:padding="5dp" />
 
+            <EditText
+                android:id="@+id/d5d_2c52_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:inputType="numberSigned"
+                android:minEms="2"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/d5d_5c2_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:inputType="numberSigned"
+                android:minEms="2"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/d5d_i_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:inputType="numberSigned"
+                android:minEms="2"
+                android:padding="5dp" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/d5d_2s103"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="6dp"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/d5d_2s10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="6dp"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/d5d_5Sd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="6dp"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_outline"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/r_reduc"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/d5d_2s103_user_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_outline"
+                android:inputType="numberSigned"
+                android:minEms="2"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/d5d_2s10_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:inputType="numberSigned"
+                android:minEms="2"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/d5d_5Sd_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:inputType="numberSigned"
+                android:minEms="2"
+                android:padding="5dp" />
         </TableRow>
 
     </TableLayout>
     <!-- -END TABLE LAYOUT- -->
 
     <Button
-        android:id="@+id/c2_submit"
+        android:id="@+id/d6d_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -107,7 +221,7 @@
         android:textSize="15sp" />
 
     <TextView
-        android:id="@+id/c2_text"
+        android:id="@+id/d6d_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -118,7 +232,7 @@
         android:visibility="gone"/>
 
     <TextView
-        android:id="@+id/c2_answer"
+        android:id="@+id/d6d_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp"
@@ -137,7 +251,7 @@
         android:layout_marginEnd="15dp">
 
         <Button
-            android:id="@+id/c2_reset"
+            android:id="@+id/d6d_reset"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/return1"

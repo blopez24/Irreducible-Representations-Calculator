@@ -38,6 +38,7 @@ import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d4d;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d5;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d5d;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d6;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d6d;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.o;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.td;
 
@@ -341,6 +342,8 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void d6d(View view) {/////////////////////////////////////////////
+        Intent it = new Intent(this, d6d.class);
+        startActivity(it);
     }
 
     public void d2h(View view){
