@@ -19,6 +19,8 @@
     <string name="answerText">The reducible representation reduces to: </string>
     <string name="equation">Equation</string>
 
+    <string name="numOfAtoms">Number of atoms: </string>
+
     <!--Strings for each point group description-->
 
 </resources>
