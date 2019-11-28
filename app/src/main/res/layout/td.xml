@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp" >
+        android:layout_marginBottom="20dp">
 
         <TableRow>
             <TextView
@@ -98,7 +98,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_outline"
-                android:inputType="number"
+                android:inputType="numberSigned"
                 android:minEms="2"
                 android:padding="5dp" />
 
@@ -107,7 +107,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:inputType="number"
+                android:inputType="numberSigned"
                 android:minEms="2"
                 android:padding="5dp" />
 
@@ -116,7 +116,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:inputType="number"
+                android:inputType="numberSigned"
                 android:minEms="2"
                 android:padding="5dp" />
 
@@ -125,7 +125,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:inputType="number"
+                android:inputType="numberSigned"
                 android:minEms="2"
                 android:padding="5dp" />
 
@@ -134,7 +134,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:inputType="number"
+                android:inputType="numberSigned"
                 android:minEms="2"
                 android:padding="5dp" />
         </TableRow>

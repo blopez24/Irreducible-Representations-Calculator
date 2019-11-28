@@ -9,33 +9,36 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c1;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c2;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c2h;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c2v;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c3;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c3h;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c3v;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c4;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c4h;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c4v;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c5;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c5v;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c6;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.c6v;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.ci;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.cinfv;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.cs;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d2;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d2d;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d2h;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d3;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d3d;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d4;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d5;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.d6;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.o;
-import com.zybooks.irreduciblerepresentationscalculator.PointGroups.td;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Nonaxial_Group.c1;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cn_Group.c2;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c2h;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnv_Group.c2v;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cn_Group.c3;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c3h;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnv_Group.c3v;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cn_Group.c4;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c4h;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnv_Group.c4v;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cn_Group.c5;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnv_Group.c5v;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cn_Group.c6;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnv_Group.c6v;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Nonaxial_Group.ci;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Linear_Group.cinfv;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Nonaxial_Group.cs;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Dn_Group.d2;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Dnd_Group.d2d;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Dnh_Group.d2h;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Dn_Group.d3;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Dnd_Group.d3d;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Dn_Group.d4;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Dnd_Group.d4d;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Dn_Group.d5;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Dnd_Group.d5d;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Dn_Group.d6;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Dnd_Group.d6d;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cubic_Group.o;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cubic_Group.td;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -327,12 +330,18 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void d4d(View view) { ///////////////////////////////////////////////
+        Intent it = new Intent(this, d4d.class);
+        startActivity(it);
     }
 
     public void d5d(View view) {/////////////////////////////////////////////////////
+        Intent it = new Intent(this, d5d.class);
+        startActivity(it);
     }
 
     public void d6d(View view) {/////////////////////////////////////////////
+        Intent it = new Intent(this, d6d.class);
+        startActivity(it);
     }
 
     public void d2h(View view){
