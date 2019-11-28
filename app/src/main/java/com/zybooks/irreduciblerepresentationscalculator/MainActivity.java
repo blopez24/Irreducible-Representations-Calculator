@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c5h;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c6h;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Nonaxial_Group.c1;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cn_Group.c2;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c2h;
@@ -286,12 +288,14 @@ public class MainActivity extends AppCompatActivity
         startActivity(it);
     }
 
-    public void c5h(View view) {///////////////////////////////////////////////////
-
+    public void c5h(View view) {
+        Intent it = new Intent(this, c5h.class);
+        startActivity(it);
     }
 
-    public void c6h(View view) {///////////////////////////////////////////////////////
-
+    public void c6h(View view) {
+        Intent it = new Intent(this, c6h.class);
+        startActivity(it);
     }
 
     public void d2(View view) {

@@ -26,6 +26,8 @@
         <activity android:name=".PointGroups.Dn_Group.d2" />
         <activity android:name=".PointGroups.Cnh_Group.c3h" />
         <activity android:name=".PointGroups.Cnh_Group.c2h" />
+        <activity android:name=".PointGroups.Cnh_Group.c5h" />
+        <activity android:name=".PointGroups.Cnh_Group.c6h" />
         <activity android:name=".PointGroups.Cnv_Group.c6v" />
         <activity android:name=".PointGroups.Cnv_Group.c5v" />
         <activity android:name=".PointGroups.Cnv_Group.c4v" />

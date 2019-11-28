@@ -37,7 +37,6 @@ public class c6v extends AppCompatActivity {
         c.setText(HtmlCompat.fromHtml("C<sub>2</sub>(Z)",HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
-
     public void result(View view) {
         EditText value1 = findViewById(R.id.c6v_e_user_input);
         EditText value2 = findViewById(R.id.c6v_2c6_user_input);
