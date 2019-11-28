@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:padding="4dp"
+                android:padding="6dp"
                 android:text="@string/e"
                 android:textColor="@color/black" />
 
@@ -54,8 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:padding="4dp"
-                android:text="C3"
+                android:padding="6dp"
                 android:textColor="@color/black" />
 
             <TextView
@@ -63,8 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:padding="4dp"
-                android:text="C3 2"
+                android:padding="6dp"
                 android:textColor="@color/black" />
 
         </TableRow>
@@ -85,7 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:inputType="number"
+                android:inputType="numberSigned"
                 android:minEms="2"
                 android:padding="5dp" />
 
@@ -94,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:inputType="number"
+                android:inputType="numberSigned"
                 android:minEms="2"
                 android:padding="5dp" />
 
@@ -103,7 +101,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:inputType="number"
+                android:inputType="numberSigned"
                 android:minEms="2"
                 android:padding="5dp" />
 

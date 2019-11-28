@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:padding="4dp"
+                android:padding="6dp"
                 android:text="@string/e"
                 android:textColor="@color/black" />
 
@@ -54,8 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:padding="4dp"
-                android:text="C2"
+                android:padding="6dp"
                 android:textColor="@color/black" />
 
         </TableRow>

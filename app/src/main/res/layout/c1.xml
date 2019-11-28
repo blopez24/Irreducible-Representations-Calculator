@@ -57,7 +57,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/table_outline"
                 android:gravity="center"
-                android:padding="5dp"
+                android:padding="6dp"
                 android:text="@string/r_reduc"
                 android:textColor="@color/black" />
 
