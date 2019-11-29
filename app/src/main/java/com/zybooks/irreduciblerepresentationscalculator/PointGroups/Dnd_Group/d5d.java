@@ -24,6 +24,7 @@ public class d5d extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.d5d);
+
         TextView descr = findViewById(R.id.d5d_descr);
         descr.setText(HtmlCompat.fromHtml(
                 "Enter the characters for the reducible representation of the D<sub>5d</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));

@@ -1,9 +1,11 @@
 package com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnv_Group;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -57,6 +59,7 @@ public class c3v extends AppCompatActivity {
             input[1] = Integer.parseInt(value2.getText().toString().trim());
             input[2] = Integer.parseInt(value3.getText().toString().trim());
 
+            hideKeyboard(view);
             td.calculate(input);
             String result = td.getResult();
             answer.setText(result);
@@ -86,5 +89,10 @@ public class c3v extends AppCompatActivity {
         answerText.setVisibility(View.GONE);
         answer.setVisibility(View.GONE);
         reset.setVisibility(View.INVISIBLE);
+    }
+
+    public void hideKeyboard(View view) {
+        InputMethodManager inputMethodManager =(InputMethodManager)getSystemService(Activity.INPUT_METHOD_SERVICE);
+        inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 }

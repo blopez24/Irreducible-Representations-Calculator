@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c5h;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c6h;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Linear_Group.dinfv;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Nonaxial_Group.c1;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cn_Group.c2;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c2h;
@@ -281,17 +284,19 @@ public class MainActivity extends AppCompatActivity
         startActivity(it);
     }
 
-    public void c4h(View view) {////////////////////////////////////////////////////
+    public void c4h(View view) {
         Intent it = new Intent(this, c4h.class);
         startActivity(it);
     }
 
-    public void c5h(View view) {///////////////////////////////////////////////////
-
+    public void c5h(View view) {
+        Intent it = new Intent(this, c5h.class);
+        startActivity(it);
     }
 
-    public void c6h(View view) {///////////////////////////////////////////////////////
-
+    public void c6h(View view) {
+        Intent it = new Intent(this, c6h.class);
+        startActivity(it);
     }
 
     public void d2(View view) {
@@ -329,17 +334,17 @@ public class MainActivity extends AppCompatActivity
         startActivity(it);
     }
 
-    public void d4d(View view) { ///////////////////////////////////////////////
+    public void d4d(View view) {
         Intent it = new Intent(this, d4d.class);
         startActivity(it);
     }
 
-    public void d5d(View view) {/////////////////////////////////////////////////////
+    public void d5d(View view) {
         Intent it = new Intent(this, d5d.class);
         startActivity(it);
     }
 
-    public void d6d(View view) {/////////////////////////////////////////////
+    public void d6d(View view) {
         Intent it = new Intent(this, d6d.class);
         startActivity(it);
     }
@@ -380,5 +385,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void dinfv(View view) {
+        Intent it = new Intent(this, dinfv.class);
+        startActivity(it);
     }
 }

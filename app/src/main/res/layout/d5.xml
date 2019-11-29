@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <include layout="@layout/toolbar"/>
@@ -10,27 +11,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="12dp"
         android:text="@string/step_2"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="23sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/d5_descr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="3dp"
         android:text="@string/step_2_descr"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:textSize="15sp" />
 
     <!-- -START TABLE LAYOUT- -->
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="20dp">
 
         <TableRow>
             <TextView
@@ -41,32 +45,32 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:padding="4dp"
+                android:padding="6dp"
                 android:text="@string/e"
                 android:textColor="@color/black" />
 
             <TextView
+                android:id="@+id/d5_2c5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:padding="4dp"
-                android:text="2C5"
+                android:padding="6dp"
                 android:textColor="@color/black" />
 
             <TextView
+                android:id="@+id/d5_2c52"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:padding="4dp"
-                android:text="2(C5)2"
+                android:padding="6dp"
                 android:textColor="@color/black" />
 
             <TextView
+                android:id="@+id/d5_5c2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:padding="4dp"
-                android:text="5C2"
+                android:padding="6dp"
                 android:textColor="@color/black" />
         </TableRow>
 
@@ -87,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
                 android:background="@drawable/table_outline"
-                android:inputType="number"
+                android:inputType="numberSigned"
                 android:minEms="2"
                 android:padding="5dp" />
 
@@ -97,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
                 android:background="@drawable/table_outline"
-                android:inputType="number"
+                android:inputType="numberSigned"
                 android:minEms="2"
                 android:padding="5dp" />
 
@@ -107,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
                 android:background="@drawable/table_outline"
-                android:inputType="number"
+                android:inputType="numberSigned"
                 android:minEms="2"
                 android:padding="5dp" />
 
@@ -117,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
                 android:background="@drawable/table_outline"
-                android:inputType="number"
+                android:inputType="numberSigned"
                 android:minEms="2"
                 android:padding="5dp" />
         </TableRow>
@@ -125,39 +129,72 @@
     </TableLayout>
     <!-- -END TABLE LAYOUT- -->
 
-    <TextView
-        android:id="@+id/textView8"
+    <Button
+        android:id="@+id/d5_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/step_3"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/bannerColor"
+        android:onClick="result"
         android:text="@string/submit"
-        android:onClick="result"/>
-
-    <Button
-        android:id="@+id/return1"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
-        android:background="#00589d"
-        android:padding="5dp"
-        android:text="@string/step_3_descr"
         android:textColor="#FFFFFF"
-        android:textColorHighlight="#00FFFFFF"
-        android:textSize="12sp"
-        android:onClick="return_1"
-        />
+        android:textSize="15sp" />
 
+    <TextView
+        android:id="@+id/d5_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/answerText"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/d5_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp">
+
+        <Button
+            android:id="@+id/d5_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/return1"
+            android:layout_marginBottom="10dp"
+            android:background="@color/bannerColor"
+            android:onClick="reset"
+            android:padding="8dp"
+            android:text="@string/reset"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/return1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bannerColor"
+            android:onClick="return_1"
+            android:padding="8dp"
+            android:text="@string/step_3_descr"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#00FFFFFF"
+            android:textSize="15sp" />
+    </RelativeLayout>
 </LinearLayout>

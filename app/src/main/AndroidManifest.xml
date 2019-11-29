@@ -15,6 +15,7 @@
         <activity android:name=".PointGroups.Dnh_Group.d2h" />
         <activity android:name=".PointGroups.Cnh_Group.c4h" />
         <activity android:name=".PointGroups.Linear_Group.cinfv" />
+        <activity android:name=".PointGroups.Linear_Group.dinfv" />
         <activity android:name=".PointGroups.Cubic_Group.o" />
         <activity android:name=".PointGroups.Cubic_Group.td" />
         <activity android:name=".PointGroups.Dnd_Group.d3d" />
@@ -26,6 +27,8 @@
         <activity android:name=".PointGroups.Dn_Group.d2" />
         <activity android:name=".PointGroups.Cnh_Group.c3h" />
         <activity android:name=".PointGroups.Cnh_Group.c2h" />
+        <activity android:name=".PointGroups.Cnh_Group.c5h" />
+        <activity android:name=".PointGroups.Cnh_Group.c6h" />
         <activity android:name=".PointGroups.Cnv_Group.c6v" />
         <activity android:name=".PointGroups.Cnv_Group.c5v" />
         <activity android:name=".PointGroups.Cnv_Group.c4v" />

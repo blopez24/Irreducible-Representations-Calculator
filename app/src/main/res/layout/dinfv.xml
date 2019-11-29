@@ -18,7 +18,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/c1_descr"
+        android:id="@+id/dinfh_descr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -34,22 +34,6 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp">
-
-        <TableRow>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/table_outline"
-            android:padding="4dp"
-            android:text="@string/e"
-            android:textColor="@color/black" />
-        </TableRow>
-
         <TableRow android:background="@drawable/table_outline">
 
             <TextView
@@ -57,17 +41,17 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/table_outline"
                 android:gravity="center"
-                android:padding="6dp"
-                android:text="@string/r_reduc"
+                android:padding="5dp"
+                android:text="@string/numOfAtoms"
                 android:textColor="@color/black" />
 
             <EditText
-                android:id="@+id/c1_e_user_input"
+                android:id="@+id/dinfh_user_input"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/table_outline"
                 android:inputType="numberSigned"
-                android:minEms="2"
+                android:minEms="3"
                 android:padding="5dp" />
         </TableRow>
 
@@ -75,7 +59,7 @@
     <!-- -END TABLE LAYOUT- -->
 
     <Button
-        android:id="@+id/c1_submit"
+        android:id="@+id/dinfh_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -87,7 +71,7 @@
         android:textSize="15sp" />
 
     <TextView
-        android:id="@+id/c1_text"
+        android:id="@+id/dinfh_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -98,11 +82,12 @@
         android:visibility="gone"/>
 
     <TextView
-        android:id="@+id/c1_answer"
+        android:id="@+id/dinfh_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp"
         android:textStyle="bold"
+        android:padding="11dp"
         android:textColor="@color/black"
         android:layout_marginTop="10dp"
         android:visibility="gone"
@@ -117,7 +102,7 @@
         android:layout_marginEnd="15dp">
 
         <Button
-            android:id="@+id/c1_reset"
+            android:id="@+id/dinfh_reset"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/return1"
