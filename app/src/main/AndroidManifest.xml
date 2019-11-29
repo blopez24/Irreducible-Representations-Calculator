@@ -13,6 +13,10 @@
         <activity android:name=".PointGroups.Dnd_Group.d5d" />
         <activity android:name=".PointGroups.Dnd_Group.d4d" />
         <activity android:name=".PointGroups.Dnh_Group.d2h" />
+        <activity android:name=".PointGroups.Dnh_Group.d3h" />
+        <activity android:name=".PointGroups.Dnh_Group.d4h" />
+        <activity android:name=".PointGroups.Dnh_Group.d5h" />
+        <activity android:name=".PointGroups.Dnh_Group.d6h" />
         <activity android:name=".PointGroups.Cnh_Group.c4h" />
         <activity android:name=".PointGroups.Linear_Group.cinfv" />
         <activity android:name=".PointGroups.Linear_Group.dinfv" />

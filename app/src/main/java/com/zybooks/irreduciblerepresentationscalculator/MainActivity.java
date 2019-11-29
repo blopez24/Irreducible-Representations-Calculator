@@ -12,6 +12,10 @@ import android.widget.TextView;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c5h;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c6h;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cubic_Group.oh;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Dnh_Group.d3h;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Dnh_Group.d4h;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Dnh_Group.d5h;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Dnh_Group.d6h;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Linear_Group.dinfv;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Nonaxial_Group.c1;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cn_Group.c2;
@@ -356,15 +360,23 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void d3h(View view) {
+        Intent it = new Intent(this, d3h.class);
+        startActivity(it);
     }
 
     public void d4h(View view) {
+        Intent it = new Intent(this, d4h.class);
+        startActivity(it);
     }
 
     public void d5h(View view) {
+        Intent it = new Intent(this, d5h.class);
+        startActivity(it);
     }
 
     public void d6h(View view) {
+        Intent it = new Intent(this, d6h.class);
+        startActivity(it);
     }
 
     public void td(View view) {
