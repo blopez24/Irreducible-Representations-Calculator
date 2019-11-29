@@ -33,21 +33,20 @@ public class o extends AppCompatActivity {
 
         TextView a = findViewById(R.id.o_8c3);
         a.setText(HtmlCompat.fromHtml("8C<sub>3</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
-        TextView b = findViewById(R.id.o_3c2);
-        b.setText(HtmlCompat.fromHtml("3C<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView b = findViewById(R.id.o_6c2);
+        b.setText(HtmlCompat.fromHtml("6C'<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
         TextView c = findViewById(R.id.o_6c4);
-        c.setText(HtmlCompat.fromHtml("6C'<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        c.setText(HtmlCompat.fromHtml("6C<sub>4</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
         TextView d = findViewById(R.id.o_c42);
         d.setText(HtmlCompat.fromHtml("(C<sub>4</sub>)<sup>2</sup>", HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
-
     public void result(View view) {
         EditText value1 = findViewById(R.id.o_e_user_input);
         EditText value2 = findViewById(R.id.o_8c3_user_input);
-        EditText value3 = findViewById(R.id.o_3c2_user_input);
+        EditText value3 = findViewById(R.id.o_6c2_user_input);
         EditText value4 = findViewById(R.id.o_6c4_user_input);
-        EditText value5 = findViewById(R.id.o_6c2_user_input);
+        EditText value5 = findViewById(R.id.o_c42_user_input);
         Button button = findViewById(R.id.o_submit);
         TextView answerText = findViewById(R.id.o_text);
         TextView answer = findViewById(R.id.o_answer);
@@ -91,9 +90,9 @@ public class o extends AppCompatActivity {
     public void reset(View view) {
         EditText value1 = findViewById(R.id.o_e_user_input);
         EditText value2 = findViewById(R.id.o_8c3_user_input);
-        EditText value3 = findViewById(R.id.o_3c2_user_input);
+        EditText value3 = findViewById(R.id.o_6c2_user_input);
         EditText value4 = findViewById(R.id.o_6c4_user_input);
-        EditText value5 = findViewById(R.id.o_6c2_user_input);
+        EditText value5 = findViewById(R.id.o_c42_user_input);
         Button button = findViewById(R.id.o_submit);
         TextView answerText = findViewById(R.id.o_text);
         TextView answer = findViewById(R.id.o_answer);

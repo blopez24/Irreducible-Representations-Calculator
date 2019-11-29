@@ -18,6 +18,7 @@
         <activity android:name=".PointGroups.Linear_Group.dinfv" />
         <activity android:name=".PointGroups.Cubic_Group.o" />
         <activity android:name=".PointGroups.Cubic_Group.td" />
+        <activity android:name=".PointGroups.Cubic_Group.oh" />
         <activity android:name=".PointGroups.Dnd_Group.d3d" />
         <activity android:name=".PointGroups.Dnd_Group.d2d" />
         <activity android:name=".PointGroups.Dn_Group.d6" />

@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c5h;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c6h;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cubic_Group.oh;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Linear_Group.dinfv;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Nonaxial_Group.c1;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cn_Group.c2;
@@ -377,6 +378,8 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void oh(View view) {
+        Intent it = new Intent(this, oh.class);
+        startActivity(it);
     }
 
     public void cinfv(View view) {

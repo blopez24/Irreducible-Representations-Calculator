@@ -18,7 +18,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/o_descr"
+        android:id="@+id/oh_descr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -49,7 +49,7 @@
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/o_8c3"
+                android:id="@+id/oh_8c3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -57,7 +57,7 @@
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/o_6c2"
+                android:id="@+id/oh_6c2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -65,7 +65,7 @@
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/o_6c4"
+                android:id="@+id/oh_6c4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -73,7 +73,114 @@
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/o_c42"
+                android:id="@+id/oh_c42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="6dp"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/table_outline"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_outline"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="@string/r_reduc"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/oh_e_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:inputType="numberSigned"
+                android:minEms="2"
+                android:padding="6dp" />
+
+            <EditText
+                android:id="@+id/oh_8c3_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:inputType="numberSigned"
+                android:minEms="2"
+                android:padding="6dp" />
+
+            <EditText
+                android:id="@+id/oh_6c2_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:inputType="numberSigned"
+                android:minEms="2"
+                android:padding="6dp" />
+
+            <EditText
+                android:id="@+id/oh_6c4_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:inputType="numberSigned"
+                android:minEms="2"
+                android:padding="6dp" />
+
+            <EditText
+                android:id="@+id/oh_c42_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:inputType="numberSigned"
+                android:minEms="2"
+                android:padding="6dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="6dp"
+                android:text="@string/i"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/oh_6s4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="6dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/oh_8s6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="6dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/oh_3sh"
+                android:text="3Sh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_outline"
+                android:padding="6dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/oh_6sd"
+                android:text="6Sd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -93,7 +200,7 @@
                 android:textColor="@color/black" />
 
             <EditText
-                android:id="@+id/o_e_user_input"
+                android:id="@+id/oh_i_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -102,7 +209,7 @@
                 android:padding="6dp" />
 
             <EditText
-                android:id="@+id/o_8c3_user_input"
+                android:id="@+id/oh_6s4_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -111,7 +218,7 @@
                 android:padding="6dp" />
 
             <EditText
-                android:id="@+id/o_6c2_user_input"
+                android:id="@+id/oh_8s6_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -120,7 +227,7 @@
                 android:padding="6dp" />
 
             <EditText
-                android:id="@+id/o_6c4_user_input"
+                android:id="@+id/oh_3sh_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -129,7 +236,7 @@
                 android:padding="6dp" />
 
             <EditText
-                android:id="@+id/o_c42_user_input"
+                android:id="@+id/oh_6sd_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -142,7 +249,7 @@
     <!-- -END TABLE LAYOUT- -->
 
     <Button
-        android:id="@+id/o_submit"
+        android:id="@+id/oh_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -154,7 +261,7 @@
         android:textSize="15sp" />
 
     <TextView
-        android:id="@+id/o_text"
+        android:id="@+id/oh_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -165,7 +272,7 @@
         android:visibility="gone"/>
 
     <TextView
-        android:id="@+id/o_answer"
+        android:id="@+id/oh_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp"
@@ -184,7 +291,7 @@
         android:layout_marginEnd="16dp">
 
         <Button
-            android:id="@+id/o_reset"
+            android:id="@+id/oh_reset"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/return1"
