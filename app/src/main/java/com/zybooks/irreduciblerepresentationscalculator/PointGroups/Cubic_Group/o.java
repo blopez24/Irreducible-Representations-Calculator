@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -17,7 +16,6 @@ import androidx.core.text.HtmlCompat;
 
 import com.zybooks.irreduciblerepresentationscalculator.MainActivity;
 import com.zybooks.irreduciblerepresentationscalculator.R;
-import com.zybooks.irreduciblerepresentationscalculator.Results;
 import com.zybooks.irreduciblerepresentationscalculator.TableData;
 
 public class o extends AppCompatActivity {

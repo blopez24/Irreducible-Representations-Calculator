@@ -14,7 +14,6 @@ import androidx.core.text.HtmlCompat;
 
 import com.zybooks.irreduciblerepresentationscalculator.MainActivity;
 import com.zybooks.irreduciblerepresentationscalculator.R;
-import com.zybooks.irreduciblerepresentationscalculator.Results;
 
 public class c1 extends AppCompatActivity {
 

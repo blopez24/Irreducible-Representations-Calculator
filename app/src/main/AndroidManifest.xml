@@ -43,7 +43,6 @@
         <activity android:name=".PointGroups.Cn_Group.c6" />
         <activity android:name=".PointGroups.Nonaxial_Group.ci" />
         <activity android:name=".PointGroups.Nonaxial_Group.cs" />
-        <activity android:name=".Results" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
