@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -24,14 +25,13 @@ public class dinfv extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dinfv);
 
-        TextView descr = findViewById(R.id.d5d_descr);
+        TextView descr = findViewById(R.id.dinfh_descr);
         descr.setText(HtmlCompat.fromHtml(
                 "Enter the characters for the reducible representation of the D<sub>&#8734;h</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {
         EditText value = findViewById(R.id.dinfh_user_input);
-
         Button reset = findViewById(R.id.dinfh_reset);
         Button button = findViewById(R.id.dinfh_submit);
         TextView answerText = findViewById(R.id.dinfh_text);
@@ -40,13 +40,19 @@ public class dinfv extends AppCompatActivity {
         if (TextUtils.isEmpty(value.getText().toString())){
             Toast.makeText(this,"Please enter the values for each cell!", Toast.LENGTH_LONG).show();
         } else {
+            String StrValue= value.getText().toString();
+            double realValue = Integer.parseInt(StrValue);
             button.setVisibility(View.GONE);
             answerText.setVisibility(View.VISIBLE);
             answer.setVisibility(View.VISIBLE);
             reset.setVisibility(View.VISIBLE);
 
+            int floor = (int) Math.floor(realValue/2.0);
+            int ceil = (int) Math.ceil(realValue/2.13);
             hideKeyboard(view);
-            answer.setText("hi");
+            answer.setText(HtmlCompat.fromHtml(
+                    floor + "A<sub>1g</sub> + " + floor + "E<sub>1g</sub> + " +
+                           ceil + "A<sub>1u</sub> + " + ceil + "E<sub>1u</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
         }
     }
 

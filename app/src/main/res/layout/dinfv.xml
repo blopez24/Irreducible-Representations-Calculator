@@ -87,6 +87,7 @@
         android:layout_height="wrap_content"
         android:textSize="25sp"
         android:textStyle="bold"
+        android:padding="11dp"
         android:textColor="@color/black"
         android:layout_marginTop="10dp"
         android:visibility="gone"

@@ -33,7 +33,7 @@ public class cinfv extends AppCompatActivity {
 
     public void result(View view) {
         EditText value = findViewById(R.id.cinfv_user_input);
-        int realValue = Integer.parseInt(value);
+
         Button reset = findViewById(R.id.cinfv_reset);
         Button button = findViewById(R.id.cinfv_submit);
         TextView answerText = findViewById(R.id.cinfv_text);
@@ -42,6 +42,8 @@ public class cinfv extends AppCompatActivity {
         if (TextUtils.isEmpty(value.getText().toString())){
             Toast.makeText(this,"Please enter the values for each cell!", Toast.LENGTH_LONG).show();
         } else {
+            String StrValue= value.getText().toString();
+            int realValue = Integer.parseInt(StrValue);
             button.setVisibility(View.GONE);
             answerText.setVisibility(View.VISIBLE);
             answer.setVisibility(View.VISIBLE);
@@ -49,7 +51,7 @@ public class cinfv extends AppCompatActivity {
 
             hideKeyboard(view);
             answer.setText(HtmlCompat.fromHtml(
-                    value + "A<sub>1</sub> + " + value + "E<sub>1</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+                    realValue + "A<sub>1</sub> + " + realValue + "E<sub>1</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
         }
     }
 

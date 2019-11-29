@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c5h;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c6h;
+import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Linear_Group.dinfv;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Nonaxial_Group.c1;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cn_Group.c2;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c2h;
@@ -384,5 +385,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void dinfv(View view) {
+        Intent it = new Intent(this, dinfv.class);
+        startActivity(it);
     }
 }
