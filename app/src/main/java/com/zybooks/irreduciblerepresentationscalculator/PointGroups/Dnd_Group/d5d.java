@@ -40,7 +40,7 @@ public class d5d extends AppCompatActivity {
         TextView e = findViewById(R.id.d5d_2s10);
         e.setText(HtmlCompat.fromHtml("2S<sub>10</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
         TextView f = findViewById(R.id.d5d_5Sd);
-        f.setText(HtmlCompat.fromHtml("5S<sub>d</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        f.setText(HtmlCompat.fromHtml("5&#963;<sub>d</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {

@@ -46,6 +46,8 @@ public class c6h extends AppCompatActivity {
         h.setText(HtmlCompat.fromHtml("S<sub>6</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
         TextView i = findViewById(R.id.c6h_s3);
         i.setText(HtmlCompat.fromHtml("S<sub>3</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView j = findViewById(R.id.c6h_sh);
+        j.setText(HtmlCompat.fromHtml("&#963;<sub>h</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {

@@ -171,7 +171,6 @@
 
             <TextView
                 android:id="@+id/oh_3sh"
-                android:text="3Sh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -180,7 +179,6 @@
 
             <TextView
                 android:id="@+id/oh_6sd"
-                android:text="6Sd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"

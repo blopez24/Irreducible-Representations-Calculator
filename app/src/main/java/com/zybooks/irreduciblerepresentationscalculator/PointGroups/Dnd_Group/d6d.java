@@ -45,6 +45,8 @@ public class d6d extends AppCompatActivity {
         f.setText(HtmlCompat.fromHtml("6C'<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
         TextView g = findViewById(R.id.d6d_2s4);
         g.setText(HtmlCompat.fromHtml("2S<sub>4</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView h = findViewById(R.id.d6d_6sd);
+        h.setText(HtmlCompat.fromHtml("6&#963;<sub>d</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {

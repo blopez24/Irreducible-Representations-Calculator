@@ -35,6 +35,12 @@ public class d2h extends AppCompatActivity {
         b.setText(HtmlCompat.fromHtml("C<sub>2</sub>(y)", HtmlCompat.FROM_HTML_MODE_LEGACY));
         TextView c = findViewById(R.id.d2h_x);
         c.setText(HtmlCompat.fromHtml("C<sub>2</sub>(x)", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView d = findViewById(R.id.xy);
+        d.setText(HtmlCompat.fromHtml("&#963;<sub>xy</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView e = findViewById(R.id.xz);
+        e.setText(HtmlCompat.fromHtml("&#963;<sub>xz</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView f = findViewById(R.id.yz);
+        f.setText(HtmlCompat.fromHtml("&#963;<sub>yz</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {

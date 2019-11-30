@@ -51,12 +51,11 @@
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/cs_sh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="6dp"
-                android:text="Sh"
                 android:textColor="@color/black" />
 
         </TableRow>

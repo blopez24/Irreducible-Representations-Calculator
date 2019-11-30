@@ -32,6 +32,8 @@ public class c5v extends AppCompatActivity {
         a.setText(HtmlCompat.fromHtml("2C<sub>5</sub>(Z)",HtmlCompat.FROM_HTML_MODE_LEGACY));
         TextView b = findViewById(R.id.c5v_2c52);
         b.setText(HtmlCompat.fromHtml("2(C<sub>5</sub>)<sup>2</sup>",HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView d = findViewById(R.id.c5v_5sv);
+        d.setText(HtmlCompat.fromHtml("5&#963;<sub>v</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {

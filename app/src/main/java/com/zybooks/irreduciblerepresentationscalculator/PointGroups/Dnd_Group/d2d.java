@@ -34,7 +34,9 @@ public class d2d extends AppCompatActivity {
         TextView b = findViewById(R.id.d2d_c2);
         b.setText(HtmlCompat.fromHtml("C<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
         TextView c = findViewById(R.id.d2d_2c2);
-        c.setText(HtmlCompat.fromHtml("2C<sub>2</sub>'", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        c.setText(HtmlCompat.fromHtml("2C'<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView d = findViewById(R.id.d2d_2sd);
+        d.setText(HtmlCompat.fromHtml("2&#963;<sub>d</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {

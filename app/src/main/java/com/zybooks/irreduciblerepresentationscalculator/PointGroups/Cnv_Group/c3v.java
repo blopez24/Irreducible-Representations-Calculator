@@ -30,6 +30,8 @@ public class c3v extends AppCompatActivity {
                 "Enter the characters for the reducible representation of the C<sub>3v</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));
         TextView a = findViewById(R.id.c3v_2c3);
         a.setText(HtmlCompat.fromHtml("2C<sub>3</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView b = findViewById(R.id.c3v_3sv);
+        b.setText(HtmlCompat.fromHtml("3&#963;<sub>v</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {

@@ -29,6 +29,8 @@ public class c2h extends AppCompatActivity {
                 "Enter the characters for the reducible representation of the C<sub>2h</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));
         TextView c2h_c2 = findViewById(R.id.c2h_c2);
         c2h_c2.setText(HtmlCompat.fromHtml("C<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView d = findViewById(R.id.c2h_sh);
+        d.setText(HtmlCompat.fromHtml("&#963;<sub>h</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
 

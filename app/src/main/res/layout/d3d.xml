@@ -54,7 +54,6 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="6dp"
-                android:text="2C3"
                 android:textColor="@color/black" />
 
             <TextView
@@ -63,7 +62,6 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="6dp"
-                android:text="3C'2"
                 android:textColor="@color/black" />
 
             <TextView
@@ -80,7 +78,6 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="6dp"
-                android:text="2S6"
                 android:textColor="@color/black" />
 
             <TextView
@@ -89,7 +86,6 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="6dp"
-                android:text="3sd"
                 android:textColor="@color/black" />
         </TableRow>
 

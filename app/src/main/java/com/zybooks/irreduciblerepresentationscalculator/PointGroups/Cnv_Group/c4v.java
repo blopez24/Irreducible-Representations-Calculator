@@ -32,6 +32,10 @@ public class c4v extends AppCompatActivity {
         a.setText(HtmlCompat.fromHtml("2C<sub>4</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
         TextView b = findViewById(R.id.c4v_c2);
         b.setText(HtmlCompat.fromHtml("C<sub>2</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView c = findViewById(R.id.c4v_2sv);
+        c.setText(HtmlCompat.fromHtml("2&#963;<sub>v</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView d = findViewById(R.id.c4v_2sd);
+        d.setText(HtmlCompat.fromHtml("2&#963;<sub>d</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {

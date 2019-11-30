@@ -40,7 +40,7 @@ public class d4d extends AppCompatActivity {
         TextView e = findViewById(R.id.d4d_4c2);
         e.setText(HtmlCompat.fromHtml("4C'<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
         TextView f = findViewById(R.id.d4d_4sd);
-        f.setText(HtmlCompat.fromHtml("4S<sub>d</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        f.setText(HtmlCompat.fromHtml("4&#963;<sub>d</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {

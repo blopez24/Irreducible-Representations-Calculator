@@ -35,6 +35,8 @@ public class d3d extends AppCompatActivity {
         b.setText(HtmlCompat.fromHtml("3C'<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
         TextView c = findViewById(R.id.d3d_2s6);
         c.setText(HtmlCompat.fromHtml("2S<sub>6</sub>'", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView d = findViewById(R.id.d3d_3sd);
+        d.setText(HtmlCompat.fromHtml("3&#963;<sub>d</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {

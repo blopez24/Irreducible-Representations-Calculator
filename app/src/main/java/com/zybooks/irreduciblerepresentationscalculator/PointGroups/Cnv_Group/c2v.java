@@ -28,10 +28,13 @@ public class c2v extends AppCompatActivity {
         TextView c2_descr = findViewById(R.id.c2v_descr);
         c2_descr.setText(HtmlCompat.fromHtml(
                 "Enter the characters for the reducible representation of the C<sub>2v</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));
-        TextView c2_c2 = findViewById(R.id.c2v_c2);
-        c2_c2.setText(HtmlCompat.fromHtml("C<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView a = findViewById(R.id.c2v_c2);
+        a.setText(HtmlCompat.fromHtml("C<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView b = findViewById(R.id.c2v_sv);
+        b.setText(HtmlCompat.fromHtml("&#963;<sub>v</sub>(xz)", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView c = findViewById(R.id.c2v_svp);
+        c.setText(HtmlCompat.fromHtml("&#963;<sub>v</sub>(yz)", HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
-
 
     public void result(View view) {
         EditText value1 = findViewById(R.id.c2v_e_user_input);

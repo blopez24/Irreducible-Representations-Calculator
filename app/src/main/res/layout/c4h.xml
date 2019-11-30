@@ -165,7 +165,6 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="6dp"
-                android:text="Sh"
                 android:textColor="@color/black" />
 
             <TextView

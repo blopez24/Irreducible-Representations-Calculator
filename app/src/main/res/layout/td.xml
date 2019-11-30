@@ -78,7 +78,6 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="6dp"
-                android:text="6sd"
                 android:textColor="@color/black" />
         </TableRow>
 

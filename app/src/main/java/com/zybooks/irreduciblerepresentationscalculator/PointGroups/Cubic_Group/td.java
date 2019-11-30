@@ -35,6 +35,8 @@ public class td extends AppCompatActivity {
         b.setText(HtmlCompat.fromHtml("3C<sub>2</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
         TextView c = findViewById(R.id.td_6s4);
         c.setText(HtmlCompat.fromHtml("6S<sub>4</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView f = findViewById(R.id.td_6sd);
+        f.setText(HtmlCompat.fromHtml("6&#963;<sub>d</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {

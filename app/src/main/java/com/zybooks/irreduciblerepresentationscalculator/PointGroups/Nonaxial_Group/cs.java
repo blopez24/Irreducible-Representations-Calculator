@@ -26,6 +26,8 @@ public class cs extends AppCompatActivity {
         TextView cs_descr = findViewById(R.id.cs_descr);
         cs_descr.setText(HtmlCompat.fromHtml(
                 "Enter the characters for the reducible representation of the C<sub>s</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView i = findViewById(R.id.cs_sh);
+        i.setText(HtmlCompat.fromHtml("&#963;<sub>h</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
 

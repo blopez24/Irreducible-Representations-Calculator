@@ -73,11 +73,11 @@
                 android:textColor="@color/black" />
 
             <TextView
+                android:id="@+id/d2d_2sd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="6dp"
-                android:text="2Sd"
                 android:textColor="@color/black" />
         </TableRow>
 

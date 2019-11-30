@@ -187,7 +187,6 @@
 
             <TextView
                 android:id="@+id/c6h_sh"
-                android:text="Sh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
