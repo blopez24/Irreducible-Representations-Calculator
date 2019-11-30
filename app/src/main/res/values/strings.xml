@@ -22,5 +22,84 @@
     <string name="numOfAtoms">Number of atoms: </string>
 
     <!--Strings for each point group description-->
+    <string-array name="point_name">
+        <item>SELECT A POINT GROUP</item>
+        <item>Nonaxial Groups</item>
+        <item>Cn Groups</item>
+        <item>Cnv Groups</item>
+        <item>Cnh Groups</item>
+        <item>Dn Groups</item>
+        <item>Dnd Groups</item>
+        <item>Dnh Groups</item>
+        <item>Cubic Groups</item>
+        <item>Linear Groups</item>
+    </string-array>
 
+    <string-array name="nonaxial">
+        <item>C1</item>
+        <item>Cs</item>
+        <item>Ci</item>
+    </string-array>
+
+    <string-array name="cn">
+        <item>C2</item>
+        <item>C3</item>
+        <item>C4</item>
+        <item>C5</item>
+        <item>C6</item>
+    </string-array>
+
+    <string-array name="cnv">
+        <item>C2v</item>
+        <item>C3v</item>
+        <item>C4v</item>
+        <item>C5v</item>
+        <item>C6v</item>
+    </string-array>
+
+    <string-array name="cnh">
+        <item>C2h</item>
+        <item>C3h</item>
+        <item>C4h</item>
+        <item>C5h</item>
+        <item>C6h</item>
+    </string-array>
+
+    <string-array name="Dn">
+        <item>D1</item>
+        <item>D2</item>
+        <item>D3</item>
+        <item>D4</item>
+        <item>D5</item>
+        <item>D6</item>
+    </string-array>
+
+    <string-array name="Dnd">
+        <item>D1d</item>
+        <item>D2d</item>
+        <item>D3d</item>
+        <item>D4d</item>
+        <item>D5d</item>
+        <item>D6d</item>
+    </string-array>
+
+    <string-array name="Dnh">
+        <item>D1h</item>
+        <item>D2h</item>
+        <item>D3h</item>
+        <item>D4h</item>
+        <item>D5h</item>
+        <item>D6h</item>
+    </string-array>
+
+    <string-array name="cubic">
+        <item>Td</item>
+        <item>O</item>
+        <item>Oh</item>
+    </string-array>
+
+    <string-array name="linear">
+        <item>Coov</item>
+        <item>Dooh</item>
+    </string-array>
 </resources>

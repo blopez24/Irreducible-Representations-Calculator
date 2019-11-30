@@ -23,15 +23,14 @@
             android:orientation="vertical" >
 
 
-
             <TextView
                 android:id="@+id/brief_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="2dp"
                 android:text="@string/app_description"
-                android:textColor="#000000"
-                android:textSize="14sp" />
+                android:textColor="@color/black"
+                android:textSize="15sp" />
 
             <ImageView
                 android:id="@+id/irc_equation_icon"
@@ -47,10 +46,139 @@
                 android:id="@+id/step1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="2dp"
                 android:text="@string/step_one"
-                android:textColor="#000000"
-                android:textSize="14sp" />
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/point_groups_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/point_group_text"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/bannerColor"
+                    android:backgroundTintMode="add"
+                    android:dropDownWidth="wrap_content"
+                    android:entries="@array/point_name"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown" />
+
+                <Spinner
+                    android:id="@+id/nonaxial"
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:entries="@array/nonaxial"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/cn"
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:entries="@array/cn"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/cnv"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:entries="@array/cnv"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/cnh"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:entries="@array/cnh"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/dn"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:entries="@array/Dn"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/dnd"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:entries="@array/Dnd"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/dnh"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:entries="@array/Dnh"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/cubic"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:entries="@array/cubic"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/linear"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:entries="@array/linear"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/table"
@@ -61,14 +189,14 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/point_groups_text"
+                    android:id="@+id/point_groups_texts"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:gravity="center"
                     android:text="@string/point_group_text"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
                     android:textStyle="bold" />
 
                 <LinearLayout
@@ -76,7 +204,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
 
                     <TextView
                         android:id="@+id/nonaxial_group_text"
@@ -560,6 +687,7 @@
             </LinearLayout>
 
         </LinearLayout>
+
     </ScrollView>
 
 

@@ -4,9 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.text.HtmlCompat;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cnh_Group.c5h;
@@ -57,7 +62,145 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final Spinner nonaxial = findViewById(R.id.nonaxial);
+        final Spinner cn = findViewById(R.id.cn);
+        final Spinner cnv = findViewById(R.id.cnv);
+        final Spinner cnh = findViewById(R.id.cnh);
+        final Spinner dn = findViewById(R.id.dn);
+        final Spinner dnd = findViewById(R.id.dnd);
+        final Spinner dnh = findViewById(R.id.dnh);
+        final Spinner cubic = findViewById(R.id.cubic);
+        final Spinner linear = findViewById(R.id.linear);
+
+        cn.setVisibility(View.GONE);
+        nonaxial.setVisibility(View.GONE);
+        cnv.setVisibility(View.GONE);
+        cnh.setVisibility(View.GONE);
+        dn.setVisibility(View.GONE);
+        dnd.setVisibility(View.GONE);
+        dnh.setVisibility(View.GONE);
+        cubic.setVisibility(View.GONE);
+        linear.setVisibility(View.GONE);
+
         setTexts();
+        Spinner pointList = findViewById(R.id.spinner);
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.point_name, R.layout.spinner_item);
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown);
+        pointList.setAdapter(adapter);
+        pointList.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Log.i("main", "position: " + position);
+                linear.setVisibility(View.GONE);
+                cn.setVisibility(View.GONE);
+                nonaxial.setVisibility(View.GONE);
+                cnv.setVisibility(View.GONE);
+                cnh.setVisibility(View.GONE);
+                dn.setVisibility(View.GONE);
+                dnd.setVisibility(View.GONE);
+                dnh.setVisibility(View.GONE);
+                cubic.setVisibility(View.GONE);
+                //((TextView) parent.getChildAt(0)).setTextColor(Color.WHITE);
+                //((TextView) parent.getChildAt(0)).setTextSize(15);
+                switch (position){
+                    case 1:
+                        ArrayAdapter adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.nonaxial, R.layout.spinner_item);
+                        adapter.setDropDownViewResource(R.layout.spinner_dropdown);
+                        nonaxial.setAdapter(adapter);
+                        nonaxial.setVisibility(View.VISIBLE);
+                        break;
+                    case 2:
+                        cn.setVisibility(View.VISIBLE);
+                        break;
+                    case 3:
+                        cnv.setVisibility(View.VISIBLE);
+
+                        break;
+                    case 4:
+                        cnh.setVisibility(View.VISIBLE);
+                        cn.setVisibility(View.GONE);
+                        nonaxial.setVisibility(View.GONE);
+                        cnv.setVisibility(View.GONE);
+                        dn.setVisibility(View.GONE);
+                        dnd.setVisibility(View.GONE);
+                        dnh.setVisibility(View.GONE);
+                        cubic.setVisibility(View.GONE);
+                        linear.setVisibility(View.GONE);
+                        break;
+                    case 5:
+                        dn.setVisibility(View.VISIBLE);
+                        cn.setVisibility(View.GONE);
+                        nonaxial.setVisibility(View.GONE);
+                        cnv.setVisibility(View.GONE);
+                        cnh.setVisibility(View.GONE);
+                        dnd.setVisibility(View.GONE);
+                        dnh.setVisibility(View.GONE);
+                        cubic.setVisibility(View.GONE);
+                        linear.setVisibility(View.GONE);
+                        break;
+                    case 6:
+                        dnd.setVisibility(View.VISIBLE);
+                        cn.setVisibility(View.GONE);
+                        nonaxial.setVisibility(View.GONE);
+                        cnv.setVisibility(View.GONE);
+                        cnh.setVisibility(View.GONE);
+                        dn.setVisibility(View.GONE);
+                        dnh.setVisibility(View.GONE);
+                        cubic.setVisibility(View.GONE);
+                        linear.setVisibility(View.GONE);
+                        break;
+                    case 7:
+                        dnh.setVisibility(View.VISIBLE);
+                        cn.setVisibility(View.GONE);
+                        nonaxial.setVisibility(View.GONE);
+                        cnv.setVisibility(View.GONE);
+                        cnh.setVisibility(View.GONE);
+                        dn.setVisibility(View.GONE);
+                        dnd.setVisibility(View.GONE);
+                        cubic.setVisibility(View.GONE);
+                        linear.setVisibility(View.GONE);
+                        break;
+                    case 8:
+                        cubic.setVisibility(View.VISIBLE);
+                        cn.setVisibility(View.GONE);
+                        nonaxial.setVisibility(View.GONE);
+                        cnv.setVisibility(View.GONE);
+                        cnh.setVisibility(View.GONE);
+                        dn.setVisibility(View.GONE);
+                        dnd.setVisibility(View.GONE);
+                        dnh.setVisibility(View.GONE);
+                        linear.setVisibility(View.GONE);
+                        break;
+                    case 9:
+                        linear.setVisibility(View.VISIBLE);
+                        cn.setVisibility(View.GONE);
+                        nonaxial.setVisibility(View.GONE);
+                        cnv.setVisibility(View.GONE);
+                        cnh.setVisibility(View.GONE);
+                        dn.setVisibility(View.GONE);
+                        dnd.setVisibility(View.GONE);
+                        dnh.setVisibility(View.GONE);
+                        cubic.setVisibility(View.GONE);
+                        break;
+                    default:
+                        linear.setVisibility(View.GONE);
+                        cn.setVisibility(View.GONE);
+                        nonaxial.setVisibility(View.GONE);
+                        cnv.setVisibility(View.GONE);
+                        cnh.setVisibility(View.GONE);
+                        dn.setVisibility(View.GONE);
+                        dnd.setVisibility(View.GONE);
+                        dnh.setVisibility(View.GONE);
+                        cubic.setVisibility(View.GONE);
+                        break;
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
     }
 
     public void setTexts()
@@ -403,4 +546,6 @@ public class MainActivity extends AppCompatActivity
         Intent it = new Intent(this, dinfv.class);
         startActivity(it);
     }
+
+
 }
