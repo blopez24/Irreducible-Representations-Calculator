@@ -36,12 +36,14 @@
     </string-array>
 
     <string-array name="nonaxial">
+        <item>SELECT</item>
         <item>C1</item>
         <item>Cs</item>
         <item>Ci</item>
     </string-array>
 
     <string-array name="cn">
+        <item>SELECT</item>
         <item>C2</item>
         <item>C3</item>
         <item>C4</item>
@@ -50,6 +52,7 @@
     </string-array>
 
     <string-array name="cnv">
+        <item>SELECT</item>
         <item>C2v</item>
         <item>C3v</item>
         <item>C4v</item>
@@ -58,6 +61,7 @@
     </string-array>
 
     <string-array name="cnh">
+        <item>SELECT</item>
         <item>C2h</item>
         <item>C3h</item>
         <item>C4h</item>
@@ -66,6 +70,7 @@
     </string-array>
 
     <string-array name="Dn">
+        <item>SELECT</item>
         <item>D1</item>
         <item>D2</item>
         <item>D3</item>
@@ -75,6 +80,7 @@
     </string-array>
 
     <string-array name="Dnd">
+        <item>SELECT</item>
         <item>D1d</item>
         <item>D2d</item>
         <item>D3d</item>
@@ -84,6 +90,7 @@
     </string-array>
 
     <string-array name="Dnh">
+        <item>SELECT</item>
         <item>D1h</item>
         <item>D2h</item>
         <item>D3h</item>
@@ -93,12 +100,14 @@
     </string-array>
 
     <string-array name="cubic">
+        <item>SELECT</item>
         <item>Td</item>
         <item>O</item>
         <item>Oh</item>
     </string-array>
 
     <string-array name="linear">
+        <item>SELECT</item>
         <item>Coov</item>
         <item>Dooh</item>
     </string-array>

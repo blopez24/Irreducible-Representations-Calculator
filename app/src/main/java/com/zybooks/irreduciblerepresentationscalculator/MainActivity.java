@@ -100,87 +100,52 @@ public class MainActivity extends AppCompatActivity
                 dnd.setVisibility(View.GONE);
                 dnh.setVisibility(View.GONE);
                 cubic.setVisibility(View.GONE);
-                //((TextView) parent.getChildAt(0)).setTextColor(Color.WHITE);
-                //((TextView) parent.getChildAt(0)).setTextSize(15);
                 switch (position){
                     case 1:
                         ArrayAdapter adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.nonaxial, R.layout.spinner_item);
                         adapter.setDropDownViewResource(R.layout.spinner_dropdown);
                         nonaxial.setAdapter(adapter);
                         nonaxial.setVisibility(View.VISIBLE);
+                        nonaxial.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                            @Override
+                            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position){
+                                    case 1:
+                                        Intent intent = new Intent(MainActivity.this, c1.class);
+                                        startActivity(intent);
+                                    case 2:
+                                    case 3:
+                                    default:
+                                }
+                            }
+
+                            @Override
+                            public void onNothingSelected(AdapterView<?> parent) {}
+                        });
                         break;
                     case 2:
                         cn.setVisibility(View.VISIBLE);
                         break;
                     case 3:
                         cnv.setVisibility(View.VISIBLE);
-
                         break;
                     case 4:
                         cnh.setVisibility(View.VISIBLE);
-                        cn.setVisibility(View.GONE);
-                        nonaxial.setVisibility(View.GONE);
-                        cnv.setVisibility(View.GONE);
-                        dn.setVisibility(View.GONE);
-                        dnd.setVisibility(View.GONE);
-                        dnh.setVisibility(View.GONE);
-                        cubic.setVisibility(View.GONE);
-                        linear.setVisibility(View.GONE);
                         break;
                     case 5:
                         dn.setVisibility(View.VISIBLE);
-                        cn.setVisibility(View.GONE);
-                        nonaxial.setVisibility(View.GONE);
-                        cnv.setVisibility(View.GONE);
-                        cnh.setVisibility(View.GONE);
-                        dnd.setVisibility(View.GONE);
-                        dnh.setVisibility(View.GONE);
-                        cubic.setVisibility(View.GONE);
-                        linear.setVisibility(View.GONE);
                         break;
                     case 6:
                         dnd.setVisibility(View.VISIBLE);
-                        cn.setVisibility(View.GONE);
-                        nonaxial.setVisibility(View.GONE);
-                        cnv.setVisibility(View.GONE);
-                        cnh.setVisibility(View.GONE);
-                        dn.setVisibility(View.GONE);
-                        dnh.setVisibility(View.GONE);
-                        cubic.setVisibility(View.GONE);
-                        linear.setVisibility(View.GONE);
                         break;
                     case 7:
                         dnh.setVisibility(View.VISIBLE);
-                        cn.setVisibility(View.GONE);
-                        nonaxial.setVisibility(View.GONE);
-                        cnv.setVisibility(View.GONE);
-                        cnh.setVisibility(View.GONE);
-                        dn.setVisibility(View.GONE);
-                        dnd.setVisibility(View.GONE);
-                        cubic.setVisibility(View.GONE);
-                        linear.setVisibility(View.GONE);
                         break;
                     case 8:
                         cubic.setVisibility(View.VISIBLE);
-                        cn.setVisibility(View.GONE);
-                        nonaxial.setVisibility(View.GONE);
-                        cnv.setVisibility(View.GONE);
-                        cnh.setVisibility(View.GONE);
-                        dn.setVisibility(View.GONE);
-                        dnd.setVisibility(View.GONE);
-                        dnh.setVisibility(View.GONE);
-                        linear.setVisibility(View.GONE);
                         break;
                     case 9:
                         linear.setVisibility(View.VISIBLE);
-                        cn.setVisibility(View.GONE);
-                        nonaxial.setVisibility(View.GONE);
-                        cnv.setVisibility(View.GONE);
-                        cnh.setVisibility(View.GONE);
-                        dn.setVisibility(View.GONE);
-                        dnd.setVisibility(View.GONE);
-                        dnh.setVisibility(View.GONE);
-                        cubic.setVisibility(View.GONE);
                         break;
                     default:
                         linear.setVisibility(View.GONE);

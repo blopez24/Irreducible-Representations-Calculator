@@ -83,7 +83,7 @@
                 <Spinner
                     android:id="@+id/nonaxial"
                     android:layout_height="wrap_content"
-                    android:layout_width="100dp"
+                    android:layout_width="140dp"
                     android:entries="@array/nonaxial"
                     android:background="@color/bannerColor"
                     android:dropDownWidth="wrap_content"
