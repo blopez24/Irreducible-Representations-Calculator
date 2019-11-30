@@ -66,10 +66,9 @@ public class c2v extends AppCompatActivity {
         input[2] = Integer.parseInt(value3.getText().toString().trim());
         input[3] = Integer.parseInt(value4.getText().toString().trim());
 
-            td.calculate(input);
-            String result = td.getResult();
-            Log.i("c2v", "results: " + result);
-            answer.setText(result);
+        td.calculate(input);
+        String result = td.getResult();
+        answer.setText(result);
         }
     }
 

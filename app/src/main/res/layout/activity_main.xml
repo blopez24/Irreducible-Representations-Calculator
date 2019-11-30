@@ -94,7 +94,7 @@
                 <Spinner
                     android:id="@+id/cn"
                     android:layout_height="wrap_content"
-                    android:layout_width="100dp"
+                    android:layout_width="140dp"
                     android:entries="@array/cn"
                     android:background="@color/bannerColor"
                     android:dropDownWidth="wrap_content"
@@ -105,7 +105,7 @@
                 <Spinner
                     android:id="@+id/cnv"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
+                    android:layout_width="140dp"
                     android:entries="@array/cnv"
                     android:background="@color/bannerColor"
                     android:dropDownWidth="wrap_content"
@@ -116,7 +116,7 @@
                 <Spinner
                     android:id="@+id/cnh"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
+                    android:layout_width="140dp"
                     android:entries="@array/cnh"
                     android:background="@color/bannerColor"
                     android:dropDownWidth="wrap_content"
@@ -127,7 +127,7 @@
                 <Spinner
                     android:id="@+id/dn"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
+                    android:layout_width="140dp"
                     android:entries="@array/Dn"
                     android:background="@color/bannerColor"
                     android:dropDownWidth="wrap_content"
@@ -138,7 +138,7 @@
                 <Spinner
                     android:id="@+id/dnd"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
+                    android:layout_width="140dp"
                     android:entries="@array/Dnd"
                     android:background="@color/bannerColor"
                     android:dropDownWidth="wrap_content"
@@ -149,7 +149,7 @@
                 <Spinner
                     android:id="@+id/dnh"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
+                    android:layout_width="140dp"
                     android:entries="@array/Dnh"
                     android:background="@color/bannerColor"
                     android:dropDownWidth="wrap_content"
@@ -160,7 +160,7 @@
                 <Spinner
                     android:id="@+id/cubic"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
+                    android:layout_width="140dp"
                     android:entries="@array/cubic"
                     android:background="@color/bannerColor"
                     android:dropDownWidth="wrap_content"
@@ -171,7 +171,7 @@
                 <Spinner
                     android:id="@+id/linear"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
+                    android:layout_width="140dp"
                     android:entries="@array/linear"
                     android:background="@color/bannerColor"
                     android:dropDownWidth="wrap_content"
@@ -180,6 +180,7 @@
                     android:visibility="gone"/>
             </LinearLayout>
 
+            <!--
             <LinearLayout
                 android:id="@+id/table"
                 android:layout_width="match_parent"
@@ -685,6 +686,7 @@
                 </LinearLayout>
 
             </LinearLayout>
+            -->
 
         </LinearLayout>
 

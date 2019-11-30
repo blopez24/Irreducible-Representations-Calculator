@@ -106,7 +106,7 @@ public class TableData
 
     }
 
-    public String getResultsFormat(int[] array)
+    private String getResultsFormat(int[] array)
     {
         String formattedResults = "";
         int nonZeroes = 0;
@@ -147,6 +147,4 @@ public class TableData
     public String getResult(){
         return result;
     }
-
-
 }

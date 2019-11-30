@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity
         cubic.setVisibility(View.GONE);
         linear.setVisibility(View.GONE);
 
-        setTexts();
+        //setTexts();
         Spinner pointList = findViewById(R.id.spinner);
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.point_name, R.layout.spinner_item);
         adapter.setDropDownViewResource(R.layout.spinner_dropdown);
@@ -101,53 +101,321 @@ public class MainActivity extends AppCompatActivity
                 dnh.setVisibility(View.GONE);
                 cubic.setVisibility(View.GONE);
                 switch (position){
-                    case 1:
-                        ArrayAdapter adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.nonaxial, R.layout.spinner_item);
-                        adapter.setDropDownViewResource(R.layout.spinner_dropdown);
-                        nonaxial.setAdapter(adapter);
+                    case 1: // nonaxial group
+                        ArrayAdapter na_adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.nonaxial, R.layout.spinner_item);
+                        na_adapter.setDropDownViewResource(R.layout.spinner_dropdown);
+                        nonaxial.setAdapter(na_adapter);
                         nonaxial.setVisibility(View.VISIBLE);
                         nonaxial.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                             @Override
                             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                                 switch (position){
-                                    case 1:
+                                    case 1: //c1
                                         Intent intent = new Intent(MainActivity.this, c1.class);
                                         startActivity(intent);
-                                    case 2:
-                                    case 3:
+                                        break;
+                                    case 2: //cs
+                                        Intent intent2 = new Intent(MainActivity.this, cs.class);
+                                        startActivity(intent2);
+                                        break;
+                                    case 3: //ci
+                                        Intent intent3 = new Intent(MainActivity.this, ci.class);
+                                        startActivity(intent3);
+                                        break;
                                     default:
                                 }
                             }
-
                             @Override
                             public void onNothingSelected(AdapterView<?> parent) {}
                         });
                         break;
-                    case 2:
+                    // end of nonaxial group =========
+
+                    case 2: //cn
+                        ArrayAdapter cn_adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.cn, R.layout.spinner_item);
+                        cn_adapter.setDropDownViewResource(R.layout.spinner_dropdown);
+                        cn.setAdapter(cn_adapter);
                         cn.setVisibility(View.VISIBLE);
+                        cn.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                            @Override
+                            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position){
+                                    case 1: //c2
+                                        Intent it = new Intent(MainActivity.this, c2.class);
+                                        startActivity(it);
+                                        break;
+                                    case 2: //c3
+                                        Intent it2 = new Intent(MainActivity.this, c3.class);
+                                        startActivity(it2);
+                                        break;
+                                    case 3: //c4
+                                        Intent it3 = new Intent(MainActivity.this, c4.class);
+                                        startActivity(it3);
+                                        break;
+                                    case 4: //c5
+                                        Intent it4 = new Intent(MainActivity.this, c5.class);
+                                        startActivity(it4);
+                                        break;
+                                    case 5: //c6
+                                        Intent it5 = new Intent(MainActivity.this, c6.class);
+                                        startActivity(it5);
+                                        break;
+                                    default:
+                                }
+                            }
+                            @Override
+                            public void onNothingSelected(AdapterView<?> parent) {}
+                        });
                         break;
-                    case 3:
+                    // end of cn group =====================
+
+                    case 3: // cnv
+                        ArrayAdapter cnv_adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.cnv, R.layout.spinner_item);
+                        cnv_adapter.setDropDownViewResource(R.layout.spinner_dropdown);
+                        cnv.setAdapter(cnv_adapter);
                         cnv.setVisibility(View.VISIBLE);
+                        cnv.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                            @Override
+                            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position){
+                                    case 1: //c2v
+                                        Intent it = new Intent(MainActivity.this, c2v.class);
+                                        startActivity(it);
+                                        break;
+                                    case 2: //c3v
+                                        Intent it2 = new Intent(MainActivity.this, c3v.class);
+                                        startActivity(it2);
+                                        break;
+                                    case 3: //c4v
+                                        Intent it3 = new Intent(MainActivity.this, c4v.class);
+                                        startActivity(it3);
+                                        break;
+                                    case 4: //c5v
+                                        Intent it4 = new Intent(MainActivity.this, c5v.class);
+                                        startActivity(it4);
+                                        break;
+                                    case 5: //c6v
+                                        Intent it5 = new Intent(MainActivity.this, c6v.class);
+                                        startActivity(it5);
+                                        break;
+                                    default:
+                                }
+                            }
+                            @Override
+                            public void onNothingSelected(AdapterView<?> parent) {}
+                        });
                         break;
-                    case 4:
+                    // end of cnv group ============================
+
+                    case 4: // cnh
+                        ArrayAdapter cnh_adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.cnh, R.layout.spinner_item);
+                        cnh_adapter.setDropDownViewResource(R.layout.spinner_dropdown);
+                        cnh.setAdapter(cnh_adapter);
                         cnh.setVisibility(View.VISIBLE);
+                        cnh.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                            @Override
+                            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position){
+                                    case 1: //c2h
+                                        Intent it = new Intent(MainActivity.this, c2h.class);
+                                        startActivity(it);
+                                        break;
+                                    case 2: //c3h
+                                        Intent it2 = new Intent(MainActivity.this, c3h.class);
+                                        startActivity(it2);
+                                        break;
+                                    case 3: //c4h
+                                        Intent it3 = new Intent(MainActivity.this, c4h.class);
+                                        startActivity(it3);
+                                        break;
+                                    case 4: //c5h
+                                        Intent it4 = new Intent(MainActivity.this, c5h.class);
+                                        startActivity(it4);
+                                        break;
+                                    case 5: //c6h
+                                        Intent it5 = new Intent(MainActivity.this, c6h.class);
+                                        startActivity(it5);
+                                        break;
+                                    default:
+                                }
+                            }
+                            @Override
+                            public void onNothingSelected(AdapterView<?> parent) {}
+                        });
                         break;
-                    case 5:
+                    // end of cnh group ========================
+
+                    case 5: // dn
+                        ArrayAdapter dn_adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Dn, R.layout.spinner_item);
+                        dn_adapter.setDropDownViewResource(R.layout.spinner_dropdown);
+                        dn.setAdapter(dn_adapter);
                         dn.setVisibility(View.VISIBLE);
+                        dn.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                            @Override
+                            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position){
+                                    case 1: //d2
+                                        Intent it = new Intent(MainActivity.this, d2.class);
+                                        startActivity(it);
+                                        break;
+                                    case 2: //d3
+                                        Intent it2 = new Intent(MainActivity.this, d3.class);
+                                        startActivity(it2);
+                                        break;
+                                    case 3: //d4
+                                        Intent it3 = new Intent(MainActivity.this, d4.class);
+                                        startActivity(it3);
+                                        break;
+                                    case 4: //d5
+                                        Intent it4 = new Intent(MainActivity.this, d5.class);
+                                        startActivity(it4);
+                                        break;
+                                    case 5: //d6
+                                        Intent it5 = new Intent(MainActivity.this, d6.class);
+                                        startActivity(it5);
+                                        break;
+                                    default:
+                                }
+                            }
+                            @Override
+                            public void onNothingSelected(AdapterView<?> parent) {}
+                        });
                         break;
+                    // end of dn group =================================
+
                     case 6:
+                        ArrayAdapter dnd_adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Dnd, R.layout.spinner_item);
+                        dnd_adapter.setDropDownViewResource(R.layout.spinner_dropdown);
+                        dnd.setAdapter(dnd_adapter);
                         dnd.setVisibility(View.VISIBLE);
+                        dnd.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                            @Override
+                            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position){
+                                    case 1: //d2d
+                                        Intent it = new Intent(MainActivity.this, d2d.class);
+                                        startActivity(it);
+                                        break;
+                                    case 2: //d3d
+                                        Intent it2 = new Intent(MainActivity.this, d3d.class);
+                                        startActivity(it2);
+                                        break;
+                                    case 3: //d4d
+                                        Intent it3 = new Intent(MainActivity.this, d4d.class);
+                                        startActivity(it3);
+                                        break;
+                                    case 4: //d5d
+                                        Intent it4 = new Intent(MainActivity.this, d5d.class);
+                                        startActivity(it4);
+                                        break;
+                                    case 5: //d6d
+                                        Intent it5 = new Intent(MainActivity.this, d6d.class);
+                                        startActivity(it5);
+                                        break;
+                                    default:
+                                }
+                            }
+                            @Override
+                            public void onNothingSelected(AdapterView<?> parent) {}
+                        });
                         break;
-                    case 7:
+                    // end of dnd group ================================
+
+                    case 7: //dnh
+                        ArrayAdapter dnh_adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Dnh, R.layout.spinner_item);
+                        dnh_adapter.setDropDownViewResource(R.layout.spinner_dropdown);
+                        dnh.setAdapter(dnh_adapter);
                         dnh.setVisibility(View.VISIBLE);
+                        dnh.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                            @Override
+                            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position){
+                                    case 1: //d2h
+                                        Intent it = new Intent(MainActivity.this, d2h.class);
+                                        startActivity(it);
+                                        break;
+                                    case 2: //d3h
+                                        Intent it2 = new Intent(MainActivity.this, d3h.class);
+                                        startActivity(it2);
+                                        break;
+                                    case 3: //d4h
+                                        Intent it3 = new Intent(MainActivity.this, d4h.class);
+                                        startActivity(it3);
+                                        break;
+                                    case 4: //d5h
+                                        Intent it4 = new Intent(MainActivity.this, d5h.class);
+                                        startActivity(it4);
+                                        break;
+                                    case 5: //d6h
+                                        Intent it5 = new Intent(MainActivity.this, d6h.class);
+                                        startActivity(it5);
+                                        break;
+                                    default:
+                                }
+                            }
+                            @Override
+                            public void onNothingSelected(AdapterView<?> parent) {}
+                        });
                         break;
-                    case 8:
+                    // end of dnh group ============================
+
+                    case 8: //cubic
+                        ArrayAdapter cubic_adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.cubic, R.layout.spinner_item);
+                        cubic_adapter.setDropDownViewResource(R.layout.spinner_dropdown);
+                        cubic.setAdapter(cubic_adapter);
                         cubic.setVisibility(View.VISIBLE);
+                        cubic.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                            @Override
+                            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position){
+                                    case 1: //td
+                                        Intent it = new Intent(MainActivity.this, td.class);
+                                        startActivity(it);
+                                        break;
+                                    case 2: //o
+                                        Intent it2 = new Intent(MainActivity.this, o.class);
+                                        startActivity(it2);
+                                        break;
+                                    case 3: //oh
+                                        Intent it3 = new Intent(MainActivity.this, oh.class);
+                                        startActivity(it3);
+                                        break;
+                                    default:
+                                }
+                            }
+                            @Override
+                            public void onNothingSelected(AdapterView<?> parent) {}
+                        });
                         break;
-                    case 9:
+                    // end of cubic group ================================
+
+                    case 9: //linear
+                        ArrayAdapter linear_adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.linear, R.layout.spinner_item);
+                        linear_adapter.setDropDownViewResource(R.layout.spinner_dropdown);
+                        linear.setAdapter(linear_adapter);
                         linear.setVisibility(View.VISIBLE);
+                        linear.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                            @Override
+                            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position){
+                                    case 1: //cinfv
+                                        Intent it = new Intent(MainActivity.this, cinfv.class);
+                                        startActivity(it);
+                                        break;
+                                    case 2: //dinfh
+                                        Intent it2 = new Intent(MainActivity.this, dinfv.class);
+                                        startActivity(it2);
+                                        break;
+                                    default:
+                                }
+                            }
+                            @Override
+                            public void onNothingSelected(AdapterView<?> parent) {}
+                        });
                         break;
-                    default:
+                    // end of linear group ==================================
+
+                    default: // whenever "SELECT A POINT GROUP" is selected
                         linear.setVisibility(View.GONE);
                         cn.setVisibility(View.GONE);
                         nonaxial.setVisibility(View.GONE);
@@ -158,16 +426,15 @@ public class MainActivity extends AppCompatActivity
                         dnh.setVisibility(View.GONE);
                         cubic.setVisibility(View.GONE);
                         break;
-                }
-            }
+                }// end of switch for main spinner dropdown menu
+            } // end of onItemSelected for main spinner dropdown menu
 
             @Override
-            public void onNothingSelected(AdapterView<?> parent) {
+            public void onNothingSelected(AdapterView<?> parent) {}
+        }); // end of onItemSelectedListener
+    } //end of onCreate
 
-            }
-        });
-    }
-
+    /*
     public void setTexts()
     {
         // TextView
@@ -512,5 +779,5 @@ public class MainActivity extends AppCompatActivity
         startActivity(it);
     }
 
-
+*/
 }
