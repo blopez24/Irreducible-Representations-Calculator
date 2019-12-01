@@ -127,11 +127,11 @@ public class TableData
             {
                 if(array[i] == 1)
                 {
-                    formattedResults += (String) charTable.get(i + 1).get(0);
+                    formattedResults += charTable.get(i + 1).get(0);
                 }
                 else
                 {
-                    formattedResults += array[i] + (String) charTable.get(i + 1).get(0);
+                    formattedResults += array[i] + charTable.get(i + 1).get(0);
                 }
 
                 if(nonZeroes > 0)
