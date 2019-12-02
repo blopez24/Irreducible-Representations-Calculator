@@ -72,6 +72,14 @@ public class TableData
             results[i] = (double)Math.round((results[i]) * 1000000) / 1000000;
         }
 
+        // we currently have total, have to subtract out rot and transl to get vib
+        for(int i = 1; i < charTable.size(); i++)
+        {
+            int rotCol = charTable.size();
+            int translCol = rotCol + 1;
+            results[i-1] = results[i-1] - Integer.parseInt(charTable.get(i).get(rotCol)) - Integer.parseInt(charTable.get(i).get(translCol));
+        }
+
 
 
         boolean reducible = true;
