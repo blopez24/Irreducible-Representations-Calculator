@@ -108,7 +108,7 @@ public class TableData
 
     private String getResultsFormat(int[] array)
     {
-        String formattedResults = "";
+        String formattedResults = "Cartesian 3N:\n";
         int nonZeroes = 0;
 
         for(int i = 0; i < array.length; i++)

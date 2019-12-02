@@ -8,6 +8,53 @@
     <string name="cubic_group_text">Cubic\nGroups</string>
     <string name="linear_group_text">Linear\nGroups</string>
 
+    <string name="c1_string">C<sub>1</sub></string>
+    <string name="cs_string">C<sub>s</sub></string>
+    <string name="ci_string">C<sub>i</sub></string>
+
+    <string name="c2_string">C<sub>2</sub></string>
+    <string name="c3_string">C<sub>3</sub></string>
+    <string name="c4_string">C<sub>4</sub></string>
+    <string name="c5_string">C<sub>5</sub></string>
+    <string name="c6_string">C<sub>6</sub></string>
+
+    <string name="d2_string">D<sub>2</sub></string>
+    <string name="d3_string">D<sub>3</sub></string>
+    <string name="d4_string">D<sub>4</sub></string>
+    <string name="d5_string">D<sub>5</sub></string>
+    <string name="d6_string">D<sub>6</sub></string>
+
+    <string name="c2v_string">C<sub>2v</sub></string>
+    <string name="c3v_string">C<sub>3v</sub></string>
+    <string name="c4v_string">C<sub>4v</sub></string>
+    <string name="c5v_string">C<sub>5v</sub></string>
+    <string name="c6v_string">C<sub>6v</sub></string>
+
+    <string name="c2h_string">C<sub>2h</sub></string>
+    <string name="c3h_string">C<sub>3h</sub></string>
+    <string name="c4h_string">C<sub>4h</sub></string>
+    <string name="c5h_string">C<sub>5h</sub></string>
+    <string name="c6h_string">C<sub>6h</sub></string>
+
+    <string name="d2h_string">D<sub>2h</sub></string>
+    <string name="d3h_string">D<sub>3h</sub></string>
+    <string name="d4h_string">D<sub>4h</sub></string>
+    <string name="d5h_string">D<sub>5h</sub></string>
+    <string name="d6h_string">D<sub>6h</sub></string>
+
+    <string name="d2d_string">D<sub>2d</sub></string>
+    <string name="d3d_string">D<sub>3d</sub></string>
+    <string name="d4d_string">D<sub>4d</sub></string>
+    <string name="d5d_string">D<sub>5d</sub></string>
+    <string name="d6d_string">D<sub>6d</sub></string>
+
+    <string name="td_string">T<sub>d</sub></string>
+    <string name="o_string">O</string>
+    <string name="oh_string">O<sub>h</sub></string>
+    
+    <string name="cinf_string">C<sub>&#8734;v</sub></string>
+    <string name="dinf_string">D<sub>&#8734;v</sub></string>
+
     <string name="step_2">Step 2: </string>
     <string name="step_2_descr">Enter the characters for the reducible representation of the C1 point group below.</string>
     <string name="e">E</string>
@@ -38,78 +85,75 @@
 
     <string-array name="nonaxial">
         <item>SELECT</item>
-        <item>C1</item>
-        <item>Cs</item>
-        <item>Ci</item>
+        <item>@string/c1_string</item>
+        <item>@string/cs_string</item>
+        <item>@string/ci_string</item>
     </string-array>
 
     <string-array name="cn">
         <item>SELECT</item>
-        <item>C2</item>
-        <item>C3</item>
-        <item>C4</item>
-        <item>C5</item>
-        <item>C6</item>
+        <item>@string/c2_string</item>
+        <item>@string/c3_string</item>
+        <item>@string/c4_string</item>
+        <item>@string/c5_string</item>
+        <item>@string/c6_string</item>
     </string-array>
 
     <string-array name="cnv">
         <item>SELECT</item>
-        <item>C2v</item>
-        <item>C3v</item>
-        <item>C4v</item>
-        <item>C5v</item>
-        <item>C6v</item>
+        <item>@string/c2v_string</item>
+        <item>@string/c3v_string</item>
+        <item>@string/c4v_string</item>
+        <item>@string/c5v_string</item>
+        <item>@string/c6v_string</item>
     </string-array>
 
     <string-array name="cnh">
         <item>SELECT</item>
-        <item>C2h</item>
-        <item>C3h</item>
-        <item>C4h</item>
-        <item>C5h</item>
-        <item>C6h</item>
+        <item>@string/c2h_string</item>
+        <item>@string/c3h_string</item>
+        <item>@string/c4h_string</item>
+        <item>@string/c5h_string</item>
+        <item>@string/c6h_string</item>
     </string-array>
 
     <string-array name="Dn">
         <item>SELECT</item>
-        <item>D1</item>
-        <item>D2</item>
-        <item>D3</item>
-        <item>D4</item>
-        <item>D5</item>
-        <item>D6</item>
+        <item>@string/d2_string</item>
+        <item>@string/d3_string</item>
+        <item>@string/d4_string</item>
+        <item>@string/d5_string</item>
+        <item>@string/d6_string</item>
     </string-array>
 
     <string-array name="Dnd">
         <item>SELECT</item>
-        <item>D1d</item>
-        <item>D2d</item>
-        <item>D3d</item>
-        <item>D4d</item>
-        <item>D5d</item>
-        <item>D6d</item>
+        <item>@string/d2d_string</item>
+        <item>@string/d3d_string</item>
+        <item>@string/d4d_string</item>
+        <item>@string/d5d_string</item>
+        <item>@string/d6d_string</item>
     </string-array>
 
     <string-array name="Dnh">
         <item>SELECT</item>
-        <item>D1h</item>
-        <item>D2h</item>
-        <item>D3h</item>
-        <item>D4h</item>
-        <item>D5h</item>
-        <item>D6h</item>
+        <item>@string/d2h_string</item>
+        <item>@string/d3h_string</item>
+        <item>@string/d4h_string</item>
+        <item>@string/d5h_string</item>
+        <item>@string/d6h_string</item>
     </string-array>
 
     <string-array name="cubic">
         <item>SELECT</item>
-        <item>Td</item>
-        <item>O</item>
-        <item>Oh</item>
+        <item>@string/td_string</item>
+        <item>@string/o_string</item>
+        <item>@string/oh_string</item>
     </string-array>
 
     <string-array name="linear">
         <item>SELECT</item>
-        <item>Coov</item>
-        <item>Dooh</item>
+        <item>@string/cinf_string</item>
+        <item>@string/dinf_string</item>
     </string-array>
 </resources>
