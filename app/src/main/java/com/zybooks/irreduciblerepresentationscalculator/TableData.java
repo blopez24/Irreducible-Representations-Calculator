@@ -56,7 +56,6 @@ public class TableData
             for(int col = 1; col < charTable.get(0).size(); col++)
             {
                 results[rIndex] += Double.parseDouble(charTable.get(row).get(col)) * Double.parseDouble(charTable.get(0).get(col)) * input[index];
-                //System.out.println(row + " " + col + "  " + (row+1) + " " + col + " " + index);
                 index++;
             }
             rIndex++;
@@ -72,15 +71,24 @@ public class TableData
             results[i] = (double)Math.round((results[i]) * 1000000) / 1000000;
         }
 
-        // we currently have total, have to subtract out rot and transl to get vib
-        for(int i = 1; i < charTable.size(); i++)
+
+        // we currently have total, have to subtract out rot and transl to get vib if Cartesian 3N contains all values
+        boolean subRotTransl = true;
+        for(int i = 0; i < results.length; i++)
         {
-            int rotCol = charTable.size();
-            int translCol = rotCol + 1;
-            results[i-1] = results[i-1] - Integer.parseInt(charTable.get(i).get(rotCol)) - Integer.parseInt(charTable.get(i).get(translCol));
+            if(results[i] == 0.0) {
+                subRotTransl = false;
+                break;
+            }
         }
-
-
+        if(subRotTransl){
+            for(int i = 1; i < charTable.size(); i++)
+            {
+                int rotCol = charTable.size();
+                int translCol = rotCol + 1;
+                results[i-1] = results[i-1] - Integer.parseInt(charTable.get(i).get(rotCol)) - Integer.parseInt(charTable.get(i).get(translCol));
+            }
+        }
 
         boolean reducible = true;
         for(int i = 0; i < results.length; i++) {
