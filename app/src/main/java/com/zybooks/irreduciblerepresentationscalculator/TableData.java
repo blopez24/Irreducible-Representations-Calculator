@@ -1,15 +1,10 @@
 package com.zybooks.irreduciblerepresentationscalculator;
 
 import android.content.Context;
-import android.os.Environment;
 import android.util.Log;
 
-import com.opencsv.CSVReader;
-
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
-import java.io.FileReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
@@ -29,7 +24,6 @@ public class TableData
         result = ""; // will be something like "2A1 + B2" eventually
         try{
             InputStream is = context.getResources().openRawResource(context.getResources().getIdentifier(element, "raw", context.getPackageName()));
-            //CSVReader reader = new CSVReader(new FileReader(element+".csv"));
             BufferedReader reader = new BufferedReader(
                     new InputStreamReader(is, Charset.forName("UTF-8"))
             );
@@ -61,7 +55,7 @@ public class TableData
             int index = 0;
             for(int col = 1; col < charTable.get(0).size(); col++)
             {
-                results[rIndex] += Integer.parseInt(charTable.get(row).get(col)) * Integer.parseInt(charTable.get(0).get(col)) * input[index];
+                results[rIndex] += Double.parseDouble(charTable.get(row).get(col)) * Double.parseDouble(charTable.get(0).get(col)) * input[index];
                 //System.out.println(row + " " + col + "  " + (row+1) + " " + col + " " + index);
                 index++;
             }
