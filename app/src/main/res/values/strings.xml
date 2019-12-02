@@ -26,12 +26,12 @@
     <string-array name="point_name">
         <item>SELECT A POINT GROUP</item>
         <item>Nonaxial Groups</item>
-        <item>Cn Groups</item>
-        <item>Cnv Groups</item>
-        <item>Cnh Groups</item>
-        <item>Dn Groups</item>
-        <item>Dnd Groups</item>
-        <item>Dnh Groups</item>
+        <item>C<sub>n</sub> Groups</item>
+        <item>C<sub>nv</sub> Groups</item>
+        <item>C<sub>nh</sub> Groups</item>
+        <item>D<sub>n</sub> Groups</item>
+        <item>D<sub>nd</sub> Groups</item>
+        <item>D<sub>nh</sub> Groups</item>
         <item>Cubic Groups</item>
         <item>Linear Groups</item>
     </string-array>
