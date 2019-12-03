@@ -27,14 +27,16 @@
                 android:layout_marginTop="5dp"
                 android:text="@string/app_description"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="16sp"
+                android:gravity="center"/>
 
             <ImageView
                 android:id="@+id/irc_equation_icon"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/equation"
                 app:srcCompat="@drawable/irc_equation" />
@@ -43,25 +45,28 @@
                 android:id="@+id/step1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
                 android:text="@string/step_one"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="16sp"
+                android:gravity="center"/>
 
-            <TextView
-                android:id="@+id/point_groups_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="19dp"
-                android:text="@string/point_group_text"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+<!--            <TextView-->
+<!--                android:id="@+id/point_groups_text"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="19dp"-->
+<!--                android:text="@string/point_group_text"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="24sp"-->
+<!--                android:textStyle="bold" />-->
 
             <RadioGroup
                 android:id="@+id/RadioGr"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center">
 
                 <RadioButton
                     android:id="@+id/radio_dropdown"
