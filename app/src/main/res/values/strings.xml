@@ -7,6 +7,8 @@
     <string name="nonaxial_group_text">Nonaxial\nGroups</string>
     <string name="cubic_group_text">Cubic\nGroups</string>
     <string name="linear_group_text">Linear\nGroups</string>
+    <string name="dropdown_menu">Dropdown Layout</string>
+    <string name="table_menu">Table Layout</string>
 
     <string name="c1_string">C<sub>1</sub></string>
     <string name="cs_string">C<sub>s</sub></string>

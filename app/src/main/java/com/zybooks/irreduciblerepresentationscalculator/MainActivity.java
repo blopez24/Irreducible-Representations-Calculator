@@ -4,13 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.text.HtmlCompat;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -53,14 +55,29 @@ import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Dnd_Group.d6
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cubic_Group.o;
 import com.zybooks.irreduciblerepresentationscalculator.PointGroups.Cubic_Group.td;
 
-public class MainActivity extends AppCompatActivity
-{
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        RadioGroup radioGroup = findViewById(R.id.RadioGr);
+        final Spinner pointList = findViewById(R.id.spinner);
+        final LinearLayout tableLayout = findViewById(R.id.table);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if (checkedId == R.id.radio_dropdown){
+                    pointList.setVisibility(View.VISIBLE);
+                    tableLayout.setVisibility(View.GONE);
+                } else if (checkedId == R.id.radio_table){
+                    pointList.setVisibility(View.GONE);
+                    tableLayout.setVisibility(View.VISIBLE);
+                }
+            }
+        });
 
         final Spinner nonaxial = findViewById(R.id.nonaxial);
         final Spinner cn = findViewById(R.id.cn);
@@ -82,8 +99,7 @@ public class MainActivity extends AppCompatActivity
         cubic.setVisibility(View.GONE);
         linear.setVisibility(View.GONE);
 
-        //setTexts();
-        Spinner pointList = findViewById(R.id.spinner);
+        setTexts();
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.point_name, R.layout.spinner_item);
         adapter.setDropDownViewResource(R.layout.spinner_dropdown);
         pointList.setAdapter(adapter);
@@ -434,7 +450,7 @@ public class MainActivity extends AppCompatActivity
         }); // end of onItemSelectedListener
     } //end of onCreate
 
-    /*
+
     public void setTexts()
     {
         // TextView
@@ -779,5 +795,10 @@ public class MainActivity extends AppCompatActivity
         startActivity(it);
     }
 
-*/
+
+    public void show_dropdown(View view) {
+    }
+
+    public void show_table(View view) {
+    }
 }
