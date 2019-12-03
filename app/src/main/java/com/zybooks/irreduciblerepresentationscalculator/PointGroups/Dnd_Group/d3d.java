@@ -74,6 +74,7 @@ public class d3d extends AppCompatActivity {
             input[4] = Integer.parseInt(value5.getText().toString().trim());
             input[5] = Integer.parseInt(value6.getText().toString().trim());
 
+            hideKeyboard(view);
             td.calculate(input);
             String result = td.getResult();
             answer.setText(result);
