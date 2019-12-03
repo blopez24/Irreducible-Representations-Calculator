@@ -79,11 +79,13 @@
             </RadioGroup>
 
 
-            <!-- buttons -->
+            <!-- Table Layout -->
             <LinearLayout
                 android:id="@+id/table"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
                 android:layout_marginLeft="3dp"
                 android:layout_marginRight="3dp"
                 android:orientation="vertical"
@@ -727,128 +729,157 @@
                 </LinearLayout>
 
             </LinearLayout>
+            <!-- END OF TABLE LAYOUT -->
 
 
-            <Spinner
-                android:id="@+id/spinner"
+            <!-- START OF DROPDOWN MENU(SPINNER) -->
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@color/bannerColor"
-                android:backgroundTintMode="add"
-                android:dropDownWidth="wrap_content"
-                android:entries="@array/point_name"
-                android:padding="9dp"
-                android:spinnerMode="dropdown" />
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/bannerColor"
+                    android:backgroundTintMode="add"
+                    android:dropDownWidth="wrap_content"
+                    android:entries="@array/point_name"
+                    android:padding="9dp"
+                    android:spinnerMode="dropdown" />
+                <ImageView
+                    android:layout_gravity="end|bottom"
+                    android:contentDescription="@null"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_expand_more_black_24dp"/>
+            </FrameLayout>
 
-            <Spinner
-                android:id="@+id/nonaxial"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@color/bannerColor"
-                android:dropDownWidth="wrap_content"
-                android:entries="@array/nonaxial"
-                android:padding="11dp"
-                android:spinnerMode="dropdown"
-                android:visibility="gone" />
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/nonaxial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:entries="@array/nonaxial"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone" />
 
-            <Spinner
-                android:id="@+id/cn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@color/bannerColor"
-                android:dropDownWidth="wrap_content"
-                android:entries="@array/cn"
-                android:padding="11dp"
-                android:spinnerMode="dropdown"
-                android:visibility="gone" />
+                <Spinner
+                    android:id="@+id/cn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:entries="@array/cn"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone" />
 
-            <Spinner
-                android:id="@+id/cnv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@color/bannerColor"
-                android:dropDownWidth="wrap_content"
-                android:entries="@array/cnv"
-                android:padding="11dp"
-                android:spinnerMode="dropdown"
-                android:visibility="gone" />
+                <Spinner
+                    android:id="@+id/cnv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:entries="@array/cnv"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone" />
 
-            <Spinner
-                android:id="@+id/cnh"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@color/bannerColor"
-                android:dropDownWidth="wrap_content"
-                android:entries="@array/cnh"
-                android:padding="11dp"
-                android:spinnerMode="dropdown"
-                android:visibility="gone" />
+                <Spinner
+                    android:id="@+id/cnh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:entries="@array/cnh"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone" />
 
-            <Spinner
-                android:id="@+id/dn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@color/bannerColor"
-                android:dropDownWidth="wrap_content"
-                android:entries="@array/Dn"
-                android:padding="11dp"
-                android:spinnerMode="dropdown"
-                android:visibility="gone" />
+                <Spinner
+                    android:id="@+id/dn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:entries="@array/Dn"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone" />
 
-            <Spinner
-                android:id="@+id/dnd"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@color/bannerColor"
-                android:dropDownWidth="wrap_content"
-                android:entries="@array/Dnd"
-                android:padding="11dp"
-                android:spinnerMode="dropdown"
-                android:visibility="gone" />
+                <Spinner
+                    android:id="@+id/dnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:entries="@array/Dnd"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone" />
 
-            <Spinner
-                android:id="@+id/dnh"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@color/bannerColor"
-                android:dropDownWidth="wrap_content"
-                android:entries="@array/Dnh"
-                android:padding="11dp"
-                android:spinnerMode="dropdown"
-                android:visibility="gone" />
+                <Spinner
+                    android:id="@+id/dnh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:entries="@array/Dnh"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone" />
 
-            <Spinner
-                android:id="@+id/cubic"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@color/bannerColor"
-                android:dropDownWidth="wrap_content"
-                android:entries="@array/cubic"
-                android:padding="11dp"
-                android:spinnerMode="dropdown"
-                android:visibility="gone" />
+                <Spinner
+                    android:id="@+id/cubic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:entries="@array/cubic"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone" />
 
-            <Spinner
-                android:id="@+id/linear"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@color/bannerColor"
-                android:dropDownWidth="wrap_content"
-                android:entries="@array/linear"
-                android:padding="11dp"
-                android:spinnerMode="dropdown"
-                android:visibility="gone" />
+                <Spinner
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/bannerColor"
+                    android:dropDownWidth="wrap_content"
+                    android:entries="@array/linear"
+                    android:padding="11dp"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone" />
+                <ImageView
+                    android:layout_gravity="end|bottom"
+                    android:contentDescription="@null"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_expand_more_black_24dp"/>
+            </FrameLayout>
+
+
+            <!-- END OF DROPDOWN -->
+
         </LinearLayout>
-
     </ScrollView>
 </android.widget.LinearLayout>

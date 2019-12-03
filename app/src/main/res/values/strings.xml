@@ -3,7 +3,7 @@
     <string name="app">Irreducible Representation\nCalculator</string>
     <string name="app_description">This calculator allows you to reduce a reducible representation for a wide range of chemically relevant point groups using the reduction operator.</string>
     <string name="step_one"><b>Step 1:</b>\nPick the point group from the list below.</string>
-    <string name="point_group_text">Character table list for chemically important point groups</string>
+    <string name="point_group_text">Character list for chemically important point groups</string>
     <string name="nonaxial_group_text">Nonaxial\nGroups</string>
     <string name="cubic_group_text">Cubic\nGroups</string>
     <string name="linear_group_text">Linear\nGroups</string>

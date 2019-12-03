@@ -7,4 +7,5 @@
     android:textSize="20sp"
     android:textColor="#FFFFFF"
     android:background="@color/bannerColor"
-    android:textAlignment="center" />
+    android:textAlignment="center"/>
+
