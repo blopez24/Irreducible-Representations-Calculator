@@ -29,7 +29,7 @@ public class d6d extends AppCompatActivity {
 
         TextView descr = findViewById(R.id.d6d_descr);
         descr.setText(HtmlCompat.fromHtml(
-                "Enter the characters for the reducible representation of the D<sub>5d</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));
+                "Enter the characters for the reducible representation of the D<sub>6d</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));
 
         TextView a = findViewById(R.id.d6d_2s12);
         a.setText(HtmlCompat.fromHtml("2S<sub>12</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
