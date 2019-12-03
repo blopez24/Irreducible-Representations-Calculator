@@ -64,22 +64,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RadioGroup radioGroup = findViewById(R.id.RadioGr);
         final Spinner pointList = findViewById(R.id.spinner);
         final LinearLayout tableLayout = findViewById(R.id.table);
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if (checkedId == R.id.radio_dropdown){
-                    pointList.setVisibility(View.VISIBLE);
-                    tableLayout.setVisibility(View.GONE);
-                } else if (checkedId == R.id.radio_table){
-                    pointList.setVisibility(View.GONE);
-                    tableLayout.setVisibility(View.VISIBLE);
-                }
-            }
-        });
-
         final Spinner nonaxial = findViewById(R.id.nonaxial);
         final Spinner cn = findViewById(R.id.cn);
         final Spinner cnv = findViewById(R.id.cnv);
@@ -89,16 +75,30 @@ public class MainActivity extends AppCompatActivity {
         final Spinner dnh = findViewById(R.id.dnh);
         final Spinner cubic = findViewById(R.id.cubic);
         final Spinner linear = findViewById(R.id.linear);
+        RadioGroup radioGroup = findViewById(R.id.RadioGr);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if (checkedId == R.id.radio_dropdown){
+                    pointList.setVisibility(View.VISIBLE);
+                    tableLayout.setVisibility(View.GONE);
 
-        cn.setVisibility(View.GONE);
-        nonaxial.setVisibility(View.GONE);
-        cnv.setVisibility(View.GONE);
-        cnh.setVisibility(View.GONE);
-        dn.setVisibility(View.GONE);
-        dnd.setVisibility(View.GONE);
-        dnh.setVisibility(View.GONE);
-        cubic.setVisibility(View.GONE);
-        linear.setVisibility(View.GONE);
+                    pointList.setSelection(0);
+                    cn.setVisibility(View.GONE);
+                    nonaxial.setVisibility(View.GONE);
+                    cnv.setVisibility(View.GONE);
+                    cnh.setVisibility(View.GONE);
+                    dn.setVisibility(View.GONE);
+                    dnd.setVisibility(View.GONE);
+                    dnh.setVisibility(View.GONE);
+                    cubic.setVisibility(View.GONE);
+                    linear.setVisibility(View.GONE);
+                } else if (checkedId == R.id.radio_table){
+                    pointList.setVisibility(View.GONE);
+                    tableLayout.setVisibility(View.VISIBLE);
+                }
+            }
+        });
 
         setTexts();
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.point_name, R.layout.spinner_item);

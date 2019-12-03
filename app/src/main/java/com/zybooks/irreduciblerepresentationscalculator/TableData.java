@@ -100,7 +100,7 @@ public class TableData
                 integerResultsVib[i] = (int)results[i];
             }
 
-            result = getResultsFormat(integerResults, "Cartesian 3N:\n") + getResultsFormat(integerResultsVib, "\nVibration:\n");
+            result = getResultsFormat(integerResults, "Cartesian 3N:\n") + getResultsFormat(integerResultsVib, "\n\nVibration:\n");
 
         }
         else
