@@ -96,6 +96,16 @@ public class MainActivity extends AppCompatActivity {
                 } else if (checkedId == R.id.radio_table){
                     pointList.setVisibility(View.GONE);
                     tableLayout.setVisibility(View.VISIBLE);
+
+                    cn.setVisibility(View.GONE);
+                    nonaxial.setVisibility(View.GONE);
+                    cnv.setVisibility(View.GONE);
+                    cnh.setVisibility(View.GONE);
+                    dn.setVisibility(View.GONE);
+                    dnd.setVisibility(View.GONE);
+                    dnh.setVisibility(View.GONE);
+                    cubic.setVisibility(View.GONE);
+                    linear.setVisibility(View.GONE);
                 }
             }
         });
