@@ -59,11 +59,11 @@ public class d5 extends AppCompatActivity {
             reset.setVisibility(View.VISIBLE);
 
             TableData td = new TableData(getApplicationContext(),"d5");
-            int[] input = new int[4];
-            input[0] = Integer.parseInt(value1.getText().toString().trim());
-            input[1] = Integer.parseInt(value2.getText().toString().trim());
-            input[2] = Integer.parseInt(value3.getText().toString().trim());
-            input[3] = Integer.parseInt(value4.getText().toString().trim());
+            double[] input = new double[4];
+            input[0] = Double.parseDouble(value1.getText().toString().trim());
+            input[1] = Double.parseDouble(value2.getText().toString().trim());
+            input[2] = Double.parseDouble(value3.getText().toString().trim());
+            input[3] = Double.parseDouble(value4.getText().toString().trim());
 
             hideKeyboard(view);
             td.calculate(input);

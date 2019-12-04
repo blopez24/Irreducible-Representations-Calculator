@@ -54,9 +54,9 @@ public class c3 extends AppCompatActivity {
             reset.setVisibility(View.VISIBLE);
 
             TableData td = new TableData(getApplicationContext(), "c3");
-            double[] input = new double[2];
-            input[0] = Double.parseDouble(value1.getText().toString().trim());
-            input[1] = Double.parseDouble(value2.getText().toString().trim());
+            int[] input = new int[2];
+            input[0] = Integer.parseInt(value1.getText().toString().trim());
+            input[1] = Integer.parseInt(value2.getText().toString().trim());
 
             hideKeyboard(view);
             td.calculate(input);

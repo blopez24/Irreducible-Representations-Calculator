@@ -64,13 +64,13 @@ public class c4h extends AppCompatActivity {
             reset.setVisibility(View.VISIBLE);
 
             TableData td = new TableData(getApplicationContext(), "c4h");
-            double[] input = new double[6];
-            input[0] = Double.parseDouble(value1.getText().toString().trim());
-            input[1] = Double.parseDouble(value2.getText().toString().trim());
-            input[2] = Double.parseDouble(value3.getText().toString().trim());
-            input[3] = Double.parseDouble(value4.getText().toString().trim());
-            input[4] = Double.parseDouble(value5.getText().toString().trim());
-            input[5] = Double.parseDouble(value6.getText().toString().trim());
+            int[] input = new int[6];
+            input[0] = Integer.parseInt(value1.getText().toString().trim());
+            input[1] = Integer.parseInt(value2.getText().toString().trim());
+            input[2] = Integer.parseInt(value3.getText().toString().trim());
+            input[3] = Integer.parseInt(value4.getText().toString().trim());
+            input[4] = Integer.parseInt(value5.getText().toString().trim());
+            input[5] = Integer.parseInt(value6.getText().toString().trim());
 
             hideKeyboard(view);
             td.calculate(input);

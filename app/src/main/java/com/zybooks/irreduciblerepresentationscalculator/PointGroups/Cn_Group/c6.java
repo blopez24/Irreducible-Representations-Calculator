@@ -58,7 +58,7 @@ public class c6 extends AppCompatActivity {
             reset.setVisibility(View.VISIBLE);
 
             TableData td = new TableData(getApplicationContext(), "c6");
-            double[] input = new double[4];
+            int[] input = new int[4];
             input[0] = Integer.parseInt(value1.getText().toString().trim());
             input[1] = Integer.parseInt(value2.getText().toString().trim());
             input[2] = Integer.parseInt(value3.getText().toString().trim());

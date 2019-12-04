@@ -72,7 +72,6 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="6dp"
-                android:text="5Sv"
                 android:textColor="@color/black" />
         </TableRow>
 
@@ -93,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
                 android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
+                android:inputType="numberSigned|numberDecimal"
                 android:minEms="2"
                 android:padding="5dp" />
 
@@ -103,7 +102,7 @@
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
                 android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
+                android:inputType="numberSigned|numberDecimal"
                 android:minEms="2"
                 android:padding="5dp" />
 
@@ -113,7 +112,7 @@
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
                 android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
+                android:inputType="numberSigned|numberDecimal"
                 android:minEms="2"
                 android:padding="5dp" />
 
@@ -123,7 +122,7 @@
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
                 android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
+                android:inputType="numberSigned|numberDecimal"
                 android:minEms="2"
                 android:padding="5dp" />
         </TableRow>

@@ -82,16 +82,16 @@ public class d6d extends AppCompatActivity {
             reset.setVisibility(View.VISIBLE);
 
             TableData td = new TableData(getApplicationContext(),"d6d");
-            int[] input = new int[9];
-            input[0] = Integer.parseInt(value0.getText().toString().trim());
-            input[1] = Integer.parseInt(value1.getText().toString().trim());
-            input[2] = Integer.parseInt(value2.getText().toString().trim());
-            input[3] = Integer.parseInt(value3.getText().toString().trim());
-            input[4] = Integer.parseInt(value4.getText().toString().trim());
-            input[5] = Integer.parseInt(value5.getText().toString().trim());
-            input[6] = Integer.parseInt(value6.getText().toString().trim());
-            input[7] = Integer.parseInt(value7.getText().toString().trim());
-            input[8] = Integer.parseInt(value8.getText().toString().trim());
+            double[] input = new double[9];
+            input[0] = Double.parseDouble(value0.getText().toString().trim());
+            input[1] = Double.parseDouble(value1.getText().toString().trim());
+            input[2] = Double.parseDouble(value2.getText().toString().trim());
+            input[3] = Double.parseDouble(value3.getText().toString().trim());
+            input[4] = Double.parseDouble(value4.getText().toString().trim());
+            input[5] = Double.parseDouble(value5.getText().toString().trim());
+            input[6] = Double.parseDouble(value6.getText().toString().trim());
+            input[7] = Double.parseDouble(value7.getText().toString().trim());
+            input[8] = Double.parseDouble(value8.getText().toString().trim());
 
             hideKeyboard(view);
             td.calculate(input);
