@@ -48,23 +48,20 @@
                 android:padding="6dp"
                 android:text="@string/e"
                 android:textColor="@color/black" />
-
             <TextView
-                android:id="@+id/c6h_c6"
+                android:id="@+id/c6h_2c6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="6dp"
                 android:textColor="@color/black" />
-
             <TextView
-                android:id="@+id/c6h_c3"
+                android:id="@+id/c6h_2c3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="6dp"
                 android:textColor="@color/black" />
-
             <TextView
                 android:id="@+id/c6h_c2"
                 android:layout_width="wrap_content"
@@ -72,17 +69,15 @@
                 android:background="@drawable/table_outline"
                 android:padding="6dp"
                 android:textColor="@color/black" />
-
             <TextView
-                android:id="@+id/c6h_c32"
+                android:text="@string/i"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="6dp"
                 android:textColor="@color/black" />
-
             <TextView
-                android:id="@+id/c6h_c65"
+                android:id="@+id/c6h_2s6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -106,25 +101,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
+                android:inputType="numberSigned|numberDecimal"
                 android:minEms="2"
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/c6h_c6_user_input"
+                android:id="@+id/c6h_2c6_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
+                android:inputType="numberSigned|numberDecimal"
                 android:minEms="2"
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/c6h_c3_user_input"
+                android:id="@+id/c6h_2c3_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
+                android:inputType="numberSigned|numberDecimal"
                 android:minEms="2"
                 android:padding="5dp" />
 
@@ -133,25 +128,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
+                android:inputType="numberSigned|numberDecimal"
                 android:minEms="2"
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/c6h_c32_user_input"
+                android:id="@+id/c6h_i_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
+                android:inputType="numberSigned|numberDecimal"
                 android:minEms="2"
                 android:padding="5dp" />
-
             <EditText
-                android:id="@+id/c6h_c65_user_input"
+                android:id="@+id/c6h_2s6_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
+                android:inputType="numberSigned|numberDecimal"
                 android:minEms="2"
                 android:padding="5dp" />
         </TableRow>
@@ -162,48 +156,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
+
+
             <TextView
-                android:text="@string/i"
+                android:id="@+id/c6h_2s3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="6dp"
                 android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/c6h_s35"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/table_outline"
-                android:padding="6dp"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/c6h_s65"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/table_outline"
-                android:padding="6dp"
-                android:textColor="@color/black" />
-
             <TextView
                 android:id="@+id/c6h_sh"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/table_outline"
-                android:padding="6dp"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/c6h_s6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/table_outline"
-                android:padding="6dp"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/c6h_s3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -221,53 +184,19 @@
                 android:text="@string/r_reduc"
                 android:textColor="@color/black" />
 
-            <EditText
-                android:id="@+id/c6h_i_user_input"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
-                android:minEms="2"
-                android:padding="5dp" />
+
 
             <EditText
-                android:id="@+id/c6h_s35_user_input"
+                android:id="@+id/c6h_2s3_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
-                android:minEms="2"
-                android:padding="5dp" />
-
-            <EditText
-                android:id="@+id/c6h_s65_user_input"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
+                android:inputType="numberSigned|numberDecimal"
                 android:minEms="2"
                 android:padding="5dp" />
 
             <EditText
                 android:id="@+id/c6h_sh_user_input"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
-                android:minEms="2"
-                android:padding="5dp" />
-
-            <EditText
-                android:id="@+id/c6h_s6_user_input"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
-                android:minEms="2"
-                android:padding="5dp" />
-
-            <EditText
-                android:id="@+id/c6h_s3_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"

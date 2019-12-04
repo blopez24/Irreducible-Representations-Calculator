@@ -28,25 +28,19 @@ public class c3h extends AppCompatActivity {
         TextView descr = findViewById(R.id.c3h_descr);
         descr.setText(HtmlCompat.fromHtml(
                 "Enter the characters for the reducible representation of the C<sub>3h</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));
-        TextView a = findViewById(R.id.c3h_c3);
-        a.setText(HtmlCompat.fromHtml("C<sub>3</sub>(z)", HtmlCompat.FROM_HTML_MODE_LEGACY));
-        TextView b = findViewById(R.id.c3h_c32);
-        b.setText(HtmlCompat.fromHtml("(C<sub>3</sub>)<sup>2</sup>", HtmlCompat.FROM_HTML_MODE_LEGACY));
-        TextView c = findViewById(R.id.c3h_s3);
-        c.setText(HtmlCompat.fromHtml("S<sub>3</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
-        TextView d = findViewById(R.id.c3h_s35);
-        d.setText(HtmlCompat.fromHtml("(S<sub>3</sub>)<sup>5</sup>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView a = findViewById(R.id.c3h_2c3);
+        a.setText(HtmlCompat.fromHtml("2C<sub>3</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView c = findViewById(R.id.c3h_2s3);
+        c.setText(HtmlCompat.fromHtml("2S<sub>3</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
         TextView e = findViewById(R.id.c3h_sh);
         e.setText(HtmlCompat.fromHtml("&#963;<sub>h</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
     public void result(View view) {
         EditText value1 = findViewById(R.id.c3h_e_user_input);
-        EditText value2 = findViewById(R.id.c3h_c3_user_input);
-        EditText value3 = findViewById(R.id.c3h_c3_2_user_input);
-        EditText value4 = findViewById(R.id.c3h_sh_user_input);
-        EditText value5 = findViewById(R.id.c3h_s3_user_input);
-        EditText value6 = findViewById(R.id.c3h_s3_5_user_input);
+        EditText value2 = findViewById(R.id.c3h_2c3_user_input);
+        EditText value3 = findViewById(R.id.c3h_sh_user_input);
+        EditText value4 = findViewById(R.id.c3h_2s3_user_input);
 
         Button button = findViewById(R.id.c3h_submit);
         TextView answerText = findViewById(R.id.c3h_text);
@@ -56,9 +50,7 @@ public class c3h extends AppCompatActivity {
         if (TextUtils.isEmpty(value1.getText().toString())
                 || TextUtils.isEmpty(value2.getText().toString())
                 || TextUtils.isEmpty(value3.getText().toString())
-                || TextUtils.isEmpty(value4.getText().toString())
-                || TextUtils.isEmpty(value5.getText().toString())
-                || TextUtils.isEmpty(value6.getText().toString())){
+                || TextUtils.isEmpty(value4.getText().toString())){
             Toast.makeText(this,"Please enter the values for each cell!", Toast.LENGTH_LONG).show();
         } else{
             button.setVisibility(View.GONE);
@@ -67,13 +59,11 @@ public class c3h extends AppCompatActivity {
             reset.setVisibility(View.VISIBLE);
 
             TableData td = new TableData(getApplicationContext(), "c3h");
-            int[] input = new int[6];
-            input[0] = Integer.parseInt(value1.getText().toString().trim());
-            input[1] = Integer.parseInt(value2.getText().toString().trim());
-            input[2] = Integer.parseInt(value3.getText().toString().trim());
-            input[3] = Integer.parseInt(value4.getText().toString().trim());
-            input[4] = Integer.parseInt(value5.getText().toString().trim());
-            input[5] = Integer.parseInt(value6.getText().toString().trim());
+            double[] input = new double[4];
+            input[0] = Double.parseDouble(value1.getText().toString().trim());
+            input[1] = Double.parseDouble(value2.getText().toString().trim());
+            input[2] = Double.parseDouble(value3.getText().toString().trim());
+            input[3] = Double.parseDouble(value4.getText().toString().trim());
 
             hideKeyboard(view);
             td.calculate(input);
@@ -90,11 +80,9 @@ public class c3h extends AppCompatActivity {
 
     public void reset(View view) {
         EditText value1 = findViewById(R.id.c3h_e_user_input);
-        EditText value2 = findViewById(R.id.c3h_c3_user_input);
-        EditText value3 = findViewById(R.id.c3h_c3_2_user_input);
-        EditText value4 = findViewById(R.id.c3h_sh_user_input);
-        EditText value5 = findViewById(R.id.c3h_s3_user_input);
-        EditText value6 = findViewById(R.id.c3h_s3_5_user_input);
+        EditText value2 = findViewById(R.id.c3h_2c3_user_input);
+        EditText value3 = findViewById(R.id.c3h_sh_user_input);
+        EditText value4 = findViewById(R.id.c3h_2s3_user_input);
 
         Button button = findViewById(R.id.c3h_submit);
         TextView answerText = findViewById(R.id.c3h_text);
@@ -105,8 +93,6 @@ public class c3h extends AppCompatActivity {
         value2.setText("");
         value3.setText("");
         value4.setText("");
-        value5.setText("");
-        value6.setText("");
         button.setVisibility(View.VISIBLE);
         answerText.setVisibility(View.GONE);
         answer.setVisibility(View.GONE);

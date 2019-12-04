@@ -49,8 +49,8 @@ public class d5d extends AppCompatActivity {
         EditText value2 = findViewById(R.id.d5d_2c52_user_input);
         EditText value3 = findViewById(R.id.d5d_5c2_user_input);
         EditText value4 = findViewById(R.id.d5d_i_user_input);
-        EditText value5 = findViewById(R.id.d5d_2s103_user_input);
-        EditText value6 = findViewById(R.id.d5d_2s10_user_input);
+        EditText value5 = findViewById(R.id.d5d_2s10_user_input);
+        EditText value6 = findViewById(R.id.d5d_2s103_user_input);
         EditText value7 = findViewById(R.id.d5d_5Sd_user_input);
 
         Button reset = findViewById(R.id.d5d_reset);
@@ -103,8 +103,8 @@ public class d5d extends AppCompatActivity {
         EditText value2 = findViewById(R.id.d5d_2c52_user_input);
         EditText value3 = findViewById(R.id.d5d_5c2_user_input);
         EditText value4 = findViewById(R.id.d5d_i_user_input);
-        EditText value5 = findViewById(R.id.d5d_2s103_user_input);
-        EditText value6 = findViewById(R.id.d5d_2s10_user_input);
+        EditText value5 = findViewById(R.id.d5d_2s10_user_input);
+        EditText value6 = findViewById(R.id.d5d_2s103_user_input);
         EditText value7 = findViewById(R.id.d5d_5Sd_user_input);
 
         Button reset = findViewById(R.id.d5d_reset);

@@ -18,6 +18,8 @@ import com.zybooks.irreduciblerepresentationscalculator.MainActivity;
 import com.zybooks.irreduciblerepresentationscalculator.R;
 import com.zybooks.irreduciblerepresentationscalculator.TableData;
 
+import static java.lang.Double.parseDouble;
+
 public class c3 extends AppCompatActivity {
 
     @Override
@@ -28,17 +30,14 @@ public class c3 extends AppCompatActivity {
         TextView c3_descr = findViewById(R.id.c3_descr);
         c3_descr.setText(HtmlCompat.fromHtml(
                 "Enter the characters for the reducible representation of the C<sub>3</sub> point group below.", HtmlCompat.FROM_HTML_MODE_LEGACY));
-        TextView a = findViewById(R.id.c3_c3);
-        a.setText(HtmlCompat.fromHtml("C<sub>3</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
-        TextView b = findViewById(R.id.c3_c32);
-        b.setText(HtmlCompat.fromHtml("(C<sub>3</sub>)<sup>2</sup>",HtmlCompat.FROM_HTML_MODE_LEGACY));
+        TextView a = findViewById(R.id.c3_2c3);
+        a.setText(HtmlCompat.fromHtml("2C<sub>3</sub>",HtmlCompat.FROM_HTML_MODE_LEGACY));
     }
 
 
     public void result(View view) {
         EditText value1 = findViewById(R.id.c3_e_user_input);
-        EditText value2 = findViewById(R.id.c3_c3_user_input);
-        EditText value3 = findViewById(R.id.c3_c3_2_user_input);
+        EditText value2 = findViewById(R.id.c3_2c3_user_input);
 
         Button button = findViewById(R.id.c3_submit);
         TextView answerText = findViewById(R.id.c3_text);
@@ -46,8 +45,7 @@ public class c3 extends AppCompatActivity {
         Button reset = findViewById(R.id.c3_reset);
 
         if (TextUtils.isEmpty(value1.getText().toString())
-                || TextUtils.isEmpty(value2.getText().toString())
-                || TextUtils.isEmpty(value3.getText().toString())){
+                || TextUtils.isEmpty(value2.getText().toString())){
         Toast.makeText(this,"Please enter the values for each cell!", Toast.LENGTH_LONG).show();
         } else{
             button.setVisibility(View.GONE);
@@ -56,10 +54,9 @@ public class c3 extends AppCompatActivity {
             reset.setVisibility(View.VISIBLE);
 
             TableData td = new TableData(getApplicationContext(), "c3");
-            int[] input = new int[3];
-            input[0] = Integer.parseInt(value1.getText().toString().trim());
-            input[1] = Integer.parseInt(value2.getText().toString().trim());
-            input[2] = Integer.parseInt(value3.getText().toString().trim());
+            double[] input = new double[2];
+            input[0] = Double.parseDouble(value1.getText().toString().trim());
+            input[1] = Double.parseDouble(value2.getText().toString().trim());
 
             hideKeyboard(view);
             td.calculate(input);
@@ -75,8 +72,7 @@ public class c3 extends AppCompatActivity {
 
     public void reset(View view) {
         EditText value1 = findViewById(R.id.c3_e_user_input);
-        EditText value2 = findViewById(R.id.c3_c3_user_input);
-        EditText value3 = findViewById(R.id.c3_c3_2_user_input);
+        EditText value2 = findViewById(R.id.c3_2c3_user_input);
 
         Button button = findViewById(R.id.c3_submit);
         TextView answerText = findViewById(R.id.c3_text);
@@ -85,7 +81,6 @@ public class c3 extends AppCompatActivity {
 
         value1.setText("");
         value2.setText("");
-        value3.setText("");
         button.setVisibility(View.VISIBLE);
         answerText.setVisibility(View.GONE);
         answer.setVisibility(View.GONE);

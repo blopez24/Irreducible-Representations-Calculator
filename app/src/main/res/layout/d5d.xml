@@ -145,14 +145,14 @@
                 android:layout_height="match_parent" />
 
             <TextView
-                android:id="@+id/d5d_2s103"
+                android:id="@+id/d5d_2s10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="6dp"
                 android:textColor="@color/black" />
             <TextView
-                android:id="@+id/d5d_2s10"
+                android:id="@+id/d5d_2s103"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -167,8 +167,7 @@
                 android:textColor="@color/black" />
         </TableRow>
 
-        <TableRow >
-
+        <TableRow>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -177,16 +176,6 @@
                 android:padding="5dp"
                 android:text="@string/r_reduc"
                 android:textColor="@color/black" />
-
-            <EditText
-                android:id="@+id/d5d_2s103_user_input"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
-                android:minEms="2"
-                android:padding="5dp" />
-
             <EditText
                 android:id="@+id/d5d_2s10_user_input"
                 android:layout_width="wrap_content"
@@ -195,7 +184,14 @@
                 android:inputType="numberSigned"
                 android:minEms="2"
                 android:padding="5dp" />
-
+            <EditText
+                android:id="@+id/d5d_2s103_user_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_outline"
+                android:inputType="numberSigned"
+                android:minEms="2"
+                android:padding="5dp" />
             <EditText
                 android:id="@+id/d5d_5Sd_user_input"
                 android:layout_width="wrap_content"

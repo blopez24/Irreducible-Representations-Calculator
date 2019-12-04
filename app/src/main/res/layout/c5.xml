@@ -50,7 +50,7 @@
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/c5_c5"
+                android:id="@+id/c5_2c5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
@@ -58,29 +58,12 @@
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/c5_c52"
+                android:id="@+id/c5_2c52"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_outline"
                 android:padding="6dp"
                 android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/c5_c53"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/table_outline"
-                android:padding="6dp"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/c5_c54"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/table_outline"
-                android:padding="6dp"
-                android:textColor="@color/black" />
-
         </TableRow>
 
         <TableRow android:background="@drawable/table_outline">
@@ -105,45 +88,24 @@
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/c5_c5_user_input"
+                android:id="@+id/c5_2c5_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
                 android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
+                android:inputType="numberSigned|numberDecimal"
                 android:minEms="2"
                 android:padding="5dp" />
 
             <EditText
-                android:id="@+id/c5_c5.2_user_input"
+                android:id="@+id/c5_2c5.2_user_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints="#"
                 android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
+                android:inputType="numberSigned|numberDecimal"
                 android:minEms="2"
                 android:padding="5dp" />
-
-            <EditText
-                android:id="@+id/c5_c5.3_user_input"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:autofillHints="#"
-                android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
-                android:minEms="2"
-                android:padding="5dp" />
-
-            <EditText
-                android:id="@+id/c5_c5.4_user_input"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:autofillHints="#"
-                android:background="@drawable/table_outline"
-                android:inputType="numberSigned"
-                android:minEms="2"
-                android:padding="5dp" />
-
         </TableRow>
 
     </TableLayout>
