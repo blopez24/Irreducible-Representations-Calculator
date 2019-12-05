@@ -55,7 +55,7 @@ public class TableData
             int index = 0;
             for(int col = 1; col < charTable.get(0).size(); col++)
             {
-                results[rIndex] += Double.parseDouble(charTable.get(row).get(col)) * Double.parseDouble(charTable.get(0).get(col)) * input[index];
+                results[rIndex] += Integer.parseInt(charTable.get(row).get(col)) * Integer.parseInt(charTable.get(0).get(col)) * input[index];
                 index++;
             }
             rIndex++;

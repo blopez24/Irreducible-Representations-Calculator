@@ -1,9 +1,11 @@
 package com.zybooks.irreduciblerepresentationscalculator.PointGroups.Nonaxial_Group;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -42,6 +44,7 @@ public class c1 extends AppCompatActivity {
             answer.setVisibility(View.VISIBLE);
             reset.setVisibility(View.VISIBLE);
 
+            hideKeyboard(view);
             String ans = value1.getText().toString() + "A";
             answer.setText(ans);
         }
@@ -64,5 +67,10 @@ public class c1 extends AppCompatActivity {
         answerText.setVisibility(View.GONE);
         answer.setVisibility(View.GONE);
         reset.setVisibility(View.INVISIBLE);
+    }
+
+    public void hideKeyboard(View view) {
+        InputMethodManager inputMethodManager =(InputMethodManager)getSystemService(Activity.INPUT_METHOD_SERVICE);
+        inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 }

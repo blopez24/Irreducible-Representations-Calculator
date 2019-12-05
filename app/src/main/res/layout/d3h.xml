@@ -205,13 +205,13 @@
         android:id="@+id/d3h_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_margin="15dp"
-        android:visibility="gone"
-        android:layout_gravity="center"
-        android:gravity="center"/>
+        android:visibility="gone" />
 
     <RelativeLayout
         android:layout_width="match_parent"
