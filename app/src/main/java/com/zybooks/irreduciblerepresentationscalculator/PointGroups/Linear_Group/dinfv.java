@@ -48,7 +48,7 @@ public class dinfv extends AppCompatActivity {
             reset.setVisibility(View.VISIBLE);
 
             int floor = (int) Math.floor(realValue/2.0);
-            int ceil = (int) Math.ceil(realValue/2.13);
+            int ceil = (int) Math.ceil(realValue/2.0);
             int e1gVib = floor - 1;
             int a1uVib = ceil - 1;
             int e1uVib = ceil - 1;
