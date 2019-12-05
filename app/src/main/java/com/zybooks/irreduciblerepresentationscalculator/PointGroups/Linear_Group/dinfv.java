@@ -53,18 +53,20 @@ public class dinfv extends AppCompatActivity {
             int a1uVib = ceil - 1;
             int e1uVib = ceil - 1;
 
-            String resultText = "Cartesian 3N:" + System.getProperty ("line.separator") + floor + "A<sub>1g</sub> + " + floor + "E<sub>1g</sub> + " +
-                    ceil + "A<sub>1u</sub> + " + ceil + "E<sub>1u</sub>" + System.getProperty ("line.separator") + "Vibration:" + System.getProperty ("line.separator");
-            resultText += floor + "A<sub>1g</sub>";
+            String resultText1 = "Cartesian 3N:"; // +  + floor + "A<sub>1g</sub> + " + floor + "E<sub>1g</sub> + " +
+            String resultText2 = floor+"A<sub>1g</sub> + " + floor + "E<sub>1g</sub> + " + ceil + "A<sub>1u</sub> + " + ceil + "E<sub>1u</sub>";
+            String resultText3 = "Vibration:";
+            String resultText4 = floor+"A<sub>1g</sub>";
             if(e1gVib > 0)
-                resultText += " + " + e1gVib + "E<sub>1g</sub>";
+                resultText4 += " + " + e1gVib + "E<sub>1g</sub>";
             if(a1uVib > 0)
-                resultText += " + " + a1uVib + "A<sub>1u</sub>";
+                resultText4 += " + " + a1uVib + "A<sub>1u</sub>";
             if(e1uVib > 0)
-                resultText += " + " + e1uVib + "E<sub>1u</sub>";
+                resultText4 += " + " + e1uVib + "E<sub>1u</sub>";
             hideKeyboard(view);
             answer.setText(HtmlCompat.fromHtml(
-                    resultText, HtmlCompat.FROM_HTML_MODE_LEGACY));
+                    resultText1+"<br/>"+resultText2+"<br/>"
+                            +resultText3+"<br/>"+resultText4, HtmlCompat.FROM_HTML_MODE_LEGACY));
         }
     }
 
