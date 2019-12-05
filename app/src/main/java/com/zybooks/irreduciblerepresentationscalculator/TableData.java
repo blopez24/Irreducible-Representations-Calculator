@@ -111,6 +111,7 @@ public class TableData
 
     public void calculate(double[] input)
     {
+        System.out.println("IN DOUBLE CALCULATE");
         // input is an array because the amount of args varies by element
         int h = Integer.parseInt(charTable.get(0).get(0));
 
@@ -135,15 +136,16 @@ public class TableData
 
             // Rounds results to the sixth decimal place
             // Necessary for sin, cos, decimal, and sqrt table values
-            results[i] = (double)Math.round((results[i]) * 1000000) / 1000000;
+            results[i] = (double)Math.round((results[i]) * 100000) / 100000;
+            Log.i("table", "results after rounding" + results[i]);
         }
 
         boolean reducible = true;
         for(int i = 0; i < results.length; i++) {
+            Log.i("table", "results casted to int: " +(int)results[i]);
             if (results[i] != (int) results[i])
                 reducible = false;
         }
-
 
         if( reducible )
         {
