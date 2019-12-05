@@ -239,7 +239,7 @@
         android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_margin="15dp"
+        android:layout_margin="8dp"
         android:visibility="gone"
         android:layout_gravity="center"
         android:gravity="center"/>
