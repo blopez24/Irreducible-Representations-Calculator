@@ -129,15 +129,26 @@ public class TableData
             rIndex++;
         }
 
-        for(int i = 0; i < results.length; i++)
+        if( element.equals("c5") || element.equals("d5") || element.equals("c5v") || element.equals("c5h") ||
+                element.equals("d5h") || element.equals("d4d") || element.equals("d5d") || element.equals("d6d") )
         {
-            results[i] /= h;
-            Log.i("table", "results " + results[i]);
+            for(int i = 0; i < results.length; i++)
+            {
+                results[i] /= h;
 
-            // Rounds results to the sixth decimal place
-            // Necessary for sin, cos, decimal, and sqrt table values
-            results[i] = (double)Math.round((results[i]) * 100000) / 100000;
-            Log.i("table", "results after rounding" + results[i]);
+                // Rounds results to the first decimal place
+                // Necessary for sin, cos, decimal, and sqrt table values
+                results[i] = (double)Math.round((results[i]) * 1) / 1;
+            }
+        }
+        else {
+            for (int i = 0; i < results.length; i++) {
+                results[i] /= h;
+
+                // Rounds results to the sixth decimal place
+                // Necessary for sin, cos, decimal, and sqrt table values
+                results[i] = (double) Math.round((results[i]) * 1000000) / 1000000;
+            }
         }
 
         boolean reducible = true;
