@@ -60,6 +60,14 @@ public class c3 extends AppCompatActivity {
 
             hideKeyboard(view);
             td.calculate(input);
+
+            /*
+            if(input[0] == 24 && input[1] == 0)
+                String result = "Cartesian 3N:\n 8A + 8E\nVibration:\n6A + 6E";
+            else if(input[0] == 205 && input[1] == 0)
+                String result = "Cartesian 3N:\n 35A + 35E\nVibration:\n33A + 33E";
+            else
+            */
             String result = td.getResult();
             answer.setText(result);
         }
