@@ -139,7 +139,7 @@ public class TableData
 
                 // Rounds results to the first decimal place
                 // Necessary for sin, cos, decimal, and sqrt table values
-                results[i] = (double)Math.round((results[i]) * 1) / 1;
+                results[i] = (double)Math.round((results[i]) * 100) / 100;
             }
         }
         else {
