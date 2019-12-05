@@ -129,6 +129,7 @@ public class TableData
             rIndex++;
         }
 
+
         if( element.equals("c5") || element.equals("d5") || element.equals("c5v") || element.equals("c5h") ||
                 element.equals("d5h") || element.equals("d4d") || element.equals("d5d") || element.equals("d6d") )
         {
