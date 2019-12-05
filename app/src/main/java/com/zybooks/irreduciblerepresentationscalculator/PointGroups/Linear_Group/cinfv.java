@@ -48,8 +48,13 @@ public class cinfv extends AppCompatActivity {
             reset.setVisibility(View.VISIBLE);
 
             hideKeyboard(view);
+            String resultText = "Cartesian 3N:\n\n" + realValue + "A<sub>1</sub> + " + realValue + "E<sub>1</sub>\n\n" + "Vibration:";
+            if (realValue == 2)
+                resultText += "\n\n" + (realValue - 1) + "A<sub>1</sub>";
+            else
+                resultText += "\n\n" + (realValue - 1) + "A<sub>1</sub> + " + (realValue - 2) + "E<sub>1</sub>";
             answer.setText(HtmlCompat.fromHtml(
-                    realValue + "A<sub>1</sub> + " + realValue + "E<sub>1</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+                    resultText, HtmlCompat.FROM_HTML_MODE_LEGACY));
         }
     }
 

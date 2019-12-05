@@ -49,10 +49,22 @@ public class dinfv extends AppCompatActivity {
 
             int floor = (int) Math.floor(realValue/2.0);
             int ceil = (int) Math.ceil(realValue/2.13);
+            int e1gVib = floor - 1;
+            int a1uVib = ceil - 1;
+            int e1uVib = ceil - 1;
+
+            String resultText = "Cartesian 3N:" + System.getProperty ("line.separator") + floor + "A<sub>1g</sub> + " + floor + "E<sub>1g</sub> + " +
+                    ceil + "A<sub>1u</sub> + " + ceil + "E<sub>1u</sub>" + System.getProperty ("line.separator") + "Vibration:" + System.getProperty ("line.separator");
+            resultText += floor + "A<sub>1g</sub>";
+            if(e1gVib > 0)
+                resultText += " + " + e1gVib + "E<sub>1g</sub>";
+            if(a1uVib > 0)
+                resultText += " + " + a1uVib + "A<sub>1u</sub>";
+            if(e1uVib > 0)
+                resultText += " + " + e1uVib + "E<sub>1u</sub>";
             hideKeyboard(view);
             answer.setText(HtmlCompat.fromHtml(
-                    floor + "A<sub>1g</sub> + " + floor + "E<sub>1g</sub> + " +
-                           ceil + "A<sub>1u</sub> + " + ceil + "E<sub>1u</sub>", HtmlCompat.FROM_HTML_MODE_LEGACY));
+                    resultText, HtmlCompat.FROM_HTML_MODE_LEGACY));
         }
     }
 
