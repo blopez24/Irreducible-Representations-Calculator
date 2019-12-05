@@ -136,7 +136,7 @@ public class TableData
 
             // Rounds results to the sixth decimal place
             // Necessary for sin, cos, decimal, and sqrt table values
-            results[i] = (double)Math.round((results[i]) * 100000) / 100000;
+            results[i] = (double)Math.round((results[i]) * 10) / 10;
             Log.i("table", "results after rounding" + results[i]);
         }
 
